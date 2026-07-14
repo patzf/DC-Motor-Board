@@ -1,0 +1,12 @@
+embeddedProto
+nanoPB
+
+
+CLI (existierendes verwenden) : Nutzt FreeRTOS und CLI Shell
+nanopb felder getrennt "schreibbar" ohne die ganze FW neu zu flashen?
+
+
+tinyusb + USBTMC: Gemeinsam mit CLI ein vorgefertigtes Muster abzufahren (Sprungantwort)
+-> damit kann regler getested werden.
+	-> Drehe an Regler parametern
+	-> Fahr ein gewisses Führungsgrößenprofil ab und beobachte output
