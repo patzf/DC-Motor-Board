@@ -1,0 +1,13 @@
+System Core
+SYS
+Debug: Serial Wire
+save power of non-active UCPD: uncheck?
+
+Connectivity
+UCPD1
+Mode: Sink
+Dead Batetry Signals enabled: checked
+
+LPUART1
+Asynchronous
+115200
