@@ -7488,6 +7488,206 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PZ:SPM4020T-100M"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L2"
+				(at 5.08 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "10µ"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PZ:IND_SPM4020T-100M-LR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_spm4020-lr_en.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SPM4020T-100M"
+				(at -1.778 4.318 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.889 0.889)
+					)
+				)
+			)
+			(property "LCSC Part #" "C307805"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "FT Rotation Offset" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SPM4020T-100M_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPM4020T-100M_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PZ:TP_Keystone_5010-5014_Multipurpose"
 			(pin_numbers
 				(hide yes)
@@ -9754,6 +9954,12 @@
 		(uuid "c57fa651-c5e1-4242-ad28-bca13c7d99af")
 	)
 	(junction
+		(at 77.47 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6d3b4c0-1588-4cb3-9ad4-c32fbb3fdda3")
+	)
+	(junction
 		(at 501.65 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10301,6 +10507,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 36.83) (xy 87.63 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21dcae7b-1541-4bc6-a7e2-09cc6c241637")
+	)
+	(wire
+		(pts
 			(xy -63.5 -7.62) (xy -59.69 -7.62)
 		)
 		(stroke
@@ -10358,6 +10574,16 @@
 			(type default)
 		)
 		(uuid "25469f5d-0428-41fe-9f49-1fec91253f4f")
+	)
+	(wire
+		(pts
+			(xy 77.47 36.83) (xy 77.47 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25914bde-24df-42b4-bdf4-633096424b94")
 	)
 	(wire
 		(pts
@@ -11201,7 +11427,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 31.75) (xy 77.47 44.45)
+			(xy 77.47 31.75) (xy 77.47 36.83)
 		)
 		(stroke
 			(width 0)
@@ -11778,6 +12004,16 @@
 			(type default)
 		)
 		(uuid "ada9c6d3-5746-4c37-9651-d170f98d1244")
+	)
+	(wire
+		(pts
+			(xy 77.47 36.83) (xy 78.74 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aedf631f-d55a-4835-a632-cd47a87eb44b")
 	)
 	(wire
 		(pts
@@ -12478,6 +12714,16 @@
 			(type default)
 		)
 		(uuid "f71370d1-7444-4181-88cb-9f842a5d6913")
+	)
+	(wire
+		(pts
+			(xy 87.63 36.83) (xy 87.63 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa0fd0e0-c1f2-4bd0-b608-142373744cfc")
 	)
 	(wire
 		(pts
@@ -14616,6 +14862,107 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PZ:SPM4020T-100M")
+		(at 82.55 36.83 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "1f4fec2f-f5d7-45b1-a188-83ab5a58c207")
+		(property "Reference" "L2"
+			(at 82.55 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10µ"
+			(at 82.55 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PZ:IND_SPM4020T-100M-LR"
+			(at 82.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_spm4020-lr_en.pdf"
+			(at 82.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SPM4020T-100M"
+			(at 78.232 38.608 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "LCSC Part #" "C307805"
+			(at 82.55 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 82.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfe18a99-f614-48cb-95f3-54f22c345a11")
+		)
+		(pin "2"
+			(uuid "5de3f4e7-4a1f-476d-bb0f-b9ad36de5763")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -27777,32 +28124,35 @@
 			"082983a2-ef38-4909-87fc-02ab1561380f" "0aaa86ac-67cc-4d9a-b556-7dc4e62a3ce4"
 			"0c5a651f-2d78-467f-8d83-f9f006aede95" "0e616a08-3f98-497f-a7aa-4905f979b425"
 			"0ef8cf4d-2f69-4ffb-b6ac-10be32d2a991" "1790d66f-3553-4ccb-aeea-01437161b75e"
-			"1ca4125a-3d1b-4c6c-a07f-d8c1deed7377" "2132680a-e572-4bd7-bf52-7a60a3209c56"
+			"1ca4125a-3d1b-4c6c-a07f-d8c1deed7377" "1f4fec2f-f5d7-45b1-a188-83ab5a58c207"
+			"2132680a-e572-4bd7-bf52-7a60a3209c56" "21dcae7b-1541-4bc6-a7e2-09cc6c241637"
 			"22e343b2-6464-45af-b003-09e184497e76" "23a58a11-21e8-442d-884c-bf9425e18e93"
-			"24e73d74-7856-4747-ad76-fcc01c29022b" "3193d417-afdb-4512-b04b-c8238ef1f9c5"
-			"3590cf87-d5e4-46e0-b9d3-e4c71b8a0e74" "35d8c716-451f-4e35-8f53-880892479593"
-			"36e8f6f7-ab3f-456f-8e72-7bae36c274fa" "370d5437-1f13-4f86-b3c3-4ccf83c33b27"
-			"3938f4bb-bc2f-4402-90e9-225717053e83" "4400241c-3006-4d1f-b147-405a29d2ea44"
-			"491e4011-f2b2-43c3-a786-e1333a0b1e78" "4cf08774-4ad6-4ac1-9821-52c421ca36ea"
-			"4d347f68-68fa-4d69-8d49-279da4478d0a" "504084f7-fb61-4c63-b16e-ab1804fd9d23"
-			"5deaf6cc-7db1-4ebc-adda-e4fd5757f132" "63501c5e-b413-44bf-84cb-75a8775b7e03"
-			"6a0ffa03-5718-4c31-b18a-8a4e22305355" "6bd379f3-0e4e-4de4-84f8-9817fd1472b7"
-			"6d6aa3a8-927d-4f63-9791-c6cef9eb925b" "6f10fab1-4215-4fe9-af83-f3f188077c5d"
-			"6fd988fa-ab16-47de-851d-f7c5d8c8c157" "70d57abe-896a-4b3f-be97-10ce9f40c8fd"
-			"78c69c17-56f5-49f4-b08c-683a79536c2f" "825a3daa-6051-4893-b21c-64958955d4fb"
-			"8348bb1c-9bb0-436e-aa1e-74c9b7f86fd1" "83c6cdb6-3bf8-4e3b-a5ac-c2626a53abdf"
-			"874bff08-58f1-4e98-b69a-fa4282722259" "88c60945-d3c1-48e2-be99-731e394db7df"
-			"8b787a2c-53e1-4aae-a3ba-b74da894bcd9" "8ce37b43-32e3-4d84-afc9-85792cec1921"
-			"96d5909b-671e-44e7-be27-a13428c33225" "976fc8fb-82e3-427b-8c68-1dd90c026cd2"
-			"987cce70-eeaa-49d7-b446-c969f8fcc364" "9d293220-b2f5-4850-a36b-1f4abfc0b40f"
-			"9eeace40-1f7b-4c73-b1cb-72297b76992b" "a3600cb7-5a44-48e0-8723-ec1a337516ec"
-			"a9625c8f-2b03-4686-bc4c-b2b57e1e57a2" "a9c329c4-7076-4173-968e-584a9b5c3355"
-			"aa0bd04e-b0d2-43f7-bfc1-8802ec652be7" "aca66297-985f-4af0-b9c3-a540406a5d1e"
-			"c22ca3ac-9223-45e7-9a48-4930aebfbda7" "ca1b7c5c-452c-4a46-b5e7-4579ccf37fc0"
-			"ca9a01f6-2891-4d8c-aa24-3e96bcc83660" "ce22da76-c260-4d1a-990f-6b714b75c203"
-			"cf1b7ec3-de97-45be-b640-b2132a7442b0" "d74f2649-5034-4892-be25-50edc1396cdf"
-			"f0284f1f-8e9e-4f7f-b3a8-3a1c86dffd9b" "f4e7a83c-f265-4be4-b4b1-9bfbefa25ae8"
-			"f84c5de0-75ac-47b9-9d01-1704064d283c" "fb65f4ed-f78e-49b2-bcf1-0492be0fc792"
+			"24e73d74-7856-4747-ad76-fcc01c29022b" "25914bde-24df-42b4-bdf4-633096424b94"
+			"3193d417-afdb-4512-b04b-c8238ef1f9c5" "3590cf87-d5e4-46e0-b9d3-e4c71b8a0e74"
+			"35d8c716-451f-4e35-8f53-880892479593" "36e8f6f7-ab3f-456f-8e72-7bae36c274fa"
+			"370d5437-1f13-4f86-b3c3-4ccf83c33b27" "3938f4bb-bc2f-4402-90e9-225717053e83"
+			"4400241c-3006-4d1f-b147-405a29d2ea44" "491e4011-f2b2-43c3-a786-e1333a0b1e78"
+			"4cf08774-4ad6-4ac1-9821-52c421ca36ea" "4d347f68-68fa-4d69-8d49-279da4478d0a"
+			"504084f7-fb61-4c63-b16e-ab1804fd9d23" "5deaf6cc-7db1-4ebc-adda-e4fd5757f132"
+			"63501c5e-b413-44bf-84cb-75a8775b7e03" "6a0ffa03-5718-4c31-b18a-8a4e22305355"
+			"6bd379f3-0e4e-4de4-84f8-9817fd1472b7" "6d6aa3a8-927d-4f63-9791-c6cef9eb925b"
+			"6f10fab1-4215-4fe9-af83-f3f188077c5d" "6fd988fa-ab16-47de-851d-f7c5d8c8c157"
+			"70d57abe-896a-4b3f-be97-10ce9f40c8fd" "78c69c17-56f5-49f4-b08c-683a79536c2f"
+			"825a3daa-6051-4893-b21c-64958955d4fb" "8348bb1c-9bb0-436e-aa1e-74c9b7f86fd1"
+			"83c6cdb6-3bf8-4e3b-a5ac-c2626a53abdf" "874bff08-58f1-4e98-b69a-fa4282722259"
+			"88c60945-d3c1-48e2-be99-731e394db7df" "8b787a2c-53e1-4aae-a3ba-b74da894bcd9"
+			"8ce37b43-32e3-4d84-afc9-85792cec1921" "96d5909b-671e-44e7-be27-a13428c33225"
+			"976fc8fb-82e3-427b-8c68-1dd90c026cd2" "987cce70-eeaa-49d7-b446-c969f8fcc364"
+			"9d293220-b2f5-4850-a36b-1f4abfc0b40f" "9eeace40-1f7b-4c73-b1cb-72297b76992b"
+			"a3600cb7-5a44-48e0-8723-ec1a337516ec" "a9625c8f-2b03-4686-bc4c-b2b57e1e57a2"
+			"a9c329c4-7076-4173-968e-584a9b5c3355" "aa0bd04e-b0d2-43f7-bfc1-8802ec652be7"
+			"aca66297-985f-4af0-b9c3-a540406a5d1e" "aedf631f-d55a-4835-a632-cd47a87eb44b"
+			"c22ca3ac-9223-45e7-9a48-4930aebfbda7" "c6d3b4c0-1588-4cb3-9ad4-c32fbb3fdda3"
+			"ca1b7c5c-452c-4a46-b5e7-4579ccf37fc0" "ca9a01f6-2891-4d8c-aa24-3e96bcc83660"
+			"ce22da76-c260-4d1a-990f-6b714b75c203" "cf1b7ec3-de97-45be-b640-b2132a7442b0"
+			"d74f2649-5034-4892-be25-50edc1396cdf" "f0284f1f-8e9e-4f7f-b3a8-3a1c86dffd9b"
+			"f4e7a83c-f265-4be4-b4b1-9bfbefa25ae8" "f84c5de0-75ac-47b9-9d01-1704064d283c"
+			"fa0fd0e0-c1f2-4bd0-b608-142373744cfc" "fb65f4ed-f78e-49b2-bcf1-0492be0fc792"
 		)
 	)
 	(group ""
