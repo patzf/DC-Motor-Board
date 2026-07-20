@@ -579,7 +579,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -677,6 +677,30 @@
           "label": "EXCLUDE_FROM_BOARD",
           "name": "${EXCLUDE_FROM_BOARD}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Additional",
+          "name": "Additional",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "FT Rotation Offset",
+          "name": "FT Rotation Offset",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser",
+          "name": "Mouser",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -741,7 +765,7 @@
         "uuid": "cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
       }
     ],
-    "used_designators": "#PWR15,#PWR22,#PWR26,#PWR28-34,#PWR38,#PWR42-44,#PWR46,#PWR48,#PWR52-53,#PWR55-57,#PWR59,#PWR61-78,#PWR84,D5-7,D9,C4,C7,C9,C13-14,C16-23,C25-32,R18-29,TP1-3,TP9-11,TP15,TP17-18,JP3,U4-8,U10,Q2,RV3-5,SW3-4,L1-2,J4-6",
+    "used_designators": "#PWR15,#PWR22,#PWR26,#PWR28-34,#PWR38,#PWR42-44,#PWR46,#PWR48,#PWR52-53,#PWR55-57,#PWR59,#PWR61-79,#PWR84,D5-7,D9,C4,C7,C9,C13-14,C16-23,C25-34,R18-29,TP1-3,TP9-11,TP15,TP17-18,JP3,U4-8,U10,Q2,RV3-5,SW3-4,L1-2,J4-6",
     "variants": []
   },
   "sheets": [
