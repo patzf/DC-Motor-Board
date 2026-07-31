@@ -18623,6 +18623,7 @@
 		(property "Reference" "NT2"
 			(at 0 -1.65 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "54ac2616-1b63-4234-a0a7-7d9832e34559")
 			(effects
 				(font
@@ -19739,7 +19740,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Treiber-Board für DFRobot FIT0186"
+	(gr_text "für DFRobot FIT0186"
 		(at 108.204 60.452 0)
 		(layer "F.SilkS")
 		(uuid "36aff58d-b897-4fb8-a0b2-23ac6429b65a")
@@ -19785,7 +19786,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "DC Motor Board V${REVISION}"
+	(gr_text "DC-Motor Board V${REVISION}"
 		(at 107.696 56.642 0)
 		(layer "F.SilkS")
 		(uuid "035e45e9-4d1f-4b47-908f-0292e916c8ef")
