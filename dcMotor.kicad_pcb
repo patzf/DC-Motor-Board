@@ -5118,6 +5118,177 @@
 			)
 		)
 	)
+	(footprint "PZ:TP_Keystone_5010-5014_Multipurpose"
+		(layer "F.Cu")
+		(uuid "3fec986c-2848-4f4a-ae1f-86f6523d8741")
+		(at 108.204 119.888)
+		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
+		(tags "Through Hole Mount Test Points")
+		(property "Reference" "TP4"
+			(at 0 -2.75 0)
+			(layer "F.SilkS")
+			(uuid "83defff5-d427-4cb9-8a5a-563a1f5d7d20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TP_Keystone_5095"
+			(at 0 2.75 0)
+			(layer "F.Fab")
+			(uuid "54ae1d47-723f-414b-8e27-e4c3fda8f888")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29de5694-be99-469f-9106-c38b172c54c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5090976-535d-43ee-93bb-88e925723dc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2906765"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c26930b2-31d3-49f4-b844-38591ef7c4de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4b520cb-899d-424a-8de8-73ed28e08139")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/c0e96b9b-73d9-44e4-8392-ee504238494a")
+		(sheetname "/")
+		(sheetfile "dcMotor.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1.75 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "ba326c2a-edfb-41ef-9e5e-a3b563b3b935")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "bce0355b-ca40-4a56-837e-8fa3d4158a6c")
+		)
+		(fp_rect
+			(start -1.25 -0.4)
+			(end 1.25 0.4)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "223d1422-5343-4219-89b8-7effd1c8ef51")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.6 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "3aef2d43-4ea2-4f24-9f59-26856d172968")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "0c424e68-1adb-4ede-90ce-f99627fcb1c4")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.09)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.8 2.8)
+			(drill 1.6)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "/PHOTO_OUT")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "0334bcdc-2a21-4f0a-82e0-7b4509d0364c")
+		)
+		(embedded_fonts no)
+		(model "${KICAD_PZ}/PZ.pretty/TP_Keystone_5011_blk.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Diode_SMD:D_SMA_Handsoldering"
 		(layer "F.Cu")
 		(uuid "40e5da37-ab69-4de1-a441-bf14707d5c35")
@@ -5472,8 +5643,8 @@
 			(unit
 				(name "A")
 				(pins "20" "7" "5" "6" "2" "3" "4" "16" "17" "18" "40" "41" "42" "43"
-					"44" "45" "46" "22" "25" "26" "27" "28" "29" "1" "24" "36" "23" "47"
-					"35" "48" "19" "21" "8" "9" "10" "11" "12" "13" "14" "15" "30" "31"
+					"44" "45" "46" "22" "25" "26" "27" "28" "29" "1" "24" "36" "35" "23"
+					"47" "48" "19" "21" "8" "9" "10" "11" "12" "13" "14" "15" "30" "31"
 					"32" "33" "34" "37" "38" "39"
 				)
 			)
@@ -12008,7 +12179,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "S1" "B1" "B12" "A1" "A12" "A9" "B4" "B9" "A4" "A5" "B5" "A7" "B7"
+				(pins "S1" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
 					"A6" "B6" "A8" "B8"
 				)
 			)
@@ -15582,7 +15753,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "S1" "B1" "B12" "A1" "A12" "A9" "B4" "B9" "A4" "A5" "B5" "A7" "B7"
+				(pins "S1" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
 					"A6" "B6" "A8" "B8"
 				)
 			)
@@ -16165,6 +16336,177 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PZ:TP_Keystone_5010-5014_Multipurpose"
+		(layer "F.Cu")
+		(uuid "cd95a5e0-fa17-4489-9d7b-bbfb061a48d1")
+		(at 108.204 112.776)
+		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
+		(tags "Through Hole Mount Test Points")
+		(property "Reference" "TP7"
+			(at 0 -2.75 0)
+			(layer "F.SilkS")
+			(uuid "3166d90a-0011-418c-9b56-543932f04d89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TP_Keystone_5095"
+			(at 0 2.75 0)
+			(layer "F.Fab")
+			(uuid "f718e8aa-53fb-447b-90af-f5f09665d9fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff3e6808-ca6b-4960-a573-0f8aba69edb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point (alternative shape)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4017ee6d-85aa-4ecf-a179-e4abc06f9616")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Part #" "C2906765"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bc9fec6-d3c5-45b2-b387-75f2f9f8c9f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83c24a73-6b33-49ef-9788-635b70cd0010")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/d079a3f6-c985-43d3-af68-4d1e81845d3a")
+		(sheetname "/")
+		(sheetfile "dcMotor.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1.75 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "f72d84b6-94b6-47c3-ac5e-c99057c06bc7")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 2 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "174ab516-f091-455f-b050-8b68d983b312")
+		)
+		(fp_rect
+			(start -1.25 -0.4)
+			(end 1.25 0.4)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "3f3d8774-3f39-466c-a2c3-0b48c210d0da")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.6 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b42a66d8-5be6-48dd-8582-bfb1b9f17d88")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "527cb6a3-d555-4d64-92cd-35f9e885833e")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.09)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.8 2.8)
+			(drill 1.6)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "/PHOTO_OUT_ST")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "898b4ff3-c44f-46a8-81eb-72417f98720d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD_PZ}/PZ.pretty/TP_Keystone_5011_blk.stp"
 			(offset
 				(xyz 0 0 0)
 			)
