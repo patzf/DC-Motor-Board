@@ -8976,6 +8976,17 @@
 		)
 		(uuid "b2240e54-170e-40a9-bcf9-9d1d27d7fa58")
 	)
+	(text "rail splitting opamp: OPA994"
+		(exclude_from_sim no)
+		(at 149.352 272.796 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b2dbb7ea-3245-467a-a442-dec8c7865957")
+	)
 	(text "! POWER only !"
 		(exclude_from_sim no)
 		(at 35.56 82.042 0)
@@ -9304,6 +9315,12 @@
 		(uuid "7030d07c-4b50-475d-8d9d-5d87a81b6d7d")
 	)
 	(junction
+		(at 153.67 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77d4b10a-dc85-4a3c-845e-fe8a4ade64ca")
+	)
+	(junction
 		(at 59.69 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9452,12 +9469,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2352117-6627-4aef-a25f-5162148b594c")
-	)
-	(junction
-		(at 153.67 254)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4622501-d934-4177-923a-c39d6f6f3552")
 	)
 	(junction
 		(at 186.69 24.13)
@@ -11519,7 +11530,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 247.65) (xy 153.67 254)
+			(xy 167.64 247.65) (xy 167.64 254)
 		)
 		(stroke
 			(width 0)
@@ -12099,6 +12110,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 254) (xy 167.64 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9df7a54-45fd-44a4-88d6-b3a46f104d35")
+	)
+	(wire
+		(pts
 			(xy 340.36 114.3) (xy 340.36 120.65)
 		)
 		(stroke
@@ -12256,6 +12277,16 @@
 			(type default)
 		)
 		(uuid "c7914f12-1f7d-47f0-a48c-77bbe9245523")
+	)
+	(wire
+		(pts
+			(xy 153.67 254) (xy 157.48 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7918fc7-5b6e-45a8-874d-27cdec90f529")
 	)
 	(wire
 		(pts
@@ -13529,7 +13560,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 173.99 255.27 0)
+		(at 153.67 311.15 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13540,7 +13571,7 @@
 		(fields_autoplaced yes)
 		(uuid "01247441-ea25-40e0-bf60-800e9e63c7ea")
 		(property "Reference" "U3"
-			(at 173.99 245.11 0)
+			(at 153.67 300.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13550,7 +13581,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xSN"
-			(at 173.99 247.65 0)
+			(at 153.67 303.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13560,7 +13591,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 173.99 255.27 0)
+			(at 153.67 311.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13571,7 +13602,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 173.99 255.27 0)
+			(at 153.67 311.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13582,7 +13613,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 173.99 255.27 0)
+			(at 153.67 311.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13593,7 +13624,7 @@
 			)
 		)
 		(property "LCSC Part #" "C7377"
-			(at 173.99 255.27 0)
+			(at 153.67 311.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15517,6 +15548,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 161.29 254 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f469621-918f-4c29-8423-245f703a3987")
+		(property "Reference" "R39"
+			(at 163.068 249.682 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100"
+			(at 162.814 251.968 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 161.29 252.222 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8562006687172894720-C17408.pdf?response-content-disposition=attachment%3B%20filename%3DC17408.pdf%3B%20filename%2A%3DUTF-8%27%27C17408.pdf&x-oss-date=20260803T110015Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vaCeCAqadigKGRW07rsTdkW8lhn%2F2Tmzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4GxF5V4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWson0vtOqnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkImsCqS6KWD5sagAFVo1j9DNDug89Rc9KGNuFnRjnV7yKXEOEIZWWsgGGuCpdG7OeKVyC%2FI3gdd0HZHHx4mb3ymanZfE3dF1L2PdLUFVyXMkL9QMvayfWvq548tg%2FDauXASjgzJ7ESH3%2FxNL7IRcu4Y4BLE0vGE24TtPeDfthd792r%2FRQhQx%2FyLYUUzyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXoBZ4DxC7czYhZU71WFMp88y%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4aff38eb81bca7ae2a83c2a76b5418a693fd6c189a99b2146bad94489006843d"
+			(at 161.29 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 161.29 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17408"
+			(at 161.29 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 161.29 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 161.29 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "72459851-8d12-421c-94af-c08c4f811694")
+		)
+		(pin "1"
+			(uuid "426bf093-745e-458f-a3c1-25de49dbd2b9")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -25912,7 +26057,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 153.67 247.65 0)
+		(at 167.64 247.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25922,7 +26067,7 @@
 		(dnp no)
 		(uuid "b95148d3-f197-404b-8081-ca2796e956df")
 		(property "Reference" "#PWR049"
-			(at 153.67 251.46 0)
+			(at 167.64 251.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25933,7 +26078,7 @@
 			)
 		)
 		(property "Value" "+1.65V"
-			(at 153.67 243.84 0)
+			(at 167.64 243.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25943,7 +26088,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 247.65 0)
+			(at 167.64 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25954,7 +26099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 247.65 0)
+			(at 167.64 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25965,7 +26110,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1.65V\""
-			(at 153.67 247.65 0)
+			(at 167.64 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25976,7 +26121,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 153.67 247.65 0)
+			(at 167.64 247.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28964,28 +29109,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d4")
+			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d5")
 		)
 		(pin "6"
-			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df972")
+			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df973")
 		)
 		(pin "3"
-			(uuid "9bd40839-62be-44dd-8111-1d68da45ecea")
+			(uuid "9bd40839-62be-44dd-8111-1d68da45eceb")
 		)
 		(pin "2"
-			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c3")
+			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c4")
 		)
 		(pin "1"
-			(uuid "97116c50-539e-43f1-a701-05cb11bdd39b")
+			(uuid "97116c50-539e-43f1-a701-05cb11bdd39c")
 		)
 		(pin "5"
-			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a470")
+			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a471")
 		)
 		(pin "4"
-			(uuid "3394c4d4-3213-4170-92ba-854458fd891e")
+			(uuid "3394c4d4-3213-4170-92ba-854458fd891f")
 		)
 		(pin "8"
-			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce07f")
+			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce080")
 		)
 		(instances
 			(project "dcMotor"
@@ -30989,28 +31134,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d4")
+			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d6")
 		)
 		(pin "6"
-			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df972")
+			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df974")
 		)
 		(pin "3"
-			(uuid "9bd40839-62be-44dd-8111-1d68da45ecea")
+			(uuid "9bd40839-62be-44dd-8111-1d68da45ecec")
 		)
 		(pin "2"
-			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c3")
+			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c5")
 		)
 		(pin "1"
-			(uuid "97116c50-539e-43f1-a701-05cb11bdd39b")
+			(uuid "97116c50-539e-43f1-a701-05cb11bdd39d")
 		)
 		(pin "5"
-			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a470")
+			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a472")
 		)
 		(pin "4"
-			(uuid "3394c4d4-3213-4170-92ba-854458fd891e")
+			(uuid "3394c4d4-3213-4170-92ba-854458fd8920")
 		)
 		(pin "8"
-			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce07f")
+			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce081")
 		)
 		(instances
 			(project "dcMotor"
