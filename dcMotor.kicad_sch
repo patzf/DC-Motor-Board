@@ -10,278 +10,6 @@
 		(rev "V1.0")
 	)
 	(lib_symbols
-		(symbol "Amplifier_Operational:MCP6002-xSN"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "MCP6002-xSN"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "dual opamp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MCP6002-xSN_1_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "MCP6002-xSN_2_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "MCP6002-xSN_3_1"
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Comparator:MCP6561-OT"
 			(pin_names
 				(offset 0.127)
@@ -7021,6 +6749,289 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PZ:TLV9152IDR"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 2.54 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TLV9152IDR"
+				(at 2.54 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/product/de-de/TLV9152"
+				(at 6.35 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual, 16V, 4.5-MHz, 21V SR, RR I/O"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part #" "C882649"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual op-amp low power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TLV9152IDR_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TLV9152IDR_2_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TLV9152IDR_3_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PZ:TP_Keystone_5010-5014_Multipurpose"
 			(pin_numbers
 				(hide yes)
@@ -13628,115 +13639,6 @@
 			(justify left bottom)
 		)
 		(uuid "ff86238b-3eb6-47fb-8e3f-18d378bfa533")
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 139.7 375.92 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01247441-ea25-40e0-bf60-800e9e63c7ea")
-		(property "Reference" "U3"
-			(at 139.7 365.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 139.7 368.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 375.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 139.7 375.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 139.7 375.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C7377"
-			(at 139.7 375.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d4")
-		)
-		(pin "6"
-			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df972")
-		)
-		(pin "3"
-			(uuid "9bd40839-62be-44dd-8111-1d68da45ecea")
-		)
-		(pin "2"
-			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c3")
-		)
-		(pin "1"
-			(uuid "97116c50-539e-43f1-a701-05cb11bdd39b")
-		)
-		(pin "5"
-			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a470")
-		)
-		(pin "4"
-			(uuid "3394c4d4-3213-4170-92ba-854458fd891e")
-		)
-		(pin "8"
-			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce07f")
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U3")
-					(unit 2)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -23229,6 +23131,115 @@
 		)
 	)
 	(symbol
+		(lib_id "PZ:TLV9152IDR")
+		(at 139.7 350.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83394136-4991-4aa6-95c3-ff6c1df69419")
+		(property "Reference" "U10"
+			(at 139.7 340.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV9152IDR"
+			(at 139.7 342.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 142.24 350.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/product/de-de/TLV9152"
+			(at 146.05 346.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual, 16V, 4.5-MHz, 21V SR, RR I/O"
+			(at 139.7 350.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C882649"
+			(at 139.7 350.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "953f1c3c-5e01-4652-9670-4128545bde15")
+		)
+		(pin "7"
+			(uuid "89e82ebd-1664-4671-9bc4-4daf7363a4e1")
+		)
+		(pin "4"
+			(uuid "feb08a58-7e28-4d30-a925-99f603988038")
+		)
+		(pin "1"
+			(uuid "488673af-f60e-4f12-8947-2a3c7c9cc430")
+		)
+		(pin "5"
+			(uuid "b95749c3-2e87-4767-b095-cdd11bd6a3da")
+		)
+		(pin "6"
+			(uuid "e90b063f-ada5-4af4-a8db-a528cf82b976")
+		)
+		(pin "8"
+			(uuid "1e3212fa-bcbc-4e2d-9374-ffeee1a6f73a")
+		)
+		(pin "3"
+			(uuid "c7107ed0-326e-4d94-b880-f2f7de9b5e37")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 25.4 48.26 0)
 		(unit 1)
@@ -26173,6 +26184,117 @@
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR063")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PZ:TLV9152IDR")
+		(at 210.82 325.12 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b56b6410-4d37-408f-8c0e-9dfb026514b8")
+		(property "Reference" "U10"
+			(at 212.09 323.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TLV9152IDR"
+			(at 212.09 326.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 213.36 325.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/product/de-de/TLV9152"
+			(at 217.17 321.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual, 16V, 4.5-MHz, 21V SR, RR I/O"
+			(at 210.82 325.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C882649"
+			(at 210.82 325.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "953f1c3c-5e01-4652-9670-4128545bde15")
+		)
+		(pin "7"
+			(uuid "89e82ebd-1664-4671-9bc4-4daf7363a4e1")
+		)
+		(pin "4"
+			(uuid "feb08a58-7e28-4d30-a925-99f603988038")
+		)
+		(pin "1"
+			(uuid "488673af-f60e-4f12-8947-2a3c7c9cc430")
+		)
+		(pin "5"
+			(uuid "b95749c3-2e87-4767-b095-cdd11bd6a3da")
+		)
+		(pin "6"
+			(uuid "e90b063f-ada5-4af4-a8db-a528cf82b976")
+		)
+		(pin "8"
+			(uuid "1e3212fa-bcbc-4e2d-9374-ffeee1a6f73a")
+		)
+		(pin "3"
+			(uuid "c7107ed0-326e-4d94-b880-f2f7de9b5e37")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "U10")
+					(unit 3)
 				)
 			)
 		)
@@ -29332,115 +29454,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 139.7 350.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df46eae1-3ee1-4572-86cf-2fcc615e280b")
-		(property "Reference" "U3"
-			(at 139.7 340.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 139.7 342.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 139.7 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 139.7 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C7377"
-			(at 139.7 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d5")
-		)
-		(pin "6"
-			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df973")
-		)
-		(pin "3"
-			(uuid "9bd40839-62be-44dd-8111-1d68da45eceb")
-		)
-		(pin "2"
-			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c4")
-		)
-		(pin "1"
-			(uuid "97116c50-539e-43f1-a701-05cb11bdd39c")
-		)
-		(pin "5"
-			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a471")
-		)
-		(pin "4"
-			(uuid "3394c4d4-3213-4170-92ba-854458fd891f")
-		)
-		(pin "8"
-			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce080")
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 232.41 264.16 180)
 		(unit 1)
@@ -31355,117 +31368,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 213.36 325.12 0)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f80c8e37-d8d3-43cc-8d0f-55364337c2f9")
-		(property "Reference" "U3"
-			(at 212.09 323.8499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP6002-xSN"
-			(at 212.09 326.3899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 213.36 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 213.36 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 213.36 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C7377"
-			(at 213.36 325.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "6536603d-b318-44ef-8d9c-62a8e8f3a1d6")
-		)
-		(pin "6"
-			(uuid "0fa4f407-58c7-4f91-9539-b03ad50df974")
-		)
-		(pin "3"
-			(uuid "9bd40839-62be-44dd-8111-1d68da45ecec")
-		)
-		(pin "2"
-			(uuid "e46cafcc-d54d-4cdf-92b2-72fdc47e35c5")
-		)
-		(pin "1"
-			(uuid "97116c50-539e-43f1-a701-05cb11bdd39d")
-		)
-		(pin "5"
-			(uuid "1ab83dea-72a2-4dae-9642-d9c2e4f3a472")
-		)
-		(pin "4"
-			(uuid "3394c4d4-3213-4170-92ba-854458fd8920")
-		)
-		(pin "8"
-			(uuid "8f119c58-2122-41ca-b85e-eea9c2fce081")
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U3")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 361.95 218.44 0)
 		(unit 1)
@@ -31966,6 +31868,115 @@
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "R1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PZ:TLV9152IDR")
+		(at 140.97 375.92 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb68a25f-d3d9-4129-b080-5da2d30d4b07")
+		(property "Reference" "U10"
+			(at 140.97 365.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV9152IDR"
+			(at 140.97 368.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 143.51 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/product/de-de/TLV9152"
+			(at 147.32 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual, 16V, 4.5-MHz, 21V SR, RR I/O"
+			(at 140.97 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C882649"
+			(at 140.97 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "953f1c3c-5e01-4652-9670-4128545bde15")
+		)
+		(pin "7"
+			(uuid "89e82ebd-1664-4671-9bc4-4daf7363a4e1")
+		)
+		(pin "4"
+			(uuid "feb08a58-7e28-4d30-a925-99f603988038")
+		)
+		(pin "1"
+			(uuid "488673af-f60e-4f12-8947-2a3c7c9cc430")
+		)
+		(pin "5"
+			(uuid "b95749c3-2e87-4767-b095-cdd11bd6a3da")
+		)
+		(pin "6"
+			(uuid "e90b063f-ada5-4af4-a8db-a528cf82b976")
+		)
+		(pin "8"
+			(uuid "1e3212fa-bcbc-4e2d-9374-ffeee1a6f73a")
+		)
+		(pin "3"
+			(uuid "c7107ed0-326e-4d94-b880-f2f7de9b5e37")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "U10")
+					(unit 2)
 				)
 			)
 		)
