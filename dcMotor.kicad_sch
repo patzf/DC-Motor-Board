@@ -8816,6 +8816,17 @@
 		)
 		(uuid "356d4944-5a80-41aa-a2f6-b02072a9ee04")
 	)
+	(text "pin compatible but with sensible BW: TLV9062D\nbetter slew rate: TLV9152"
+		(exclude_from_sim no)
+		(at 127.254 332.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39c33760-798d-4879-a900-1268029b7e94")
+	)
 	(text "No CTR given\n\n1.)\nAt IF = 20mA -> Datasheet guaratees > 0.5mA photocurrent -> estimated worst case CTR ~0.5/20 = 2.5%\n-> worst case IC @ 10mA LED drive = 240µA\n-> For Rload = 1k -> Vlow,out = 3.3-240µA*1k = 3.1V -> only 0.2V swing\n\n2.)\nTo guarantee saturation in worst case, Rload must limit Ic to 240µA\nRload > (3.3-VCE,sat)/240µA = 13kOhm \n\n3.)\nEstimate Rload for large enough output swing:\nFor a swing of 2V -> Rload = 2/240µA = 8,3kOhm\n-> we want be rather fast, so try with a smaller Rload first\n\nhttps://josepheoff.github.io/posts/rpm"
 		(exclude_from_sim no)
 		(at 251.714 26.416 0)
@@ -8968,7 +8979,7 @@
 	)
 	(text "PC13, 14, 15 cannot drive more than ~3mA (see DS)"
 		(exclude_from_sim no)
-		(at 155.194 171.45 90)
+		(at 178.308 162.052 90)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -8978,7 +8989,7 @@
 	)
 	(text "rail splitting opamp: OPA994"
 		(exclude_from_sim no)
-		(at 149.352 272.796 0)
+		(at 147.574 292.354 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9171,7 +9182,7 @@
 		(uuid "01df3017-6cd9-45b8-97bd-8d12e384c757")
 	)
 	(junction
-		(at 74.93 262.89)
+		(at 95.25 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05f9af2c-e0e9-4bdc-a66d-8580b8065b07")
@@ -9237,7 +9248,7 @@
 		(uuid "3c4f530b-0bc6-470e-8f8b-05475326ea16")
 	)
 	(junction
-		(at 74.93 252.73)
+		(at 95.25 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ec6cea7-f082-47cd-94ea-fd3329fe7f55")
@@ -9297,7 +9308,7 @@
 		(uuid "5d59226d-8743-4331-8d8d-cd9bcf7fda91")
 	)
 	(junction
-		(at 119.38 251.46)
+		(at 118.11 347.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65b9ee08-5433-4d2a-8040-4c4d6732cac4")
@@ -9315,7 +9326,7 @@
 		(uuid "7030d07c-4b50-475d-8d9d-5d87a81b6d7d")
 	)
 	(junction
-		(at 153.67 254)
+		(at 152.4 350.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77d4b10a-dc85-4a3c-845e-fe8a4ade64ca")
@@ -9327,7 +9338,7 @@
 		(uuid "79b00a1a-aa74-4ae4-990a-4bc533128867")
 	)
 	(junction
-		(at 177.8 214.63)
+		(at 148.59 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e60c02b-7940-4ef9-8497-0880c79a1c8e")
@@ -9411,7 +9422,7 @@
 		(uuid "b2ed0686-9e59-4dd6-a550-cb664a6b63d4")
 	)
 	(junction
-		(at 119.38 240.03)
+		(at 118.11 336.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b51040c7-2ac0-402e-966b-026f26f74da2")
@@ -9507,7 +9518,7 @@
 		(uuid "d2ff6061-0985-4e6a-8bb7-6effdf405997")
 	)
 	(junction
-		(at 96.52 252.73)
+		(at 128.27 250.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4af3ddf-568b-4d75-a7a2-c6666d434c6e")
@@ -9525,7 +9536,7 @@
 		(uuid "df25da2e-6a27-4203-a19e-2fdec688162c")
 	)
 	(junction
-		(at 96.52 262.89)
+		(at 128.27 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e05c885d-63e2-4cc6-a5ef-5b50fae16c00")
@@ -9600,7 +9611,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 261.62) (xy 96.52 262.89)
+			(xy 128.27 259.08) (xy 128.27 260.35)
 		)
 		(stroke
 			(width 0)
@@ -9710,7 +9721,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 252.73) (xy 96.52 252.73)
+			(xy 121.92 250.19) (xy 128.27 250.19)
 		)
 		(stroke
 			(width 0)
@@ -9740,7 +9751,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 248.92) (xy 119.38 251.46)
+			(xy 118.11 345.44) (xy 118.11 347.98)
 		)
 		(stroke
 			(width 0)
@@ -9910,7 +9921,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 214.63) (xy 186.69 214.63)
+			(xy 148.59 160.02) (xy 157.48 160.02)
 		)
 		(stroke
 			(width 0)
@@ -10140,7 +10151,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 251.46) (xy 119.38 255.27)
+			(xy 118.11 347.98) (xy 118.11 351.79)
 		)
 		(stroke
 			(width 0)
@@ -10360,7 +10371,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 262.89) (xy 96.52 264.16)
+			(xy 128.27 260.35) (xy 128.27 261.62)
 		)
 		(stroke
 			(width 0)
@@ -10380,7 +10391,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 262.89) (xy 74.93 262.89)
+			(xy 88.9 260.35) (xy 95.25 260.35)
 		)
 		(stroke
 			(width 0)
@@ -10430,7 +10441,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 252.73) (xy 74.93 252.73)
+			(xy 88.9 250.19) (xy 95.25 250.19)
 		)
 		(stroke
 			(width 0)
@@ -10440,7 +10451,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 252.73) (xy 96.52 254)
+			(xy 128.27 250.19) (xy 128.27 251.46)
 		)
 		(stroke
 			(width 0)
@@ -10450,7 +10461,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 218.44) (xy 168.91 226.06)
+			(xy 139.7 163.83) (xy 139.7 171.45)
 		)
 		(stroke
 			(width 0)
@@ -10510,7 +10521,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 214.63) (xy 177.8 214.63)
+			(xy 143.51 160.02) (xy 148.59 160.02)
 		)
 		(stroke
 			(width 0)
@@ -10650,7 +10661,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 250.19) (xy 96.52 252.73)
+			(xy 128.27 247.65) (xy 128.27 250.19)
 		)
 		(stroke
 			(width 0)
@@ -10670,7 +10681,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 261.62) (xy 90.17 262.89)
+			(xy 121.92 259.08) (xy 121.92 260.35)
 		)
 		(stroke
 			(width 0)
@@ -10730,6 +10741,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 234.95) (xy 95.25 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f3a4563-e676-44f7-837b-ed3177a4fd7e")
+	)
+	(wire
+		(pts
 			(xy 198.12 269.24) (xy 198.12 271.78)
 		)
 		(stroke
@@ -10750,7 +10771,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 262.89) (xy 119.38 264.16)
+			(xy 118.11 359.41) (xy 118.11 360.68)
 		)
 		(stroke
 			(width 0)
@@ -10767,6 +10788,16 @@
 			(type default)
 		)
 		(uuid "5023ccf2-4905-44d2-9911-086a98afc9b5")
+	)
+	(wire
+		(pts
+			(xy 95.25 250.19) (xy 113.03 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50bf0e27-a004-4d1b-a4db-9c4477c57847")
 	)
 	(wire
 		(pts
@@ -10920,7 +10951,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 254) (xy 153.67 254)
+			(xy 147.32 350.52) (xy 152.4 350.52)
 		)
 		(stroke
 			(width 0)
@@ -10950,7 +10981,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 251.46) (xy 133.35 251.46)
+			(xy 118.11 347.98) (xy 132.08 347.98)
 		)
 		(stroke
 			(width 0)
@@ -11130,13 +11161,23 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 254) (xy 68.58 252.73)
+			(xy 88.9 251.46) (xy 88.9 250.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "710d709a-0085-4645-a1ce-3500af74c3cb")
+	)
+	(wire
+		(pts
+			(xy 91.44 234.95) (xy 95.25 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7245e131-4991-4cd6-a46d-597031e91bb0")
 	)
 	(wire
 		(pts
@@ -11200,7 +11241,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 254) (xy 90.17 252.73)
+			(xy 121.92 251.46) (xy 121.92 250.19)
 		)
 		(stroke
 			(width 0)
@@ -11300,7 +11341,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 240.03) (xy 119.38 241.3)
+			(xy 118.11 336.55) (xy 118.11 337.82)
 		)
 		(stroke
 			(width 0)
@@ -11320,7 +11361,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 262.89) (xy 74.93 264.16)
+			(xy 95.25 260.35) (xy 95.25 261.62)
 		)
 		(stroke
 			(width 0)
@@ -11367,6 +11408,16 @@
 			(type default)
 		)
 		(uuid "89d300a2-5fb5-4ae5-aa51-24bc87135577")
+	)
+	(wire
+		(pts
+			(xy 91.44 227.33) (xy 128.27 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a489d46-7d06-4b36-9e9b-107ba1a083fd")
 	)
 	(wire
 		(pts
@@ -11530,7 +11581,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 247.65) (xy 167.64 254)
+			(xy 166.37 344.17) (xy 166.37 350.52)
 		)
 		(stroke
 			(width 0)
@@ -11550,7 +11601,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 214.63) (xy 177.8 215.9)
+			(xy 148.59 160.02) (xy 148.59 161.29)
 		)
 		(stroke
 			(width 0)
@@ -11560,7 +11611,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 256.54) (xy 129.54 264.16)
+			(xy 128.27 353.06) (xy 128.27 360.68)
 		)
 		(stroke
 			(width 0)
@@ -11590,7 +11641,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 250.19) (xy 74.93 252.73)
+			(xy 95.25 247.65) (xy 95.25 250.19)
 		)
 		(stroke
 			(width 0)
@@ -11700,7 +11751,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 252.73) (xy 74.93 254)
+			(xy 95.25 250.19) (xy 95.25 251.46)
 		)
 		(stroke
 			(width 0)
@@ -11810,7 +11861,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 264.16) (xy 153.67 254)
+			(xy 152.4 360.68) (xy 152.4 350.52)
 		)
 		(stroke
 			(width 0)
@@ -11820,7 +11871,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 261.62) (xy 68.58 262.89)
+			(xy 88.9 259.08) (xy 88.9 260.35)
 		)
 		(stroke
 			(width 0)
@@ -11950,7 +12001,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 238.76) (xy 119.38 240.03)
+			(xy 118.11 335.28) (xy 118.11 336.55)
 		)
 		(stroke
 			(width 0)
@@ -12040,7 +12091,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 256.54) (xy 129.54 256.54)
+			(xy 132.08 353.06) (xy 128.27 353.06)
 		)
 		(stroke
 			(width 0)
@@ -12110,7 +12161,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 254) (xy 167.64 254)
+			(xy 163.83 350.52) (xy 166.37 350.52)
 		)
 		(stroke
 			(width 0)
@@ -12130,7 +12181,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 204.47) (xy 168.91 210.82)
+			(xy 139.7 149.86) (xy 139.7 156.21)
 		)
 		(stroke
 			(width 0)
@@ -12280,7 +12331,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 254) (xy 157.48 254)
+			(xy 152.4 350.52) (xy 156.21 350.52)
 		)
 		(stroke
 			(width 0)
@@ -12410,7 +12461,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 262.89) (xy 111.76 264.16)
+			(xy 110.49 359.41) (xy 110.49 360.68)
 		)
 		(stroke
 			(width 0)
@@ -12430,7 +12481,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 240.03) (xy 96.52 242.57)
+			(xy 128.27 227.33) (xy 128.27 240.03)
 		)
 		(stroke
 			(width 0)
@@ -12460,7 +12511,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 261.62) (xy 74.93 262.89)
+			(xy 95.25 259.08) (xy 95.25 260.35)
 		)
 		(stroke
 			(width 0)
@@ -12480,16 +12531,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 240.03) (xy 74.93 242.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7b7dd6e-e34e-4e8e-9ffd-a4025ecbdb6d")
-	)
-	(wire
-		(pts
 			(xy 276.86 257.81) (xy 292.1 257.81)
 		)
 		(stroke
@@ -12500,7 +12541,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 223.52) (xy 177.8 226.06)
+			(xy 148.59 168.91) (xy 148.59 171.45)
 		)
 		(stroke
 			(width 0)
@@ -12710,7 +12751,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 255.27) (xy 111.76 240.03)
+			(xy 110.49 351.79) (xy 110.49 336.55)
 		)
 		(stroke
 			(width 0)
@@ -12730,6 +12771,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 250.19) (xy 146.05 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb8ca36-2a69-45d4-9c74-33664104bdbd")
+	)
+	(wire
+		(pts
 			(xy 368.3 157.48) (xy 368.3 160.02)
 		)
 		(stroke
@@ -12740,7 +12791,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 240.03) (xy 119.38 240.03)
+			(xy 110.49 336.55) (xy 118.11 336.55)
 		)
 		(stroke
 			(width 0)
@@ -12750,7 +12801,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 264.16) (xy 153.67 264.16)
+			(xy 128.27 360.68) (xy 152.4 360.68)
 		)
 		(stroke
 			(width 0)
@@ -12770,7 +12821,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 240.03) (xy 74.93 240.03)
+			(xy 74.93 227.33) (xy 83.82 227.33)
 		)
 		(stroke
 			(width 0)
@@ -12860,7 +12911,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 240.03) (xy 96.52 240.03)
+			(xy 74.93 234.95) (xy 83.82 234.95)
 		)
 		(stroke
 			(width 0)
@@ -12940,7 +12991,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 262.89) (xy 96.52 262.89)
+			(xy 121.92 260.35) (xy 128.27 260.35)
 		)
 		(stroke
 			(width 0)
@@ -13067,6 +13118,16 @@
 			(justify left bottom)
 		)
 		(uuid "183fd62c-794a-4820-b325-51e99aabe651")
+	)
+	(label "MOTOR+_SENSE"
+		(at 146.05 250.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1d671668-6aeb-4388-9e3d-04f40504f3b4")
 	)
 	(label "USB_CC1"
 		(at 116.84 111.76 180)
@@ -13249,7 +13310,7 @@
 		(uuid "721e37e6-7eae-4f8e-8f06-337e62be9e17")
 	)
 	(label "MOTOR+"
-		(at 66.04 240.03 0)
+		(at 74.93 227.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13329,7 +13390,7 @@
 		(uuid "95bc65ed-ba7c-4f57-b880-e3e2bc84ad34")
 	)
 	(label "MOTOR-"
-		(at 87.63 240.03 0)
+		(at 74.93 234.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13369,7 +13430,7 @@
 		(uuid "b4657a9e-e7f6-47a4-b24c-050a26f3ec3a")
 	)
 	(label "POT"
-		(at 186.69 214.63 180)
+		(at 157.48 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13377,6 +13438,16 @@
 			(justify right bottom)
 		)
 		(uuid "b7434597-fe94-4a67-a403-6182122a8d7b")
+	)
+	(label "MOTOR-_SENSE"
+		(at 113.03 250.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "be841050-1a08-4ca6-93f4-edb34c67e222")
 	)
 	(label "IPROPI"
 		(at 314.96 157.48 0)
@@ -13560,7 +13631,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 153.67 311.15 0)
+		(at 139.7 375.92 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13571,7 +13642,7 @@
 		(fields_autoplaced yes)
 		(uuid "01247441-ea25-40e0-bf60-800e9e63c7ea")
 		(property "Reference" "U3"
-			(at 153.67 300.99 0)
+			(at 139.7 365.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13581,7 +13652,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xSN"
-			(at 153.67 303.53 0)
+			(at 139.7 368.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13591,7 +13662,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 153.67 311.15 0)
+			(at 139.7 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13602,7 +13673,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 153.67 311.15 0)
+			(at 139.7 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13613,7 +13684,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 153.67 311.15 0)
+			(at 139.7 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13624,7 +13695,7 @@
 			)
 		)
 		(property "LCSC Part #" "C7377"
-			(at 153.67 311.15 0)
+			(at 139.7 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13925,7 +13996,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 68.58 257.81 0)
+		(at 88.9 255.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13935,7 +14006,7 @@
 		(dnp no)
 		(uuid "042c98ed-1f66-4c17-adcc-65c1a977d7c3")
 		(property "Reference" "C29"
-			(at 63.5 256.794 0)
+			(at 83.82 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13945,7 +14016,7 @@
 			)
 		)
 		(property "Value" "47p"
-			(at 63.5 258.826 0)
+			(at 83.82 256.286 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13955,7 +14026,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 69.5452 261.62 0)
+			(at 89.8652 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13966,7 +14037,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706849194524672-C14857.pdf?response-content-disposition=attachment%3B%20filename%3DC14857.pdf%3B%20filename%2A%3DUTF-8%27%27C14857.pdf&x-oss-date=20260731T092011Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vaPNLniZpZ8qSIY1XfsUgPWNxonLSZlzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeAu21xS4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWhpDnE53%2BtHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMI1uYCPaKWD5sagAGDrhxBdSKzoMC8x5cbc6XKyEvbLaKl4oLELvycxVmJX7wbWFDmlSsvKhMKLR%2BpcE%2BIRBZfvUy5SS3kAnvqg8gl6NN%2BeNoqFVwYYASRxoM%2F7Xl0NVuJxvl26Gq7yv0S4MlAiUrkuEZP%2BESLFxertaUc9haMwIy0DJCuYLfp82qauyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXowhSdExEfcasnUHZTSDsq2u%2F20260731%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=53ebba7bc4963c9e967b511df8e4ad39efcfc50e93c3d202d818a9bb47e73aa2"
-			(at 68.58 257.81 0)
+			(at 88.9 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13977,7 +14048,7 @@
 			)
 		)
 		(property "Description" "50V C0G ±5% MLCC"
-			(at 72.644 257.81 90)
+			(at 92.964 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13988,7 +14059,7 @@
 			)
 		)
 		(property "LCSC Part #" "C14857"
-			(at 68.58 257.81 90)
+			(at 88.9 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13999,7 +14070,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 68.58 257.81 0)
+			(at 88.9 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14010,7 +14081,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 68.58 257.81 0)
+			(at 88.9 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15555,7 +15626,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 161.29 254 270)
+		(at 160.02 350.52 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15565,7 +15636,7 @@
 		(dnp no)
 		(uuid "1f469621-918f-4c29-8423-245f703a3987")
 		(property "Reference" "R39"
-			(at 163.068 249.682 90)
+			(at 161.798 346.202 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15576,7 +15647,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 162.814 251.968 90)
+			(at 161.544 348.488 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15587,7 +15658,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 161.29 252.222 90)
+			(at 160.02 348.742 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15598,7 +15669,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8562006687172894720-C17408.pdf?response-content-disposition=attachment%3B%20filename%3DC17408.pdf%3B%20filename%2A%3DUTF-8%27%27C17408.pdf&x-oss-date=20260803T110015Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vaCeCAqadigKGRW07rsTdkW8lhn%2F2Tmzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4GxF5V4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWson0vtOqnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkImsCqS6KWD5sagAFVo1j9DNDug89Rc9KGNuFnRjnV7yKXEOEIZWWsgGGuCpdG7OeKVyC%2FI3gdd0HZHHx4mb3ymanZfE3dF1L2PdLUFVyXMkL9QMvayfWvq548tg%2FDauXASjgzJ7ESH3%2FxNL7IRcu4Y4BLE0vGE24TtPeDfthd792r%2FRQhQx%2FyLYUUzyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXoBZ4DxC7czYhZU71WFMp88y%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4aff38eb81bca7ae2a83c2a76b5418a693fd6c189a99b2146bad94489006843d"
-			(at 161.29 254 0)
+			(at 160.02 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15609,7 +15680,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 161.29 254 0)
+			(at 160.02 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15620,7 +15691,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17408"
-			(at 161.29 254 0)
+			(at 160.02 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15631,7 +15702,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 161.29 254 0)
+			(at 160.02 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15642,7 +15713,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 161.29 254 0)
+			(at 160.02 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16859,7 +16930,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 90.17 257.81 0)
+		(at 121.92 255.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16869,7 +16940,7 @@
 		(dnp no)
 		(uuid "2df6ee8c-08e8-43f8-abd6-6a3797767d6e")
 		(property "Reference" "C30"
-			(at 85.09 256.794 0)
+			(at 116.84 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16879,7 +16950,7 @@
 			)
 		)
 		(property "Value" "47p"
-			(at 85.09 258.826 0)
+			(at 116.84 256.286 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16889,7 +16960,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 91.1352 261.62 0)
+			(at 122.8852 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16900,7 +16971,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706849194524672-C14857.pdf?response-content-disposition=attachment%3B%20filename%3DC14857.pdf%3B%20filename%2A%3DUTF-8%27%27C14857.pdf&x-oss-date=20260731T092011Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5vaPNLniZpZ8qSIY1XfsUgPWNxonLSZlzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeAu21xS4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWhpDnE53%2BtHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMI1uYCPaKWD5sagAGDrhxBdSKzoMC8x5cbc6XKyEvbLaKl4oLELvycxVmJX7wbWFDmlSsvKhMKLR%2BpcE%2BIRBZfvUy5SS3kAnvqg8gl6NN%2BeNoqFVwYYASRxoM%2F7Xl0NVuJxvl26Gq7yv0S4MlAiUrkuEZP%2BESLFxertaUc9haMwIy0DJCuYLfp82qauyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NXowhSdExEfcasnUHZTSDsq2u%2F20260731%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=53ebba7bc4963c9e967b511df8e4ad39efcfc50e93c3d202d818a9bb47e73aa2"
-			(at 90.17 257.81 0)
+			(at 121.92 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16911,7 +16982,7 @@
 			)
 		)
 		(property "Description" "50V C0G ±5% MLCC"
-			(at 94.234 257.81 90)
+			(at 125.984 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16922,7 +16993,7 @@
 			)
 		)
 		(property "LCSC Part #" "C14857"
-			(at 90.17 257.81 90)
+			(at 121.92 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16933,7 +17004,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 90.17 257.81 0)
+			(at 121.92 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16944,7 +17015,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 90.17 257.81 0)
+			(at 121.92 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17259,7 +17330,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 68.58 227.33 180)
+		(at 151.13 314.96 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17269,7 +17340,7 @@
 		(dnp yes)
 		(uuid "357c5ba7-41c2-4dae-b911-6cf13c4deee0")
 		(property "Reference" "R29"
-			(at 70.612 226.314 0)
+			(at 153.162 313.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17280,7 +17351,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 70.612 228.854 0)
+			(at 153.162 316.484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17291,7 +17362,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 70.358 227.33 90)
+			(at 152.908 314.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17302,7 +17373,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588884762689196032-C149504.pdf?response-content-disposition=attachment%3B%20filename%3DC149504.pdf%3B%20filename%2A%3DUTF-8%27%27C149504.pdf&x-oss-date=20260803T081359Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5n4LdjwpbVP2KqzZBfDlGc2ONxV3P3chjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qelv%2BFVV4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWppnFEZLitHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIgJmNcqKWD5sagAF3ygFntnAhrKj09Ap%2FtVT9PA2Sx0yp64fMv2P2MPFSnqsXMbB1LgugKUxQn5R2P4BTatvB%2Bs%2FuvTzIyWOURnBOfSV%2Bl6yVKXdJZR%2BLzCPytm37bab%2FQ2kiiUZ%2B55kkq%2BWM29yjsbA8e%2F1HJ1j08QOmp%2FuSwxFRoxzauzfW8NWQmyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZMfbDHjnohXf1rpgc4Sy38wd%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=95446e9908f94a72606fcd80205fbba12920fe61fc762000bd8884656a28c692"
-			(at 68.58 227.33 0)
+			(at 151.13 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17313,7 +17384,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 68.58 227.33 0)
+			(at 151.13 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17324,7 +17395,7 @@
 			)
 		)
 		(property "LCSC Part #" "C149504"
-			(at 68.58 227.33 0)
+			(at 151.13 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17335,7 +17406,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 68.58 227.33 0)
+			(at 151.13 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17346,7 +17417,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 68.58 227.33 0)
+			(at 151.13 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17477,7 +17548,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 96.52 257.81 180)
+		(at 128.27 255.27 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17487,7 +17558,7 @@
 		(dnp no)
 		(uuid "39e1b4ee-5351-43e2-b5b8-caff00afdff6")
 		(property "Reference" "R38"
-			(at 98.552 256.794 0)
+			(at 130.302 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17498,7 +17569,7 @@
 			)
 		)
 		(property "Value" "2k"
-			(at 98.552 259.334 0)
+			(at 130.302 256.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17509,7 +17580,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 98.298 257.81 90)
+			(at 130.048 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17520,7 +17591,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706552309239808-C17604.pdf?response-content-disposition=attachment%3B%20filename%3DC17604.pdf%3B%20filename%2A%3DUTF-8%27%27C17604.pdf&x-oss-date=20260803T084736Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rfMo7S2a9U8%2FSMd0PAik5hfdYYn4v9kzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qcEXt1tV4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWqqoA0hbitHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMItHFAAaKWD5sagAEfS%2B0Q6nclgCJi6oRMMJzPrIfnSPyl4oT4D2nYZcDuJGM%2FIU1JWKYmx%2FMsIE1oMmrN6SdN40lcLde8y7IdMzMUBnDRuelKa4tGtI7DD1GzMeOSSVBYnayeVPLefaS%2BJSpvVxPwUIrDQ66KgI91wSY5Q4q2lUeslekITmYezm6qgiAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYjy4f4puD6gueqnN4qY4pNVq%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ba9360ce1cf6876a581be08460a6a98fe3bfa05a9ddaac9009e212cec7d70b69"
-			(at 96.52 257.81 0)
+			(at 128.27 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17531,7 +17602,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 96.52 257.81 0)
+			(at 128.27 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17542,7 +17613,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17604"
-			(at 96.52 257.81 0)
+			(at 128.27 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17553,7 +17624,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 96.52 257.81 0)
+			(at 128.27 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17564,7 +17635,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 96.52 257.81 0)
+			(at 128.27 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18320,7 +18391,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 264.16 0)
+		(at 110.49 360.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18330,7 +18401,7 @@
 		(dnp no)
 		(uuid "46a57c95-faa3-4064-8fb1-371c712d8976")
 		(property "Reference" "#PWR047"
-			(at 111.76 270.51 0)
+			(at 110.49 367.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18341,7 +18412,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 268.224 0)
+			(at 110.49 364.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18351,7 +18422,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 264.16 0)
+			(at 110.49 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18362,7 +18433,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 264.16 0)
+			(at 110.49 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18373,7 +18444,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 264.16 0)
+			(at 110.49 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20028,7 +20099,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 257.81 180)
+		(at 95.25 255.27 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20038,7 +20109,7 @@
 		(dnp no)
 		(uuid "5b985dd5-a551-42b3-a357-d900104e0dec")
 		(property "Reference" "R30"
-			(at 76.962 256.794 0)
+			(at 97.282 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20049,7 +20120,7 @@
 			)
 		)
 		(property "Value" "2k"
-			(at 76.962 259.334 0)
+			(at 97.282 256.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20060,7 +20131,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 76.708 257.81 90)
+			(at 97.028 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20071,7 +20142,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706552309239808-C17604.pdf?response-content-disposition=attachment%3B%20filename%3DC17604.pdf%3B%20filename%2A%3DUTF-8%27%27C17604.pdf&x-oss-date=20260803T084736Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rfMo7S2a9U8%2FSMd0PAik5hfdYYn4v9kzz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qcEXt1tV4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWqqoA0hbitHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMItHFAAaKWD5sagAEfS%2B0Q6nclgCJi6oRMMJzPrIfnSPyl4oT4D2nYZcDuJGM%2FIU1JWKYmx%2FMsIE1oMmrN6SdN40lcLde8y7IdMzMUBnDRuelKa4tGtI7DD1GzMeOSSVBYnayeVPLefaS%2BJSpvVxPwUIrDQ66KgI91wSY5Q4q2lUeslekITmYezm6qgiAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYjy4f4puD6gueqnN4qY4pNVq%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ba9360ce1cf6876a581be08460a6a98fe3bfa05a9ddaac9009e212cec7d70b69"
-			(at 74.93 257.81 0)
+			(at 95.25 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20082,7 +20153,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 74.93 257.81 0)
+			(at 95.25 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20093,7 +20164,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17604"
-			(at 74.93 257.81 0)
+			(at 95.25 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20104,7 +20175,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 74.93 257.81 0)
+			(at 95.25 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20115,7 +20186,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 74.93 257.81 0)
+			(at 95.25 255.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20464,7 +20535,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 168.91 204.47 0)
+		(at 139.7 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20474,7 +20545,7 @@
 		(dnp no)
 		(uuid "5e7ccbb4-9ffb-43f5-8251-7746260bd1eb")
 		(property "Reference" "#PWR027"
-			(at 168.91 208.28 0)
+			(at 139.7 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20485,7 +20556,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 168.91 200.66 0)
+			(at 139.7 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20495,7 +20566,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 204.47 0)
+			(at 139.7 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20506,7 +20577,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 204.47 0)
+			(at 139.7 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20517,7 +20588,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 168.91 204.47 0)
+			(at 139.7 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21007,7 +21078,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 96.52 246.38 180)
+		(at 128.27 243.84 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21017,7 +21088,7 @@
 		(dnp no)
 		(uuid "6a03366c-63b2-4c5a-afdc-2f692402cc08")
 		(property "Reference" "R35"
-			(at 98.552 245.364 0)
+			(at 130.302 242.824 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21028,7 +21099,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 98.552 247.904 0)
+			(at 130.302 245.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21039,7 +21110,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 98.298 246.38 90)
+			(at 130.048 243.84 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21050,7 +21121,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8562006748392685568-C17414.pdf?response-content-disposition=attachment%3B%20filename%3DC17414.pdf%3B%20filename%2A%3DUTF-8%27%27C17414.pdf&x-oss-date=20260622T133753Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rfHeONp5xb0fWDV0nnqHcddNdouYOfhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qZxG%2BxxH4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWgpj0vpv4nSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkImp63u6KWD5sagAGxlb2GKy1UFMi7aNbBRpZOAAy2NLp4pg6XyxRfLk6ktvfvlAPr6Eqz5lBg09y5ysxAg0Lkt0AYkpiklNrFt30vwIvpKK%2BM6mBuzdsyxf2%2Bwe91hYyyvVbCM5Upgn0U0%2B0jqpXc4gEDFDz5dt%2Fz4RV5hJGrkLm1SMMaIQTjV816dyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYjVY9JCzf7hUoVLwHxXDVF4d%2F20260622%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d89f178f472a71e47221462aa600ff1069728a78174548dc6d9c506e4982c6cb"
-			(at 96.52 246.38 0)
+			(at 128.27 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21061,7 +21132,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 96.52 246.38 0)
+			(at 128.27 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21072,7 +21143,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17414"
-			(at 96.52 246.38 0)
+			(at 128.27 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21083,7 +21154,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 96.52 246.38 0)
+			(at 128.27 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21094,7 +21165,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 96.52 246.38 0)
+			(at 128.27 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21225,6 +21296,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 87.63 234.95 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6ccb9b6b-c40d-4f6b-97f2-e24c0e2036df")
+		(property "Reference" "R41"
+			(at 89.408 230.632 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 86.868 232.664 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 87.63 233.172 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 87.63 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 87.63 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 87.63 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 87.63 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "462e3fd0-8fd5-409a-8e53-be57a02f49ce")
+		)
+		(pin "1"
+			(uuid "662139ab-bb42-4024-8820-402b59176840")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -22083,6 +22268,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 87.63 227.33 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77b1463e-4c78-4352-8a6e-ae78234fc929")
+		(property "Reference" "R40"
+			(at 89.408 223.012 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 86.868 225.044 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 87.63 225.552 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 87.63 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 87.63 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 87.63 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 87.63 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5c23d093-7db5-4c7c-a9e0-5479d44ac255")
+		)
+		(pin "1"
+			(uuid "5ea6c709-92e3-4b19-b8a4-7d8ff59b5fac")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -23596,7 +23895,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 264.16 0)
+		(at 118.11 360.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23606,7 +23905,7 @@
 		(dnp no)
 		(uuid "8ca243c5-ea56-42ac-8d07-d112dff52394")
 		(property "Reference" "#PWR072"
-			(at 119.38 270.51 0)
+			(at 118.11 367.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23617,7 +23916,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 268.224 0)
+			(at 118.11 364.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23627,7 +23926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 264.16 0)
+			(at 118.11 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23638,7 +23937,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 264.16 0)
+			(at 118.11 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23649,7 +23948,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 264.16 0)
+			(at 118.11 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23828,7 +24127,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 96.52 264.16 180)
+		(at 128.27 261.62 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23838,7 +24137,7 @@
 		(dnp no)
 		(uuid "9222d09e-43b3-4f97-9ff2-e9038689303a")
 		(property "Reference" "#PWR079"
-			(at 96.52 260.35 0)
+			(at 128.27 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23849,7 +24148,7 @@
 			)
 		)
 		(property "Value" "+1.65V"
-			(at 96.52 267.97 0)
+			(at 128.27 265.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23859,7 +24158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 264.16 0)
+			(at 128.27 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23870,7 +24169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 264.16 0)
+			(at 128.27 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23881,7 +24180,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1.65V\""
-			(at 96.52 264.16 0)
+			(at 128.27 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23892,7 +24191,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 96.52 264.16 0)
+			(at 128.27 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24441,7 +24740,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 74.93 264.16 180)
+		(at 95.25 261.62 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24451,7 +24750,7 @@
 		(dnp no)
 		(uuid "9b469454-3f7d-4ff9-adab-74fec409b27e")
 		(property "Reference" "#PWR073"
-			(at 74.93 260.35 0)
+			(at 95.25 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24462,7 +24761,7 @@
 			)
 		)
 		(property "Value" "+1.65V"
-			(at 74.93 267.97 0)
+			(at 95.25 265.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24472,7 +24771,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 264.16 0)
+			(at 95.25 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24483,7 +24782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 264.16 0)
+			(at 95.25 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24494,7 +24793,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1.65V\""
-			(at 74.93 264.16 0)
+			(at 95.25 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24505,7 +24804,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 74.93 264.16 0)
+			(at 95.25 261.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24820,7 +25119,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 226.06 0)
+		(at 148.59 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24830,7 +25129,7 @@
 		(dnp no)
 		(uuid "a32d34ae-a15a-4fb5-8b92-05cb47240bce")
 		(property "Reference" "#PWR045"
-			(at 177.8 232.41 0)
+			(at 148.59 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24841,7 +25140,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 177.8 230.124 0)
+			(at 148.59 175.514 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24851,7 +25150,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 226.06 0)
+			(at 148.59 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24862,7 +25161,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 226.06 0)
+			(at 148.59 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24873,7 +25172,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 226.06 0)
+			(at 148.59 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24974,7 +25273,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 119.38 238.76 0)
+		(at 118.11 335.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24984,7 +25283,7 @@
 		(dnp no)
 		(uuid "a642b21d-a3a9-489b-adb1-d94585755c54")
 		(property "Reference" "#PWR037"
-			(at 119.38 242.57 0)
+			(at 118.11 339.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24995,7 +25294,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 119.38 234.95 0)
+			(at 118.11 331.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25005,7 +25304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 238.76 0)
+			(at 118.11 335.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25016,7 +25315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 238.76 0)
+			(at 118.11 335.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25027,7 +25326,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 119.38 238.76 0)
+			(at 118.11 335.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25575,7 +25874,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 119.38 245.11 180)
+		(at 118.11 341.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25585,7 +25884,7 @@
 		(dnp no)
 		(uuid "ac8960aa-74c1-4cf1-a959-161e81da56d3")
 		(property "Reference" "R34"
-			(at 121.412 244.094 0)
+			(at 120.142 340.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25596,7 +25895,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 121.412 246.634 0)
+			(at 120.142 343.154 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25607,7 +25906,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 121.158 245.11 90)
+			(at 119.888 341.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25618,7 +25917,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8562006748392685568-C17414.pdf?response-content-disposition=attachment%3B%20filename%3DC17414.pdf%3B%20filename%2A%3DUTF-8%27%27C17414.pdf&x-oss-date=20260622T133753Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rfHeONp5xb0fWDV0nnqHcddNdouYOfhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qZxG%2BxxH4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWgpj0vpv4nSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkImp63u6KWD5sagAGxlb2GKy1UFMi7aNbBRpZOAAy2NLp4pg6XyxRfLk6ktvfvlAPr6Eqz5lBg09y5ysxAg0Lkt0AYkpiklNrFt30vwIvpKK%2BM6mBuzdsyxf2%2Bwe91hYyyvVbCM5Upgn0U0%2B0jqpXc4gEDFDz5dt%2Fz4RV5hJGrkLm1SMMaIQTjV816dyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYjVY9JCzf7hUoVLwHxXDVF4d%2F20260622%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d89f178f472a71e47221462aa600ff1069728a78174548dc6d9c506e4982c6cb"
-			(at 119.38 245.11 0)
+			(at 118.11 341.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25629,7 +25928,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 119.38 245.11 0)
+			(at 118.11 341.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25640,7 +25939,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17414"
-			(at 119.38 245.11 0)
+			(at 118.11 341.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25651,7 +25950,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 119.38 245.11 0)
+			(at 118.11 341.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25662,7 +25961,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 119.38 245.11 0)
+			(at 118.11 341.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25689,7 +25988,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 119.38 259.08 180)
+		(at 118.11 355.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25699,7 +25998,7 @@
 		(dnp no)
 		(uuid "af57553c-2c4b-40d9-b4bd-9a72453f6d77")
 		(property "Reference" "R33"
-			(at 121.412 258.064 0)
+			(at 120.142 354.584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25710,7 +26009,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 121.412 260.604 0)
+			(at 120.142 357.124 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25721,7 +26020,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 121.158 259.08 90)
+			(at 119.888 355.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25732,7 +26031,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8562006748392685568-C17414.pdf?response-content-disposition=attachment%3B%20filename%3DC17414.pdf%3B%20filename%2A%3DUTF-8%27%27C17414.pdf&x-oss-date=20260622T133753Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rfHeONp5xb0fWDV0nnqHcddNdouYOfhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qZxG%2BxxH4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWgpj0vpv4nSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkImp63u6KWD5sagAGxlb2GKy1UFMi7aNbBRpZOAAy2NLp4pg6XyxRfLk6ktvfvlAPr6Eqz5lBg09y5ysxAg0Lkt0AYkpiklNrFt30vwIvpKK%2BM6mBuzdsyxf2%2Bwe91hYyyvVbCM5Upgn0U0%2B0jqpXc4gEDFDz5dt%2Fz4RV5hJGrkLm1SMMaIQTjV816dyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYjVY9JCzf7hUoVLwHxXDVF4d%2F20260622%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d89f178f472a71e47221462aa600ff1069728a78174548dc6d9c506e4982c6cb"
-			(at 119.38 259.08 0)
+			(at 118.11 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25743,7 +26042,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 119.38 259.08 0)
+			(at 118.11 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25754,7 +26053,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17414"
-			(at 119.38 259.08 0)
+			(at 118.11 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25765,7 +26064,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 119.38 259.08 0)
+			(at 118.11 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25776,7 +26075,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 119.38 259.08 0)
+			(at 118.11 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26057,7 +26356,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 167.64 247.65 0)
+		(at 166.37 344.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26067,7 +26366,7 @@
 		(dnp no)
 		(uuid "b95148d3-f197-404b-8081-ca2796e956df")
 		(property "Reference" "#PWR049"
-			(at 167.64 251.46 0)
+			(at 166.37 347.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26078,7 +26377,7 @@
 			)
 		)
 		(property "Value" "+1.65V"
-			(at 167.64 243.84 0)
+			(at 166.37 340.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26088,7 +26387,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 247.65 0)
+			(at 166.37 344.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26099,7 +26398,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 247.65 0)
+			(at 166.37 344.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26110,7 +26409,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1.65V\""
-			(at 167.64 247.65 0)
+			(at 166.37 344.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26121,7 +26420,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 167.64 247.65 0)
+			(at 166.37 344.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27584,7 +27883,7 @@
 	)
 	(symbol
 		(lib_id "PZ:PTV09A-1020F-B203")
-		(at 168.91 214.63 0)
+		(at 139.7 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27594,7 +27893,7 @@
 		(dnp no)
 		(uuid "cdff8f3b-ea8a-4043-a7ae-c71a34a7e8ad")
 		(property "Reference" "RV5"
-			(at 165.862 214.376 0)
+			(at 136.652 159.766 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27605,7 +27904,7 @@
 			)
 		)
 		(property "Value" "PTV09A-1020F-B203"
-			(at 165.862 216.916 0)
+			(at 136.652 162.306 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27616,7 +27915,7 @@
 			)
 		)
 		(property "Footprint" "PZ:Potentiometer_Bourns_PTV09A-1_Single_Vertical"
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27627,7 +27926,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27638,7 +27937,7 @@
 			)
 		)
 		(property "Description" "Potentiometer"
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27649,7 +27948,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27660,7 +27959,7 @@
 			)
 		)
 		(property "Sim.Type" "POT"
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27671,7 +27970,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27682,7 +27981,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27693,7 +27992,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27704,7 +28003,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 168.91 214.63 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28766,7 +29065,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 246.38 180)
+		(at 95.25 243.84 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28776,7 +29075,7 @@
 		(dnp no)
 		(uuid "ddf00716-077a-4a44-b501-d56ab239a215")
 		(property "Reference" "R37"
-			(at 76.962 245.364 0)
+			(at 97.282 242.824 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28787,7 +29086,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 76.962 247.904 0)
+			(at 97.282 245.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28798,7 +29097,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 76.708 246.38 90)
+			(at 97.028 243.84 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28809,7 +29108,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8562006748392685568-C17414.pdf?response-content-disposition=attachment%3B%20filename%3DC17414.pdf%3B%20filename%2A%3DUTF-8%27%27C17414.pdf&x-oss-date=20260622T133753Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rfHeONp5xb0fWDV0nnqHcddNdouYOfhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qZxG%2BxxH4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWgpj0vpv4nSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkImp63u6KWD5sagAGxlb2GKy1UFMi7aNbBRpZOAAy2NLp4pg6XyxRfLk6ktvfvlAPr6Eqz5lBg09y5ysxAg0Lkt0AYkpiklNrFt30vwIvpKK%2BM6mBuzdsyxf2%2Bwe91hYyyvVbCM5Upgn0U0%2B0jqpXc4gEDFDz5dt%2Fz4RV5hJGrkLm1SMMaIQTjV816dyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYjVY9JCzf7hUoVLwHxXDVF4d%2F20260622%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d89f178f472a71e47221462aa600ff1069728a78174548dc6d9c506e4982c6cb"
-			(at 74.93 246.38 0)
+			(at 95.25 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28820,7 +29119,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 74.93 246.38 0)
+			(at 95.25 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28831,7 +29130,7 @@
 			)
 		)
 		(property "LCSC Part #" "C17414"
-			(at 74.93 246.38 0)
+			(at 95.25 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28842,7 +29141,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 74.93 246.38 0)
+			(at 95.25 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28853,7 +29152,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 74.93 246.38 0)
+			(at 95.25 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28957,7 +29256,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 226.06 0)
+		(at 139.7 171.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28967,7 +29266,7 @@
 		(dnp no)
 		(uuid "ded0dd47-8d16-4279-8c1b-1a4ddcb3e50c")
 		(property "Reference" "#PWR036"
-			(at 168.91 232.41 0)
+			(at 139.7 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28978,7 +29277,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 230.124 0)
+			(at 139.7 175.514 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28988,7 +29287,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 226.06 0)
+			(at 139.7 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28999,7 +29298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 226.06 0)
+			(at 139.7 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29010,7 +29309,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 226.06 0)
+			(at 139.7 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29034,7 +29333,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xSN")
-		(at 140.97 254 0)
+		(at 139.7 350.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29045,7 +29344,7 @@
 		(fields_autoplaced yes)
 		(uuid "df46eae1-3ee1-4572-86cf-2fcc615e280b")
 		(property "Reference" "U3"
-			(at 140.97 243.84 0)
+			(at 139.7 340.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29055,7 +29354,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xSN"
-			(at 140.97 246.38 0)
+			(at 139.7 342.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29065,7 +29364,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 140.97 254 0)
+			(at 139.7 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29076,7 +29375,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 140.97 254 0)
+			(at 139.7 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29087,7 +29386,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, SOIC-8"
-			(at 140.97 254 0)
+			(at 139.7 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29098,7 +29397,7 @@
 			)
 		)
 		(property "LCSC Part #" "C7377"
-			(at 140.97 254 0)
+			(at 139.7 350.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30363,7 +30662,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 111.76 259.08 180)
+		(at 110.49 355.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30373,7 +30672,7 @@
 		(dnp no)
 		(uuid "f4734c4c-cfb6-403e-9b06-ee005549a38b")
 		(property "Reference" "C16"
-			(at 116.84 259.08 90)
+			(at 115.57 355.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30383,7 +30682,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 115.062 259.08 90)
+			(at 113.792 355.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30393,7 +30692,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 110.7948 255.27 0)
+			(at 109.5248 351.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30404,7 +30703,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8554627388276903936-C307331.pdf?response-content-disposition=attachment%3B%20filename%3DC307331.pdf%3B%20filename%2A%3DUTF-8%27%27C307331.pdf&x-oss-date=20260505T162742Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5qGBsPcnZEZ3Ya8ThTeo2EPXbx2q7HFmjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qftp%2BCp24J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrty8pRbnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIHgGDfqKWD5sagAF6VgUKivbVMIBYAHtPbEarcjdLKB%2Fv3R3XC7QrUkcxIbGKHkBmaxKBu%2BGtj%2FHQPAyPjesVk27QjSsWunbsWcdoaKfP5rLgen%2BoButIbAdnf%2Bqw11q%2FkZftS7ZxbIUiFvZ7qlrREHh2ZWByiFa3lk1Cu9tITyaRM80B9EW6%2F3i7dCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY3MyhpN8jDWL2oGaZQ3ZDtnx%2F20260505%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f4933891084f8fd6e75212da0ccaabda9059efdd5eed7cf7fcbc104cfadb9c80"
-			(at 111.76 259.08 0)
+			(at 110.49 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30415,7 +30714,7 @@
 			)
 		)
 		(property "Description" "50V X7R ±10% MLCC"
-			(at 111.76 259.08 0)
+			(at 110.49 355.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30426,7 +30725,7 @@
 			)
 		)
 		(property "LCSC Part #" "C307331"
-			(at 111.76 259.08 90)
+			(at 110.49 355.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30437,7 +30736,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 111.76 259.08 90)
+			(at 110.49 355.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30829,7 +31128,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 80.01 227.33 180)
+		(at 162.56 314.96 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30839,7 +31138,7 @@
 		(dnp yes)
 		(uuid "f62f7a57-80d7-4258-af9c-ed60b507850d")
 		(property "Reference" "R36"
-			(at 82.042 226.314 0)
+			(at 164.592 313.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30850,7 +31149,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 82.042 228.854 0)
+			(at 164.592 316.484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30861,7 +31160,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 81.788 227.33 90)
+			(at 164.338 314.96 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30872,7 +31171,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706522877673472-C4328.pdf?response-content-disposition=attachment%3B%20filename%3DC4328.pdf%3B%20filename%2A%3DUTF-8%27%27C4328.pdf&x-oss-date=20260803T081520Z&x-oss-expires=3600&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5n4LdjwpbVP2KqzZBfDlGc2ONxV3P3chjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qelv%2BFVV4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWppnFEZLitHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIgJmNcqKWD5sagAF3ygFntnAhrKj09Ap%2FtVT9PA2Sx0yp64fMv2P2MPFSnqsXMbB1LgugKUxQn5R2P4BTatvB%2Bs%2FuvTzIyWOURnBOfSV%2Bl6yVKXdJZR%2BLzCPytm37bab%2FQ2kiiUZ%2B55kkq%2BWM29yjsbA8e%2F1HJ1j08QOmp%2FuSwxFRoxzauzfW8NWQmyAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZMfbDHjnohXf1rpgc4Sy38wd%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4e8be027f7c983e091ecfa9d594fbcf7f0de3cf6b94e3a392c0223462dc2a26c"
-			(at 80.01 227.33 0)
+			(at 162.56 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30883,7 +31182,7 @@
 			)
 		)
 		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
-			(at 80.01 227.33 0)
+			(at 162.56 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30894,7 +31193,7 @@
 			)
 		)
 		(property "LCSC Part #" "C4328"
-			(at 80.01 227.33 0)
+			(at 162.56 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30905,7 +31204,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 80.01 227.33 0)
+			(at 162.56 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30916,7 +31215,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 80.01 227.33 0)
+			(at 162.56 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31469,7 +31768,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 177.8 219.71 180)
+		(at 148.59 165.1 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31479,7 +31778,7 @@
 		(dnp no)
 		(uuid "faa8ceaf-6cd0-4dad-a9fd-40cca05ea7f7")
 		(property "Reference" "C15"
-			(at 182.88 219.71 90)
+			(at 153.67 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31489,7 +31788,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 181.102 219.71 90)
+			(at 151.892 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31499,7 +31798,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 176.8348 215.9 0)
+			(at 147.6248 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31510,7 +31809,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8554627388276903936-C307331.pdf?response-content-disposition=attachment%3B%20filename%3DC307331.pdf%3B%20filename%2A%3DUTF-8%27%27C307331.pdf&x-oss-date=20260505T162742Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5qGBsPcnZEZ3Ya8ThTeo2EPXbx2q7HFmjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qftp%2BCp24J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrty8pRbnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIHgGDfqKWD5sagAF6VgUKivbVMIBYAHtPbEarcjdLKB%2Fv3R3XC7QrUkcxIbGKHkBmaxKBu%2BGtj%2FHQPAyPjesVk27QjSsWunbsWcdoaKfP5rLgen%2BoButIbAdnf%2Bqw11q%2FkZftS7ZxbIUiFvZ7qlrREHh2ZWByiFa3lk1Cu9tITyaRM80B9EW6%2F3i7dCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY3MyhpN8jDWL2oGaZQ3ZDtnx%2F20260505%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f4933891084f8fd6e75212da0ccaabda9059efdd5eed7cf7fcbc104cfadb9c80"
-			(at 177.8 219.71 0)
+			(at 148.59 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31521,7 +31820,7 @@
 			)
 		)
 		(property "Description" "50V X7R ±10% MLCC"
-			(at 177.8 219.71 0)
+			(at 148.59 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31532,7 +31831,7 @@
 			)
 		)
 		(property "LCSC Part #" "C307331"
-			(at 177.8 219.71 90)
+			(at 148.59 165.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31543,7 +31842,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 177.8 219.71 90)
+			(at 148.59 165.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
