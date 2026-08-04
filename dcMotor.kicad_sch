@@ -9579,6 +9579,12 @@
 		(uuid "79b00a1a-aa74-4ae4-990a-4bc533128867")
 	)
 	(junction
+		(at 309.88 321.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79c19e80-8d60-44f9-aeb8-804ae7bed65b")
+	)
+	(junction
 		(at 148.59 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11310,6 +11316,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.88 325.12) (xy 309.88 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6252662d-3870-461d-babe-0aebd50887ca")
+	)
+	(wire
+		(pts
 			(xy 88.9 205.74) (xy 88.9 207.01)
 		)
 		(stroke
@@ -11530,6 +11546,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 325.12) (xy 318.77 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75f71513-9133-44db-b8a2-75583ba3b400")
+	)
+	(wire
+		(pts
 			(xy 91.44 127) (xy 91.44 130.81)
 		)
 		(stroke
@@ -11537,6 +11563,16 @@
 			(type default)
 		)
 		(uuid "76dc51eb-3c3a-4d6c-a1bd-a75e695e6e8d")
+	)
+	(wire
+		(pts
+			(xy 309.88 332.74) (xy 309.88 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78115737-9a33-4106-adc2-62db5243cc4b")
 	)
 	(wire
 		(pts
@@ -11577,6 +11613,16 @@
 			(type default)
 		)
 		(uuid "7ac64422-8a85-437a-88e4-47837b03fee8")
+	)
+	(wire
+		(pts
+			(xy 299.72 321.31) (xy 309.88 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d307fac-a66f-4e9f-a6ba-7aa331f11469")
 	)
 	(wire
 		(pts
@@ -11687,6 +11733,16 @@
 			(type default)
 		)
 		(uuid "8457ef39-c40f-43d2-bb79-dc44d0151eca")
+	)
+	(wire
+		(pts
+			(xy 318.77 332.74) (xy 318.77 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866feb60-dbc8-4d02-b7b3-0476b2764ec3")
 	)
 	(wire
 		(pts
@@ -12607,6 +12663,16 @@
 			(type default)
 		)
 		(uuid "bc1d4912-3029-4c90-90fc-2682fb20ff3d")
+	)
+	(wire
+		(pts
+			(xy 318.77 321.31) (xy 309.88 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc76fb6-57cb-4bb1-aac5-f378eb9b698c")
 	)
 	(wire
 		(pts
@@ -14743,6 +14809,118 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 309.88 328.93 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0beeac5d-b0fe-45f1-9e91-8093dd5ba2c0")
+		(property "Reference" "C16"
+			(at 305.562 327.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 305.562 329.946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 308.9148 325.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "25V X5R ±10%"
+			(at 313.69 328.168 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C15850"
+			(at 309.88 328.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 309.88 328.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 309.88 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "23914c54-aa38-4aaf-928e-f1e8c17d6131")
+		)
+		(pin "1"
+			(uuid "bd6c83fd-a3f5-4994-b3d2-2ee1fe4d467c")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -19614,6 +19792,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 318.77 336.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4b1e56ef-fb29-4863-92fd-f1b4bfdc6057")
+		(property "Reference" "#PWR090"
+			(at 318.77 342.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 318.77 340.868 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 318.77 336.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 318.77 336.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 318.77 336.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "857e6401-dc54-4871-ab4c-e79de0a6fe70")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Franz:LMR54406DB")
 		(at 52.07 40.64 0)
 		(unit 1)
@@ -22010,6 +22265,118 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 318.77 328.93 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6bf5ab29-5223-48e8-b69e-bb3e29cb2150")
+		(property "Reference" "C33"
+			(at 314.452 327.914 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 314.452 329.946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 317.8048 325.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 318.77 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "25V X5R ±10%"
+			(at 322.58 328.168 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C15850"
+			(at 318.77 328.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 318.77 328.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 318.77 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83cc4ab6-dae4-4dd7-9f3c-d2b9640690ff")
+		)
+		(pin "1"
+			(uuid "a347c428-889e-4eb7-b967-6fb6353cffea")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -24436,6 +24803,83 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 309.88 336.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85ccaaca-6567-4d12-b77a-4cd5d074ae73")
+		(property "Reference" "#PWR086"
+			(at 309.88 342.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 309.88 340.868 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 336.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 336.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 309.88 336.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "318b3964-435d-4f78-9ee8-84c63bde5735")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
