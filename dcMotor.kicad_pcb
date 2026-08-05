@@ -2346,7 +2346,7 @@
 		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP7"
-			(at 3.81 0 0)
+			(at 4.66719 0 0)
 			(layer "F.SilkS")
 			(uuid "c8ebe96d-1c8d-477c-9742-4c1cd9a0e177")
 			(effects
@@ -4593,7 +4593,7 @@
 		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP11"
-			(at 3.81 0 0)
+			(at 4.445 0 0)
 			(layer "F.SilkS")
 			(uuid "c9f73d2e-0d5b-4342-b8a0-87a915e29e3a")
 			(effects
@@ -9480,7 +9480,7 @@
 	(footprint "PZ:na"
 		(layer "F.Cu")
 		(uuid "6416fabc-bc27-45b3-94f8-d1268247a517")
-		(at 127.508 78.994 -90)
+		(at 136.652 78.994 -90)
 		(property "Reference" "U4"
 			(at 0 -0.5 270)
 			(unlocked yes)
@@ -14871,7 +14871,7 @@
 	(footprint "PZ:LTH-301-05"
 		(layer "F.Cu")
 		(uuid "99332c8a-d518-4208-98ff-add1d8fd5c37")
-		(at 127.508 121.158 -90)
+		(at 136.652 121.158 -90)
 		(property "Reference" "U8"
 			(at 0.5 0 270)
 			(unlocked yes)
@@ -16690,7 +16690,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_6.3x7.7"
 		(layer "F.Cu")
 		(uuid "a42f611e-2fc4-44ca-8dcd-5ef2a085c523")
-		(at 54.61 70.358)
+		(at 100.076 58.42)
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C28"
@@ -18403,7 +18403,7 @@
 		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP10"
-			(at 3.302 0 180)
+			(at 4.191 0 180)
 			(layer "F.SilkS")
 			(uuid "816632e0-45be-4c96-82bb-e683f9e7a94c")
 			(effects
@@ -21700,7 +21700,7 @@
 		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP8"
-			(at 3.302 0 180)
+			(at 4.66719 0 180)
 			(layer "F.SilkS")
 			(uuid "0c27daef-e5cb-4507-bf58-366d4189308b")
 			(effects
@@ -25339,7 +25339,7 @@
 		(descr "Keystone THM Multipurpose Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319")
 		(tags "Through Hole Mount Test Points")
 		(property "Reference" "TP6"
-			(at 3.556 0 180)
+			(at 4.66719 0 180)
 			(layer "F.SilkS")
 			(uuid "f2d744cf-dfe6-4799-be32-5d3c96fa1406")
 			(effects
@@ -27420,6 +27420,14 @@
 		(uuid "c8c76be7-6459-403b-a9dd-f63b85012529")
 	)
 	(segment
+		(start 57.451 55.442)
+		(end 59.053 55.442)
+		(width 0.3)
+		(layer "F.Cu")
+		(net "Net-(D6-A)")
+		(uuid "e8aa16d8-49eb-4cfc-be38-1bb9e0de7e99")
+	)
+	(segment
 		(start 58.034 58.744)
 		(end 59.561 58.744)
 		(width 0.5)
@@ -27586,6 +27594,14 @@
 		(layer "F.Cu")
 		(net "/USB_CC2")
 		(uuid "fe9779f5-6f1d-4290-97a9-9e33a5560a78")
+	)
+	(segment
+		(start 68.297 64.679)
+		(end 66.6535 64.679)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(U2-ADJ)")
+		(uuid "8bd8226f-08a2-4246-8e7f-795fc154bf52")
 	)
 	(segment
 		(start 70.866 63.5)
@@ -27772,38 +27788,6 @@
 		(uuid "da2e4c3f-540b-4711-82b9-1abbb5101012")
 	)
 	(segment
-		(start 103.51675 74.8085)
-		(end 103.51675 74.356)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(U3-ADJ)")
-		(uuid "1bcda1f1-0a3c-4505-ac92-d6cc821dc00c")
-	)
-	(segment
-		(start 100.71225 76.073)
-		(end 102.35575 76.073)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(U3-ADJ)")
-		(uuid "7d6360e8-819c-4440-8708-22023dbb3e1b")
-	)
-	(segment
-		(start 102.35575 75.9695)
-		(end 103.51675 74.8085)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(U3-ADJ)")
-		(uuid "da4ffefe-1843-4e36-972a-432f86d024d9")
-	)
-	(segment
-		(start 102.35575 76.073)
-		(end 102.35575 75.9695)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(U3-ADJ)")
-		(uuid "f41205b1-6a14-401e-92f4-099dd119ea0c")
-	)
-	(segment
 		(start 57.474 63.5)
 		(end 58.862 63.5)
 		(width 0.5)
@@ -27860,28 +27844,36 @@
 		(uuid "eeb6d5b8-8033-44d5-a892-903a49bd7ecb")
 	)
 	(segment
-		(start 54.8195 62.588)
-		(end 55.1735 62.234)
-		(width 0.3)
+		(start 103.51675 74.8085)
+		(end 103.51675 74.356)
+		(width 0.25)
 		(layer "F.Cu")
-		(net "Net-(U1-CB)")
-		(uuid "70d13d03-a357-4bcf-b065-3245006f47ee")
+		(net "Net-(U3-ADJ)")
+		(uuid "1bcda1f1-0a3c-4505-ac92-d6cc821dc00c")
 	)
 	(segment
-		(start 54.8195 63.808)
-		(end 54.8195 62.588)
-		(width 0.3)
+		(start 100.71225 76.073)
+		(end 102.35575 76.073)
+		(width 0.25)
 		(layer "F.Cu")
-		(net "Net-(U1-CB)")
-		(uuid "9ec7da1a-c28f-451a-a25e-95449171d747")
+		(net "Net-(U3-ADJ)")
+		(uuid "7d6360e8-819c-4440-8708-22023dbb3e1b")
 	)
 	(segment
-		(start 57.451 55.442)
-		(end 59.053 55.442)
-		(width 0.3)
+		(start 102.35575 75.9695)
+		(end 103.51675 74.8085)
+		(width 0.25)
 		(layer "F.Cu")
-		(net "Net-(D6-A)")
-		(uuid "e8aa16d8-49eb-4cfc-be38-1bb9e0de7e99")
+		(net "Net-(U3-ADJ)")
+		(uuid "da4ffefe-1843-4e36-972a-432f86d024d9")
+	)
+	(segment
+		(start 102.35575 76.073)
+		(end 102.35575 75.9695)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(U3-ADJ)")
+		(uuid "f41205b1-6a14-401e-92f4-099dd119ea0c")
 	)
 	(segment
 		(start 58.1 57.157)
@@ -27932,12 +27924,20 @@
 		(uuid "78c2fdca-1063-4cfe-a91b-73dc578452f5")
 	)
 	(segment
-		(start 68.297 64.679)
-		(end 66.6535 64.679)
-		(width 0.25)
+		(start 54.8195 62.588)
+		(end 55.1735 62.234)
+		(width 0.3)
 		(layer "F.Cu")
-		(net "Net-(U2-ADJ)")
-		(uuid "8bd8226f-08a2-4246-8e7f-795fc154bf52")
+		(net "Net-(U1-CB)")
+		(uuid "70d13d03-a357-4bcf-b065-3245006f47ee")
+	)
+	(segment
+		(start 54.8195 63.808)
+		(end 54.8195 62.588)
+		(width 0.3)
+		(layer "F.Cu")
+		(net "Net-(U1-CB)")
+		(uuid "9ec7da1a-c28f-451a-a25e-95449171d747")
 	)
 	(zone
 		(net "GND")
