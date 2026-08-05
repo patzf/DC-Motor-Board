@@ -14084,7 +14084,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0173fed8-b2b1-4bee-a5fd-db9e9388a1ba")
-		(property "Reference" "C41"
+		(property "Reference" "C19"
 			(at 234.95 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14168,7 +14168,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C41")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -14185,7 +14185,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01c72f85-92ac-4163-a704-87de85dedd53")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 30.48 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -14245,7 +14245,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -14263,7 +14263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "038d065a-6863-4cfd-851a-b7e54d7c5038")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR072"
 			(at 295.91 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -14323,7 +14323,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR048")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -14340,7 +14340,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "042c98ed-1f66-4c17-adcc-65c1a977d7c3")
-		(property "Reference" "C29"
+		(property "Reference" "C6"
 			(at 83.82 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14435,7 +14435,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C29")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -14452,7 +14452,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "078ee502-0d39-4ce0-9d22-0f4a56bf5efe")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR06"
 			(at 30.48 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -14512,7 +14512,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR04")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -14529,7 +14529,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07caa001-5e81-4076-acb6-2ea51c31143a")
-		(property "Reference" "C19"
+		(property "Reference" "C31"
 			(at 330.454 135.382 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14612,7 +14612,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C19")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -14630,7 +14630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "082983a2-ef38-4909-87fc-02ab1561380f")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR029"
 			(at 104.14 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -14690,7 +14690,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR060")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -14707,7 +14707,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a66075b-2596-4ba5-9b34-204f914a282f")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR036"
 			(at 137.16 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -14767,7 +14767,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR094")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -14784,7 +14784,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0bc8f308-04ba-4071-94c2-b5b702bf2a80")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR053"
 			(at 210.82 316.23 0)
 			(hide yes)
 			(show_name no)
@@ -14844,7 +14844,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR081")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -14861,7 +14861,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0beeac5d-b0fe-45f1-9e91-8093dd5ba2c0")
-		(property "Reference" "C16"
+		(property "Reference" "C13"
 			(at 143.002 198.374 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14956,7 +14956,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C16")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -15097,7 +15097,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0da1d9f0-9523-487c-839d-3df517718a1a")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR052"
 			(at 207.01 280.67 0)
 			(hide yes)
 			(show_name no)
@@ -15157,7 +15157,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR084")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -15175,7 +15175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ef8cf4d-2f69-4ffb-b6ac-10be32d2a991")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR011"
 			(at 52.07 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15235,7 +15235,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR029")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -15252,7 +15252,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f7bae9b-735d-4ec3-a9ad-008c4c6b6068")
-		(property "Reference" "C44"
+		(property "Reference" "C22"
 			(at 234.95 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15336,7 +15336,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C44")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -15353,7 +15353,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0faff400-7b38-4486-90b5-e5cf5da70736")
-		(property "Reference" "R27"
+		(property "Reference" "R24"
 			(at 296.672 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15450,7 +15450,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R27")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -15467,7 +15467,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "108f0ff1-73e5-4daa-b0f8-041e98aeec8c")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR051"
 			(at 200.66 334.01 0)
 			(hide yes)
 			(show_name no)
@@ -15527,7 +15527,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR080")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -15544,7 +15544,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "12046534-075a-4aeb-98a3-5ff6825712d6")
-		(property "Reference" "R20"
+		(property "Reference" "R19"
 			(at 156.972 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15630,7 +15630,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R20")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -15648,7 +15648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "174b7c18-c2cc-4a30-9596-3d4bb5c41906")
-		(property "Reference" "J2"
+		(property "Reference" "J6"
 			(at 55.245 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15721,7 +15721,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J2")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -15738,7 +15738,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a51628e-a126-40b1-bccd-8a1e388551f4")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 36.068 141.478 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15887,7 +15887,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -15904,7 +15904,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1aca5ee8-abef-4d33-8e9a-8e70132dd847")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR067"
 			(at 274.32 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -15964,7 +15964,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR015")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -15981,7 +15981,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d380d8c-49bd-46ef-93c2-716f29494698")
-		(property "Reference" "C45"
+		(property "Reference" "C23"
 			(at 234.95 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16065,7 +16065,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C45")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -16082,7 +16082,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e89104d-6012-4f55-a1c6-e8af86d1b419")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR088"
 			(at 368.3 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -16142,7 +16142,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR053")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -16159,7 +16159,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f469621-918f-4c29-8423-245f703a3987")
-		(property "Reference" "R39"
+		(property "Reference" "R18"
 			(at 161.798 346.202 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16256,7 +16256,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R39")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -16273,7 +16273,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f4fec2f-f5d7-45b1-a188-83ab5a58c207")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 76.2 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16368,7 +16368,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -16385,7 +16385,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "213840f8-6cfc-4bc8-a174-a87dda61c3fc")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR075"
 			(at 313.69 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -16446,7 +16446,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR052")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -16464,7 +16464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22e343b2-6464-45af-b003-09e184497e76")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR010"
 			(at 34.29 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16524,7 +16524,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR022")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -16655,7 +16655,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24e73d74-7856-4747-ad76-fcc01c29022b")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 25.4 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -16715,7 +16715,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -16732,7 +16732,7 @@
 		(in_pos_files no)
 		(dnp yes)
 		(uuid "251be53d-5f88-4af4-861e-262c3b77b159")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 41.91 373.38 0)
 			(hide yes)
 			(show_name no)
@@ -16803,7 +16803,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -16820,7 +16820,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25379ee6-a704-4990-b123-8d6ef9513ec6")
-		(property "Reference" "FB4"
+		(property "Reference" "FB1"
 			(at 209.042 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16926,7 +16926,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "FB4")
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -16943,7 +16943,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "26bbc767-e8c0-415f-b42c-0314b0b2e1e5")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR025"
 			(at 92.71 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -17003,7 +17003,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR096")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -17020,7 +17020,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27724346-2434-49b9-af74-fe82230f17b4")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR040"
 			(at 139.7 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -17080,7 +17080,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR019")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -17097,7 +17097,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2826ae55-667a-4f1d-b0df-51e72c2edd93")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR054"
 			(at 210.82 341.63 0)
 			(hide yes)
 			(show_name no)
@@ -17157,7 +17157,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR082")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -17174,7 +17174,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "287e88e3-c5d0-46ec-a43a-63d5224c0604")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR061"
 			(at 246.38 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -17235,7 +17235,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR040")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -17252,7 +17252,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b41d065-d3e7-4533-8d59-428b5a9306a7")
-		(property "Reference" "R9"
+		(property "Reference" "R26"
 			(at 320.548 234.442 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17369,7 +17369,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R9")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -17500,7 +17500,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d85e907-a7c5-4546-a410-92bf04f2a6c8")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR068"
 			(at 274.32 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -17560,7 +17560,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR042")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -17577,7 +17577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2df6ee8c-08e8-43f8-abd6-6a3797767d6e")
-		(property "Reference" "C30"
+		(property "Reference" "C15"
 			(at 151.13 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17672,7 +17672,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C30")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -17689,7 +17689,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "31c452ab-1c75-41a2-9236-fe6fd135cf78")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR084"
 			(at 351.79 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -17749,7 +17749,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR032")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -17766,7 +17766,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3360a6c0-cc04-4f07-9e1c-3f2d27214be3")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR022"
 			(at 91.44 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -17826,7 +17826,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR020")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -17843,7 +17843,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "351950be-337b-468f-828b-349c2bc7e060")
-		(property "Reference" "R7"
+		(property "Reference" "R31"
 			(at 353.568 236.982 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17960,7 +17960,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R7")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -17977,7 +17977,7 @@
 		(in_pos_files no)
 		(dnp yes)
 		(uuid "357c5ba7-41c2-4dae-b911-6cf13c4deee0")
-		(property "Reference" "R29"
+		(property "Reference" "R16"
 			(at 153.162 313.944 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18074,7 +18074,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R29")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -18194,7 +18194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3938f4bb-bc2f-4402-90e9-225717053e83")
-		(property "Reference" "R5"
+		(property "Reference" "R9"
 			(at 106.68 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18280,7 +18280,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R5")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -18297,7 +18297,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39e1b4ee-5351-43e2-b5b8-caff00afdff6")
-		(property "Reference" "R38"
+		(property "Reference" "R21"
 			(at 164.592 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18394,7 +18394,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R38")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -18411,7 +18411,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c7165ba-4420-48a6-8958-868195427d93")
-		(property "Reference" "R33"
+		(property "Reference" "R12"
 			(at 126.238 194.564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18508,7 +18508,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R33")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -18525,7 +18525,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e0e3113-db43-4d10-b533-2eb03897b3a0")
-		(property "Reference" "C31"
+		(property "Reference" "C18"
 			(at 205.74 322.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18609,7 +18609,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C31")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -18626,7 +18626,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3fdf70e4-bab1-42b5-8e1c-3bc13c3e6452")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 22.86 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -18686,7 +18686,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -18703,7 +18703,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "421d3c2f-4bbd-4d95-8812-6a968fd4c985")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR012"
 			(at 53.34 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -18763,7 +18763,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR010")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -18780,7 +18780,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "43169b4b-2a06-4b3f-8bd1-d99c490fe6e4")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR085"
 			(at 360.68 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -18862,7 +18862,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR025")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -18879,7 +18879,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4400241c-3006-4d1f-b147-405a29d2ea44")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR021"
 			(at 91.44 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -18939,7 +18939,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR058")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -18957,7 +18957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "444dcee5-70a0-4000-a29f-ccf86fd79836")
-		(property "Reference" "U6"
+		(property "Reference" "U7"
 			(at 229.4733 212.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19160,7 +19160,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -19177,7 +19177,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45bfc8d4-19e8-40be-bc73-1e79c0f7f822")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR014"
 			(at 62.23 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -19237,7 +19237,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -19254,7 +19254,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "46d138c5-9a65-4aed-87c6-736fcb8ccd8d")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 276.352 53.594 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19351,7 +19351,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -19368,7 +19368,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "46d91eb4-eed3-4afe-aa4d-1e99b40f378d")
-		(property "Reference" "TP11"
+		(property "Reference" "TP2"
 			(at 81.534 242.824 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19451,7 +19451,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP11")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -19468,7 +19468,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4859fe62-b340-48d6-9057-2632ee16de8a")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 68.58 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -19528,7 +19528,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -19545,7 +19545,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "498611ab-bbee-4721-af09-bea02be05564")
-		(property "Reference" "TP5"
+		(property "Reference" "TP11"
 			(at 334.264 230.124 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19628,7 +19628,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP5")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -19645,7 +19645,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49a1f12b-952e-4f97-be0a-66c8f4f1f409")
-		(property "Reference" "R23"
+		(property "Reference" "R5"
 			(at 85.852 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19731,7 +19731,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R23")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -19748,7 +19748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a244960-6dad-4c3c-8506-da9082f84500")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR024"
 			(at 92.71 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -19808,7 +19808,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR091")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -19826,7 +19826,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a9dba23-f9b2-4121-bfcc-e6a8b6002ffc")
-		(property "Reference" "J1"
+		(property "Reference" "J8"
 			(at 393.7 203.962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19924,7 +19924,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J1")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -19941,7 +19941,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b1e56ef-fb29-4863-92fd-f1b4bfdc6057")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR043"
 			(at 156.21 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -20001,7 +20001,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR090")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -20018,7 +20018,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4cf08774-4ad6-4ac1-9821-52c421ca36ea")
-		(property "Reference" "U8"
+		(property "Reference" "U1"
 			(at 52.07 28.702 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20116,7 +20116,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U8")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -20235,7 +20235,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4f7917ce-9a1c-45d5-bbe0-f2936075a8f4")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR039"
 			(at 139.7 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -20295,7 +20295,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR018")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -20312,7 +20312,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5133e005-ccea-43e6-a332-2fe441103f6d")
-		(property "Reference" "C22"
+		(property "Reference" "C29"
 			(at 327.914 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20408,7 +20408,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C22")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -20425,7 +20425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "529c3327-cbc0-453e-96e6-7be2b61a2eaa")
-		(property "Reference" "TP15"
+		(property "Reference" "TP5"
 			(at 205.486 266.446 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20509,7 +20509,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP15")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -20526,7 +20526,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "52bd2dcc-6621-4297-abad-2d58d643288a")
-		(property "Reference" "SW4"
+		(property "Reference" "SW2"
 			(at 267.97 266.6999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20612,7 +20612,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "SW4")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -20629,7 +20629,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "54eef9e0-3884-4e2b-be0f-8977963e03c8")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR055"
 			(at 219.71 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20689,7 +20689,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR039")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -20706,7 +20706,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "553399d7-335d-453e-9e40-f4c5c03f9ec9")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR071"
 			(at 294.64 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -20766,7 +20766,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR026")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -20884,7 +20884,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "567b6f20-237c-4eaf-a72d-b79cc44a57ad")
-		(property "Reference" "TP3"
+		(property "Reference" "TP6"
 			(at 296.926 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20967,7 +20967,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP3")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -20984,7 +20984,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5741788a-8c81-4228-8733-53812184a79e")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR037"
 			(at 137.16 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -21055,7 +21055,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR085")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -21072,7 +21072,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "581aefff-6f02-452e-9288-8270b0cee0cc")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR044"
 			(at 162.56 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -21132,7 +21132,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR066")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -21149,7 +21149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58cfe635-f820-4d4a-9237-a6039339b700")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR091"
 			(at 383.54 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21210,7 +21210,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR059")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -21227,7 +21227,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59e964a8-f35f-4791-8799-3299e981c8b3")
-		(property "Reference" "C17"
+		(property "Reference" "C26"
 			(at 284.48 266.7 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21311,7 +21311,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C17")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -21328,7 +21328,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b985dd5-a551-42b3-a357-d900104e0dec")
-		(property "Reference" "R30"
+		(property "Reference" "R7"
 			(at 97.282 254.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21425,7 +21425,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R30")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -21442,7 +21442,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cef32f1-1b84-4f35-9c75-f88409af5bc3")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR048"
 			(at 186.69 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -21502,7 +21502,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR065")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -21519,7 +21519,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d0e872b-6f0e-4b44-b0aa-a8d0bca16117")
-		(property "Reference" "R8"
+		(property "Reference" "R25"
 			(at 320.548 223.774 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21636,7 +21636,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R8")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -21653,7 +21653,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5db76a74-6336-4bdc-9799-1a86d7973963")
-		(property "Reference" "U5"
+		(property "Reference" "U10"
 			(at 374.904 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21747,7 +21747,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U5")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -21764,7 +21764,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e7ccbb4-9ffb-43f5-8251-7746260bd1eb")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR064"
 			(at 266.7 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -21824,7 +21824,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR027")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -21842,7 +21842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62eb1b22-1bc0-466d-9945-2763405ac991")
-		(property "Reference" "J8"
+		(property "Reference" "J7"
 			(at 155.575 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21921,7 +21921,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -21938,7 +21938,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6307589d-4388-4978-ab88-05b398abdc41")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR026"
 			(at 92.71 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21998,7 +21998,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR037")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -22015,7 +22015,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63501c5e-b413-44bf-84cb-75a8775b7e03")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 83.058 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22101,7 +22101,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -22118,7 +22118,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67ff775e-4264-4156-b704-defbd91d5baf")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR062"
 			(at 246.38 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -22179,7 +22179,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR041")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -22197,7 +22197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69ce2a71-904a-4f02-af1b-ec3e2c38d06d")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR066"
 			(at 266.7 280.67 0)
 			(hide yes)
 			(show_name no)
@@ -22257,7 +22257,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR069")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -22274,7 +22274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a03366c-63b2-4c5a-afdc-2f692402cc08")
-		(property "Reference" "R35"
+		(property "Reference" "R20"
 			(at 164.592 242.824 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22371,7 +22371,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R35")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -22388,7 +22388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a0ffa03-5718-4c31-b18a-8a4e22305355")
-		(property "Reference" "C13"
+		(property "Reference" "C7"
 			(at 88.138 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22482,7 +22482,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C13")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -22499,7 +22499,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6bf5ab29-5223-48e8-b69e-bb3e29cb2150")
-		(property "Reference" "C33"
+		(property "Reference" "C14"
 			(at 151.892 198.374 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22594,7 +22594,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C33")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -22611,7 +22611,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ccb9b6b-c40d-4f6b-97f2-e24c0e2036df")
-		(property "Reference" "R41"
+		(property "Reference" "R4"
 			(at 89.408 230.632 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22708,7 +22708,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R41")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -22803,7 +22803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6da4238d-dbe4-49b2-8793-183d393560c8")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR079"
 			(at 330.2 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -22863,7 +22863,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR076")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -22880,7 +22880,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "6f10fab1-4215-4fe9-af83-f3f188077c5d")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 76.2 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22975,7 +22975,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -22992,7 +22992,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6fd988fa-ab16-47de-851d-f7c5d8c8c157")
-		(property "Reference" "C4"
+		(property "Reference" "C2"
 			(at 35.814 44.704 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23086,7 +23086,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -23103,7 +23103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7285a0c8-ff24-4d6c-b86b-980b82c4b5d9")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 54.61 120.142 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23210,7 +23210,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -23227,7 +23227,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76557898-428a-4893-acd6-7c5df18132ac")
-		(property "Reference" "C20"
+		(property "Reference" "C34"
 			(at 371.602 159.766 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23311,7 +23311,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C20")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -23328,7 +23328,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "772584b3-2274-4c7f-b0fb-fc7c220072f4")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR05"
 			(at 27.94 281.94 0)
 			(hide yes)
 			(show_name no)
@@ -23388,7 +23388,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR062")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -23405,7 +23405,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7788f6b7-3a37-4b9f-8a84-74c0ed0f5520")
-		(property "Reference" "C12"
+		(property "Reference" "C17"
 			(at 196.85 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23489,7 +23489,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C12")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -23506,7 +23506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77b1463e-4c78-4352-8a6e-ae78234fc929")
-		(property "Reference" "R40"
+		(property "Reference" "R3"
 			(at 89.408 223.012 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23603,7 +23603,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R40")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -23620,7 +23620,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78c69c17-56f5-49f4-b08c-683a79536c2f")
-		(property "Reference" "C9"
+		(property "Reference" "C3"
 			(at 62.23 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23704,7 +23704,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C9")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -23721,7 +23721,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a500458-6ac2-4815-8e94-b9b6c0799304")
-		(property "Reference" "R21"
+		(property "Reference" "R17"
 			(at 148.082 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23807,7 +23807,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R21")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -23824,7 +23824,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a53e182-db81-42da-a9e6-440d1567cd36")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR023"
 			(at 92.71 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -23884,7 +23884,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR051")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -23901,7 +23901,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a671507-ffd1-46c4-bafb-7eb599911e2a")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR031"
 			(at 107.95 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -23961,7 +23961,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR047")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -23978,7 +23978,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b2e63f6-9189-45e0-b135-1f0360602650")
-		(property "Reference" "C32"
+		(property "Reference" "C35"
 			(at 374.65 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24062,7 +24062,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C32")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -24079,7 +24079,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bd99d21-b59d-4f7a-8ca5-e47b57bb01b0")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR060"
 			(at 246.38 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -24140,7 +24140,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR089")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -24157,7 +24157,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c57e16f-6c33-49c6-b881-624703feef98")
-		(property "Reference" "C7"
+		(property "Reference" "C9"
 			(at 96.774 200.914 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24241,7 +24241,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C7")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -24258,7 +24258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c66779b-f430-447b-9d98-427f094a37f9")
-		(property "Reference" "R24"
+		(property "Reference" "R8"
 			(at 94.742 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24344,7 +24344,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R24")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -24361,7 +24361,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ce18cad-94eb-4e48-a302-d1db64a5fc69")
-		(property "Reference" "C26"
+		(property "Reference" "C10"
 			(at 126.238 122.174 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24445,7 +24445,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C26")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -24463,7 +24463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d3a28bb-9f2b-4fe3-88e1-b097bf995be5")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR082"
 			(at 340.36 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -24523,7 +24523,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR044")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -24540,7 +24540,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8007f278-86f4-4491-a9e3-27c33e89fe8a")
-		(property "Reference" "TP9"
+		(property "Reference" "TP4"
 			(at 190.246 243.586 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24623,7 +24623,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP9")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -24640,7 +24640,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83394136-4991-4aa6-95c3-ff6c1df69419")
-		(property "Reference" "U10"
+		(property "Reference" "U5"
 			(at 116.84 243.332 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24731,7 +24731,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U10")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -24748,7 +24748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83c6cdb6-3bf8-4e3b-a5ac-c2626a53abdf")
-		(property "Reference" "C24"
+		(property "Reference" "C1"
 			(at 21.844 45.974 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24844,7 +24844,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C24")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -24861,7 +24861,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85ccaaca-6567-4d12-b77a-4cd5d074ae73")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR041"
 			(at 147.32 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -24921,7 +24921,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR086")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -24938,7 +24938,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85f92b6f-216a-42ab-b179-da5115756801")
-		(property "Reference" "R3"
+		(property "Reference" "R15"
 			(at 141.478 122.682 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25044,7 +25044,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R3")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -25061,7 +25061,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "861f1e5c-7561-4d7c-bb43-6f1b1ab2f93b")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR077"
 			(at 313.69 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -25122,7 +25122,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR057")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -25139,7 +25139,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8880a96c-fa67-4589-972b-d3f17c12d893")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR030"
 			(at 107.95 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -25199,7 +25199,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR092")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -25216,7 +25216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88c60945-d3c1-48e2-be99-731e394db7df")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR020"
 			(at 91.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -25276,7 +25276,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR031")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -25293,7 +25293,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "891c980f-555c-4f49-8e00-286f8138a315")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR034"
 			(at 132.08 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -25353,7 +25353,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR017")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -25370,7 +25370,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b282a21-510e-4d42-baa2-9c64fd6d05a7")
-		(property "Reference" "U9"
+		(property "Reference" "U8"
 			(at 284.48 58.928 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25460,7 +25460,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U9")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -25477,7 +25477,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c81bc9f-433c-4521-8c19-4f4a61f25936")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 53.594 170.942 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25550,7 +25550,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -25567,7 +25567,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ce18c26-e3c7-4f4d-9e3b-402469e43488")
-		(property "Reference" "C10"
+		(property "Reference" "C8"
 			(at 96.774 165.354 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25651,7 +25651,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C10")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -25669,7 +25669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ce37b43-32e3-4d84-afc9-85792cec1921")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR04"
 			(at 25.4 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -25729,7 +25729,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR07")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -25746,7 +25746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9222d09e-43b3-4f97-9ff2-e9038689303a")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR045"
 			(at 162.56 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -25817,7 +25817,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR079")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -25911,7 +25911,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93aed311-86a0-4d34-9b77-009003ffc9b0")
-		(property "Reference" "R34"
+		(property "Reference" "R10"
 			(at 126.238 159.004 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26008,7 +26008,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R34")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -26026,7 +26026,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "946250fd-f35d-42ae-a795-a7bfab997485")
-		(property "Reference" "D5"
+		(property "Reference" "D1"
 			(at 41.91 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26110,7 +26110,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "D5")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -26127,7 +26127,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9546fc51-0221-48f2-a74b-9211b75094d2")
-		(property "Reference" "R31"
+		(property "Reference" "R29"
 			(at 332.232 71.374 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26224,7 +26224,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R31")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -26241,7 +26241,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95e42c9e-1968-4bcc-858c-2046c86bfd05")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR028"
 			(at 100.33 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -26301,7 +26301,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR021")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -26319,7 +26319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "987cce70-eeaa-49d7-b446-c969f8fcc364")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR019"
 			(at 81.28 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -26379,7 +26379,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR030")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -26396,7 +26396,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "994c28c7-fe33-415e-b2d9-f16c7c27b0ec")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR08"
 			(at 30.48 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -26456,7 +26456,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR068")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -26473,7 +26473,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "995eb1db-1faf-45c0-a937-b56969138393")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR033"
 			(at 124.46 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -26533,7 +26533,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR083")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -26550,7 +26550,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9b469454-3f7d-4ff9-adab-74fec409b27e")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR027"
 			(at 95.25 257.81 0)
 			(hide yes)
 			(show_name no)
@@ -26621,7 +26621,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR073")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -26638,7 +26638,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9eeace40-1f7b-4c73-b1cb-72297b76992b")
-		(property "Reference" "D1"
+		(property "Reference" "D6"
 			(at 107.95 54.9274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26734,7 +26734,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "D1")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -26751,7 +26751,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a32d34ae-a15a-4fb5-8b92-05cb47240bce")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR069"
 			(at 275.59 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -26811,7 +26811,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR045")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -26828,7 +26828,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5764f2c-ea9a-485a-9e58-5323f6250867")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR018"
 			(at 77.47 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -26888,7 +26888,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -26905,7 +26905,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6d1d46c-2303-4f2d-8fc3-d2bc31e75dfa")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR038"
 			(at 137.16 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -26965,7 +26965,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR072")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -26983,7 +26983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7809abc-b970-4fb4-87fc-6249c1bb5090")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 278.13 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27086,7 +27086,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -27104,7 +27104,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a83a0dd2-c99a-41fe-9bb2-9d14c2de9d43")
-		(property "Reference" "U11"
+		(property "Reference" "U2"
 			(at 100.838 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27189,7 +27189,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U11")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -27206,7 +27206,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a844285d-23da-43bb-a5de-5a4cb074ed03")
-		(property "Reference" "TP2"
+		(property "Reference" "TP10"
 			(at 305.816 140.716 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27289,7 +27289,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP2")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -27306,7 +27306,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a869b06d-c8ea-4cf7-9fa5-90d5807f4bd3")
-		(property "Reference" "D7"
+		(property "Reference" "D5"
 			(at 68.834 73.152 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27379,7 +27379,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "D7")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -27397,7 +27397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9979439-ccf8-45b6-9795-7aedb7f0909c")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR078"
 			(at 322.58 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -27457,7 +27457,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR056")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -27474,7 +27474,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "aa53ec36-3598-4630-8fd7-a71386b3573a")
-		(property "Reference" "C18"
+		(property "Reference" "C28"
 			(at 332.232 108.458 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27592,7 +27592,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C18")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -27609,7 +27609,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aec6233c-0280-4c58-9fc3-3b4586345c2f")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR035"
 			(at 137.16 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -27691,7 +27691,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR095")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -27708,7 +27708,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b020a4fc-13c1-439f-94b3-3d83034d3c41")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR047"
 			(at 186.69 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -27768,7 +27768,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR063")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -27786,7 +27786,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b56b6410-4d37-408f-8c0e-9dfb026514b8")
-		(property "Reference" "U10"
+		(property "Reference" "U5"
 			(at 212.09 323.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27879,7 +27879,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U10")
+					(reference "U5")
 					(unit 3)
 				)
 			)
@@ -27896,7 +27896,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b632d2a1-a292-4ac2-9424-61c84cb1794e")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR049"
 			(at 184.15 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -27956,7 +27956,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR028")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -27973,7 +27973,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b668c786-468a-4073-b705-f1f0f1d11650")
-		(property "Reference" "TP1"
+		(property "Reference" "TP8"
 			(at 300.736 140.716 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28056,7 +28056,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP1")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -28073,7 +28073,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b95148d3-f197-404b-8081-ca2796e956df")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR046"
 			(at 166.37 347.98 0)
 			(hide yes)
 			(show_name no)
@@ -28144,7 +28144,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR049")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -28161,7 +28161,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb4a0136-45af-4f42-b02b-dae84cdaf01d")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR017"
 			(at 76.2 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -28221,7 +28221,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR054")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -28238,7 +28238,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb7a82d9-5f61-46a5-bfed-be5179af1260")
-		(property "Reference" "R2"
+		(property "Reference" "R14"
 			(at 141.478 112.014 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28344,7 +28344,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R2")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -28361,7 +28361,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bbc86dd0-0fe2-461e-83b2-0f82cbe14408")
-		(property "Reference" "C28"
+		(property "Reference" "C27"
 			(at 305.308 223.774 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28456,7 +28456,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C28")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -28473,7 +28473,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf11dc07-570a-4517-9cc9-f0277680732e")
-		(property "Reference" "J6"
+		(property "Reference" "J3"
 			(at 34.29 235.712 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28605,7 +28605,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J6")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -28622,7 +28622,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c084550b-9eb0-4fd9-841f-03773249047d")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR073"
 			(at 318.77 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -28682,7 +28682,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR033")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -28699,7 +28699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0e96b9b-73d9-44e4-8392-ee504238494a")
-		(property "Reference" "TP4"
+		(property "Reference" "TP9"
 			(at 303.276 54.356 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28782,7 +28782,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP4")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -28800,7 +28800,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1b9e343-68d8-4c49-8309-57f6e64c8328")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR080"
 			(at 330.2 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -28860,7 +28860,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR075")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -28877,7 +28877,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1d6e51e-6c8b-4584-82cc-a546f362fa7c")
-		(property "Reference" "C25"
+		(property "Reference" "C33"
 			(at 355.854 206.502 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28961,7 +28961,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C25")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -28978,7 +28978,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c59578c4-8b32-44a4-b6cd-776be2f0a0d9")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR050"
 			(at 203.2 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -29038,7 +29038,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR064")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -29055,7 +29055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c7871dff-4e98-40a7-87ab-bb06ee0d92f3")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR09"
 			(at 26.67 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -29115,7 +29115,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR05")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -29133,7 +29133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c858b878-6727-4c2a-a12a-8552d58fa938")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR063"
 			(at 241.3 280.67 0)
 			(hide yes)
 			(show_name no)
@@ -29193,7 +29193,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR038")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -29210,7 +29210,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c889841a-b409-435b-a895-9dc5bea3f079")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR074"
 			(at 313.69 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -29271,7 +29271,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR061")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -29288,7 +29288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c94c5eb7-2228-4df1-aa6f-5be429fa09f6")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 82.55 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29392,7 +29392,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -29409,7 +29409,7 @@
 		(in_pos_files no)
 		(dnp yes)
 		(uuid "cd23b216-ce22-4b34-bd86-5ee617c81108")
-		(property "Reference" "D6"
+		(property "Reference" "D7"
 			(at 365.252 209.296 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29482,7 +29482,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "D6")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -29499,7 +29499,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cdff8f3b-ea8a-4043-a7ae-c71a34a7e8ad")
-		(property "Reference" "RV5"
+		(property "Reference" "RV1"
 			(at 263.652 194.056 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29635,7 +29635,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "RV5")
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -29652,7 +29652,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf86805a-f443-4ae0-9ee4-1fbd80ebf92a")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR013"
 			(at 57.15 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -29712,7 +29712,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR011")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -29729,7 +29729,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cfd55ad4-c509-43f5-82a4-f0b544f2210f")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR032"
 			(at 124.46 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -29789,7 +29789,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR093")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -29806,7 +29806,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d079a3f6-c985-43d3-af68-4d1e81845d3a")
-		(property "Reference" "TP7"
+		(property "Reference" "TP12"
 			(at 383.286 58.166 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29889,7 +29889,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP7")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -29906,7 +29906,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1fb13b3-c97d-482d-9bad-0ffb00b88e5c")
-		(property "Reference" "TP8"
+		(property "Reference" "TP3"
 			(at 125.476 244.856 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29989,7 +29989,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP8")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -30006,7 +30006,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d279463b-3b67-47a0-a7fc-4f169e45922e")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR015"
 			(at 63.5 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -30066,7 +30066,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR050")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -30083,7 +30083,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d5777002-2800-4c31-bf31-bb466cea318c")
-		(property "Reference" "C21"
+		(property "Reference" "C30"
 			(at 328.422 129.794 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30179,7 +30179,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C21")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -30196,7 +30196,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6ef5f56-19f5-405a-ab07-9dc3ac60548f")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at 324.612 162.814 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30293,7 +30293,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R26")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -30310,7 +30310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7afdf02-fb67-4675-b753-2a98a1813716")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR042"
 			(at 153.67 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -30370,7 +30370,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR067")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -30387,7 +30387,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d895c777-d9ee-4f96-84e2-735da7138642")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR076"
 			(at 313.69 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -30448,7 +30448,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR046")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -30465,7 +30465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "da3f5cc3-ed69-4602-b221-7cc03a7ce7f3")
-		(property "Reference" "C27"
+		(property "Reference" "C32"
 			(at 338.328 226.314 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30560,7 +30560,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C27")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -30577,7 +30577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dafd9a05-e085-4118-8e9f-61ce15585a35")
-		(property "Reference" "C42"
+		(property "Reference" "C20"
 			(at 234.95 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30661,7 +30661,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C42")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -30678,7 +30678,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db10baaf-4a8e-488f-8852-619b376c1bf2")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 229.87 266.6999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30763,7 +30763,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -30781,7 +30781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd35a93f-0c4c-489d-bd34-045a3fba8122")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR089"
 			(at 368.3 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -30841,7 +30841,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR055")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -30858,7 +30858,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ddf00716-077a-4a44-b501-d56ab239a215")
-		(property "Reference" "R37"
+		(property "Reference" "R6"
 			(at 97.282 242.824 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30955,7 +30955,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R37")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -30972,7 +30972,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "deaa6fb3-6a55-40a4-b0aa-424b0f6d9119")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR086"
 			(at 367.03 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -31032,7 +31032,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR074")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -31049,7 +31049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ded0dd47-8d16-4279-8c1b-1a4ddcb3e50c")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR065"
 			(at 266.7 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -31109,7 +31109,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR036")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -31126,7 +31126,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dfeaf358-b956-447d-89f8-4ba6ad0b1367")
-		(property "Reference" "C14"
+		(property "Reference" "C24"
 			(at 246.38 266.7 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31210,7 +31210,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C14")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -31228,7 +31228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1815b7b-fdbc-4017-88af-cd1ec9622e05")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 114.3 280.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31288,7 +31288,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -31305,7 +31305,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e18dd374-8715-4b85-825c-2eaf47c01b9f")
-		(property "Reference" "TP10"
+		(property "Reference" "TP1"
 			(at 78.486 219.456 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31388,7 +31388,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP10")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -31405,7 +31405,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e21a697b-c375-45d3-b6ba-3567f4c69e20")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR090"
 			(at 388.62 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -31465,7 +31465,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR078")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -31482,7 +31482,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e30ec153-685a-449f-9b21-a7d23f72d952")
-		(property "Reference" "C43"
+		(property "Reference" "C21"
 			(at 234.95 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31566,7 +31566,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C43")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -31583,7 +31583,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e4346250-779f-48a9-b10d-95489b463ff2")
-		(property "Reference" "C8"
+		(property "Reference" "C12"
 			(at 133.096 198.374 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31667,7 +31667,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C8")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -31684,7 +31684,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e4857f8c-2bbe-4a6f-840d-1c3e963eb094")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR056"
 			(at 224.79 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -31744,7 +31744,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR035")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -31761,7 +31761,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e54f390f-c378-4dbe-ba5d-7eb0f8aa8d43")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR081"
 			(at 340.36 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -31821,7 +31821,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR043")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -31838,7 +31838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7ad616a-5e39-4a6b-a450-37f3211e25d0")
-		(property "Reference" "R6"
+		(property "Reference" "R30"
 			(at 353.568 226.314 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31955,7 +31955,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R6")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -31974,7 +31974,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "eb0e4cd1-a6b4-45bb-9298-a21f84843c14")
-		(property "Reference" "JP3"
+		(property "Reference" "JP1"
 			(at 39.37 354.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32071,7 +32071,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "JP3")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -32088,7 +32088,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed49d4e7-5f50-4fb8-a28b-b9f36f39c6fb")
-		(property "Reference" "C23"
+		(property "Reference" "C16"
 			(at 191.77 19.05 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32172,7 +32172,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C23")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -32190,7 +32190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f07cd7a3-e614-44c5-b24d-804b60724c7f")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR083"
 			(at 340.36 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -32250,7 +32250,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR071")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -32268,7 +32268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1e1e118-d4d5-4d21-a85b-0d613900b86c")
-		(property "Reference" "U4"
+		(property "Reference" "U9"
 			(at 342.5033 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32375,7 +32375,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U4")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -32392,7 +32392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f32fbedd-f6c3-4c32-b2d5-71439c2cc6a8")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR059"
 			(at 246.38 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -32453,7 +32453,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR088")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -32470,7 +32470,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f426da4f-e40c-4d7f-bb3a-1571c1007b3e")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR087"
 			(at 367.03 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -32530,7 +32530,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR077")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -32548,7 +32548,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f580ef2e-23aa-480d-9a53-3d90c64ec7ec")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR057"
 			(at 228.6 280.67 0)
 			(hide yes)
 			(show_name no)
@@ -32608,7 +32608,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR034")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -32625,7 +32625,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5c3add9-57cb-42b0-b04e-2e93c2a4b2e5")
-		(property "Reference" "J7"
+		(property "Reference" "J2"
 			(at 34.798 211.328 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32774,7 +32774,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J7")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -32791,7 +32791,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6025772-2f4d-42ed-bbc3-48a0d9c521a2")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 73.66 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32895,7 +32895,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -32912,7 +32912,7 @@
 		(in_pos_files no)
 		(dnp yes)
 		(uuid "f62f7a57-80d7-4258-af9c-ed60b507850d")
-		(property "Reference" "R36"
+		(property "Reference" "R22"
 			(at 164.592 313.944 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33009,7 +33009,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R36")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -33026,7 +33026,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f679b515-8473-4e80-87ee-2cff2a549545")
-		(property "Reference" "R10"
+		(property "Reference" "R13"
 			(at 126.238 202.692 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33143,7 +33143,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "R10")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -33376,7 +33376,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa337c9e-f607-4c4c-bc91-ae87e64fac69")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR058"
 			(at 246.38 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -33437,7 +33437,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR087")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -33455,7 +33455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa7ddd14-52f1-490f-b644-4071502b7204")
-		(property "Reference" "U7"
+		(property "Reference" "U6"
 			(at 195.58 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33558,7 +33558,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U7")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -33575,7 +33575,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "faa8ceaf-6cd0-4dad-a9fd-40cca05ea7f7")
-		(property "Reference" "C15"
+		(property "Reference" "C25"
 			(at 280.67 199.39 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33659,7 +33659,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "C15")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -33779,7 +33779,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb68a25f-d3d9-4129-b080-5da2d30d4b07")
-		(property "Reference" "U10"
+		(property "Reference" "U5"
 			(at 180.34 243.332 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33870,7 +33870,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "U10")
+					(reference "U5")
 					(unit 2)
 				)
 			)
@@ -33887,7 +33887,7 @@
 		(in_pos_files no)
 		(dnp yes)
 		(uuid "fdd4ff62-6b58-4958-b381-ce577805dd4e")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 49.53 374.65 0)
 			(hide yes)
 			(show_name no)
@@ -33958,7 +33958,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -33975,7 +33975,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff05463f-4da8-4eac-a304-8724747e183a")
-		(property "Reference" "TP6"
+		(property "Reference" "TP7"
 			(at 301.244 226.314 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34058,7 +34058,7 @@
 		(instances
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "TP6")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
