@@ -9065,6 +9065,16 @@
 		)
 		(uuid "976fc8fb-82e3-427b-8c68-1dd90c026cd2")
 	)
+	(text "(=ADC2_IN1)"
+		(exclude_from_sim no)
+		(at 265.176 137.668 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a19f5676-0466-491e-9fb7-27274454e1f3")
+	)
 	(text "internal PU(25k-55k)"
 		(exclude_from_sim no)
 		(at 238.76 257.048 0)
@@ -9202,6 +9212,16 @@
 			)
 		)
 		(uuid "e3c2c334-3cf5-41a0-a3a4-564e22a50b6a")
+	)
+	(text "(=ADC2_IN2)"
+		(exclude_from_sim no)
+		(at 265.176 140.208 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e4cc6ab9-d2a6-4abd-8d68-b2502881d3cd")
 	)
 	(text "(=HALL_A)"
 		(exclude_from_sim no)
@@ -10475,6 +10495,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 138.43) (xy 257.81 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "325f658e-20f0-416f-885b-24a6975ecea0")
+	)
+	(wire
+		(pts
 			(xy 191.77 252.73) (xy 187.96 252.73)
 		)
 		(stroke
@@ -11202,6 +11232,16 @@
 			(type default)
 		)
 		(uuid "5fab41dd-096b-47e0-a3bf-518c85d4ea76")
+	)
+	(wire
+		(pts
+			(xy 242.57 140.97) (xy 257.81 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60ab6687-7038-4011-aa31-55445534603a")
 	)
 	(wire
 		(pts
@@ -13683,6 +13723,16 @@
 		)
 		(uuid "58dc82a5-c7af-4b26-be20-50160b75789a")
 	)
+	(label "MOTOR+_SENSE"
+		(at 257.81 138.43 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6d5eee1e-124c-4d1d-abd1-d97342c5eda1")
+	)
 	(label "~{RST}"
 		(at 193.04 143.51 0)
 		(effects
@@ -13912,6 +13962,16 @@
 			(justify left bottom)
 		)
 		(uuid "d9384092-8e26-439d-87ff-bd3cee1a0175")
+	)
+	(label "MOTOR-_SENSE"
+		(at 257.81 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dbd200c5-5992-4e5b-90db-b03facc88cc7")
 	)
 	(label "LPUART1_RX"
 		(at 259.08 146.05 180)
