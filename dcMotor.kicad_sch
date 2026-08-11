@@ -5168,8 +5168,8 @@
 			)
 			(symbol "NCP718ASNADJT1G_1_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 5.08)
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -5225,25 +5225,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6961,8 +6942,8 @@
 			)
 			(symbol "NCP718ASNADJT1G_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 5.08)
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -7018,25 +6999,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12519,6 +12481,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 271.78) (xy 170.18 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "968238ca-eed9-4fd5-b61f-d8eb1018ae7d")
+	)
+	(wire
+		(pts
 			(xy 104.14 58.42) (xy 104.14 60.96)
 		)
 		(stroke
@@ -15809,6 +15781,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 170.18 274.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e52132f-c459-4bc1-9ccb-c6c289756647")
+		(property "Reference" "#PWR099"
+			(at 170.18 280.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.434 278.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe52e591-dcb1-4397-ad19-acdb17ecddb1")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 52.07 53.34 0)
 		(unit 1)
 		(body_style 1)
@@ -18646,7 +18695,7 @@
 		(dnp no)
 		(uuid "3591aa57-8acb-4566-bf9a-d6536102a468")
 		(property "Reference" "U3"
-			(at 100.33 186.436 0)
+			(at 104.14 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18656,7 +18705,7 @@
 			)
 		)
 		(property "Value" "NCP718ASNADJT1G"
-			(at 107.95 188.722 0)
+			(at 114.3 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18714,9 +18763,6 @@
 		)
 		(pin "3"
 			(uuid "f22255d3-3a8d-4df1-a9fe-558c1f938ed2")
-		)
-		(pin "4"
-			(uuid "96af362e-c5cd-43ea-bf75-ca27c54793b5")
 		)
 		(pin "1"
 			(uuid "72c059de-2613-49c1-a6f0-b09f3a94ae3a")
@@ -27154,6 +27200,107 @@
 		)
 	)
 	(symbol
+		(lib_id "PZ:TestPoint_Keystone_5019")
+		(at 170.18 271.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e90a9bc-4528-4b18-b63e-b0c0e9d7ca37")
+		(property "Reference" "TP18"
+			(at 168.656 266.446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Keystone_5019"
+			(at 172.72 269.7479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PZ:TestPoint_Keystone_5019_Miniature"
+			(at 175.26 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C238131"
+			(at 170.18 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 170.18 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3722e240-08c1-4eed-a445-de91f6a6ab8f")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 162.56 261.62 180)
 		(unit 1)
@@ -28812,7 +28959,7 @@
 		(dnp no)
 		(uuid "a83a0dd2-c99a-41fe-9bb2-9d14c2de9d43")
 		(property "Reference" "U2"
-			(at 100.838 150.876 0)
+			(at 103.886 151.638 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28822,7 +28969,7 @@
 			)
 		)
 		(property "Value" "NCP718ASNADJT1G"
-			(at 107.95 153.162 0)
+			(at 111.506 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28880,9 +29027,6 @@
 		)
 		(pin "3"
 			(uuid "2c05829b-1532-4baa-827b-e2029c52a9dc")
-		)
-		(pin "4"
-			(uuid "b1d0d622-02e5-4aa0-9db7-2a2ddca13b54")
 		)
 		(pin "1"
 			(uuid "ef08000a-62d8-4672-ac5f-6fc148d57f28")
