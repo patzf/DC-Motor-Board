@@ -15587,7 +15587,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0d68bb1b-a8cb-4593-b522-184fdb0c1bf5")
 		(property "Reference" "D4"
 			(at 60.198 120.142 90)
@@ -19726,6 +19726,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C5270317"
+			(at 224.79 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "37"
 			(uuid "6bd41641-7f60-467f-930d-341cf0039683")
 		)
@@ -20079,7 +20090,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "46d91eb4-eed3-4afe-aa4d-1e99b40f378d")
 		(property "Reference" "TP2"
 			(at 81.534 242.824 0)
@@ -20256,7 +20267,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "498611ab-bbee-4721-af09-bea02be05564")
 		(property "Reference" "TP11"
 			(at 336.804 217.424 0)
@@ -20537,7 +20548,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4a9dba23-f9b2-4121-bfcc-e6a8b6002ffc")
 		(property "Reference" "J8"
 			(at 396.24 191.262 0)
@@ -20841,7 +20852,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -21237,7 +21248,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "52bd2dcc-6621-4297-abad-2d58d643288a")
 		(property "Reference" "SW2"
 			(at 267.97 266.6999 90)
@@ -21672,7 +21683,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "567b6f20-237c-4eaf-a72d-b79cc44a57ad")
 		(property "Reference" "TP6"
 			(at 312.166 150.876 0)
@@ -24146,7 +24157,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7285a0c8-ff24-4d6c-b86b-980b82c4b5d9")
 		(property "Reference" "D3"
 			(at 54.61 120.142 90)
@@ -25814,7 +25825,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8007f278-86f4-4491-a9e3-27c33e89fe8a")
 		(property "Reference" "TP4"
 			(at 190.246 243.586 0)
@@ -26832,7 +26843,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8b282a21-510e-4d42-baa2-9c64fd6d05a7")
 		(property "Reference" "U8"
 			(at 284.48 58.928 0)
@@ -29055,7 +29066,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a844285d-23da-43bb-a5de-5a4cb074ed03")
 		(property "Reference" "TP10"
 			(at 321.056 140.716 0)
@@ -29957,7 +29968,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b668c786-468a-4073-b705-f1f0f1d11650")
 		(property "Reference" "TP8"
 			(at 315.976 140.716 0)
@@ -30366,10 +30377,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bf11dc07-570a-4517-9cc9-f0277680732e")
 		(property "Reference" "J3"
 			(at 34.29 235.712 0)
@@ -30595,7 +30606,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c0e96b9b-73d9-44e4-8392-ee504238494a")
 		(property "Reference" "TP9"
 			(at 303.276 54.356 0)
@@ -31496,7 +31507,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cdff8f3b-ea8a-4043-a7ae-c71a34a7e8ad")
 		(property "Reference" "RV1"
 			(at 267.462 194.056 0)
@@ -31803,7 +31814,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d079a3f6-c985-43d3-af68-4d1e81845d3a")
 		(property "Reference" "TP12"
 			(at 383.286 48.006 0)
@@ -31903,7 +31914,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d1fb13b3-c97d-482d-9bad-0ffb00b88e5c")
 		(property "Reference" "TP3"
 			(at 125.476 244.856 0)
@@ -32776,7 +32787,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "db10baaf-4a8e-488f-8852-619b376c1bf2")
 		(property "Reference" "SW1"
 			(at 267.97 234.9499 90)
@@ -33325,7 +33336,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e1815b7b-fdbc-4017-88af-cd1ec9622e05")
 		(property "Reference" "U4"
@@ -33382,6 +33393,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 110.49 283.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14d51cc1-38f9-4e89-954f-0ee639554324")
 		)
@@ -33403,7 +33425,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e18dd374-8715-4b85-825c-2eaf47c01b9f")
 		(property "Reference" "TP1"
 			(at 78.486 219.456 0)
@@ -34164,7 +34186,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 71.12 275.59 0)
+		(at 140.97 316.23 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -34176,7 +34198,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb0e4cd1-a6b4-45bb-9298-a21f84843c14")
 		(property "Reference" "JP1"
-			(at 71.12 271.78 0)
+			(at 140.97 312.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34186,7 +34208,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 69.8501 273.05 90)
+			(at 139.7001 313.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34198,7 +34220,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 71.12 275.59 0)
+			(at 140.97 316.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34209,7 +34231,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 275.59 0)
+			(at 140.97 316.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34220,7 +34242,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 71.12 275.59 0)
+			(at 140.97 316.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34231,7 +34253,7 @@
 			)
 		)
 		(property "LCSC Part #" "C492401"
-			(at 71.12 275.59 0)
+			(at 140.97 316.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34242,7 +34264,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "90"
-			(at 71.12 275.59 90)
+			(at 140.97 316.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34253,7 +34275,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 71.12 275.59 0)
+			(at 140.97 316.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35548,7 +35570,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -36242,7 +36264,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ff05463f-4da8-4eac-a304-8724747e183a")
 		(property "Reference" "TP7"
 			(at 303.784 213.614 0)
