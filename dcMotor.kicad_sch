@@ -9483,7 +9483,7 @@
 		)
 		(uuid "603da7bf-129d-4697-8d8b-3e6118bc00cd")
 	)
-	(text "STM32G431KBT6"
+	(text "STM32G431CBT6"
 		(exclude_from_sim no)
 		(at 237.236 217.424 0)
 		(effects
@@ -9586,6 +9586,16 @@
 			)
 		)
 		(uuid "b8033273-8244-4281-be39-afc9125a2fe9")
+	)
+	(text "Achtung:\nFür erste Order C15850 statt C440198\nC1, C29, C30, C37 da für 12V ok und günstiger"
+		(exclude_from_sim no)
+		(at 37.846 -3.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bc57a511-b874-4eca-883a-b1e61554f3ff")
 	)
 	(text "USB VBUS / µC VDD active"
 		(exclude_from_sim no)
@@ -15487,7 +15497,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 143.002 200.406 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16338,7 +16348,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "174b7c18-c2cc-4a30-9596-3d4bb5c41906")
 		(property "Reference" "J6"
@@ -16850,7 +16860,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1f4fec2f-f5d7-45b1-a188-83ab5a58c207")
 		(property "Reference" "L1"
 			(at 76.2 26.67 90)
@@ -18344,7 +18354,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 217.932 257.556 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18748,6 +18758,17 @@
 			)
 		)
 		(property "LCSC Part #" "C440035"
+			(at 107.95 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 107.95 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -19179,7 +19200,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 341.63 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -19726,7 +19747,18 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C5270317"
+		(property "LCSC Part #" "C529355"
+			(at 224.79 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 224.79 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -21090,7 +21122,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 341.63 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -21147,7 +21179,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "529c3327-cbc0-453e-96e6-7be2b61a2eaa")
 		(property "Reference" "TP5"
 			(at 205.486 266.446 0)
@@ -22717,7 +22749,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "62eb1b22-1bc0-466d-9945-2763405ac991")
 		(property "Reference" "J7"
@@ -22774,6 +22806,17 @@
 			)
 		)
 		(property "LCSC Part #" "C7430360"
+			(at 154.94 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 154.94 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -23276,7 +23319,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 90.17 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23375,7 +23418,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6a55b750-2e6d-4e01-b7e1-3e52e7db3af5")
 		(property "Reference" "TP13"
 			(at 199.136 266.446 0)
@@ -23488,7 +23531,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 151.892 200.406 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26277,7 +26320,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 25.4 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -27219,7 +27262,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8e90a9bc-4528-4b18-b63e-b0c0e9d7ca37")
 		(property "Reference" "TP18"
 			(at 168.656 266.446 0)
@@ -28590,7 +28633,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a4d4850c-1076-49de-ac31-e07736397d76")
 		(property "Reference" "TP17"
 			(at 173.736 266.446 0)
@@ -29023,6 +29066,17 @@
 			)
 		)
 		(property "LCSC Part #" "C440035"
+			(at 107.95 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 107.95 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -30885,7 +30939,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c1e37e0f-3ebd-48df-af8e-8cffc4b0fc30")
 		(property "Reference" "TP16"
 			(at 180.086 266.446 0)
@@ -32147,7 +32201,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 341.63 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -32686,7 +32740,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "db0fac8e-9d39-48f8-9e5c-67cdbe44bf01")
 		(property "Reference" "TP14"
 			(at 192.786 266.446 0)
@@ -34092,7 +34146,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e8ebf83b-c119-4037-8ce1-4b4a9450b798")
 		(property "Reference" "TP15"
 			(at 186.436 266.446 0)
@@ -34636,6 +34690,17 @@
 			)
 		)
 		(property "Package" ""
+			(at 355.6 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 355.6 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -35753,7 +35818,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "fa7ddd14-52f1-490f-b644-4071502b7204")
 		(property "Reference" "U6"
@@ -36370,66 +36435,8 @@
 			"f09eb9bd-95ad-4ccc-a9cd-6a7316afab23" "fbd1f915-9275-4804-87ed-44c1f507bd31"
 		)
 	)
-	(group "NCP718ASN-ADJ-3V3"
-		(uuid "ba5b210b-6d07-4a43-8307-29dddd2513f9")
-		(lib_id "dcdc_lin:NCP718ASN-ADJ-3V3")
-		(members "087cab51-ca10-4d81-9758-96e601bc3384" "1164ab4b-7715-49d9-ae02-1223cf65ff4b"
-			"2ac937b7-5faf-40b6-9707-48dc70a7acf4" "39f0dc94-edff-4035-95b8-2651f78fdd9a"
-			"432e86de-6a64-4897-8756-467f61a6512a" "4b3e3a9d-2303-491a-a5f6-43ba34f1a43f"
-			"58aaacc0-f006-4dd4-b569-22a8ea36df80" "642c1acf-fb78-4ecf-b52a-7530b7583f61"
-			"6d1e340a-d8a1-400d-b242-401b39055000" "71d3b8a3-7d0d-4514-9651-c00f2b4c1909"
-			"7c1c4822-8859-46be-a3cd-432d718b0505" "810997df-c2c9-4a98-927c-c7fc92ece93b"
-			"82954d61-2ba6-4fd3-aa79-f41d8e461c90" "855a23d4-7eee-49b3-bdf4-97c0906ed207"
-			"878c5705-08ca-4ccb-8eb9-f544bb3af368" "881c09ee-a59b-4d93-92c1-dc5279f9037b"
-			"8ccb6454-afc3-40b0-a10c-2700b75c35bf" "8e5dbe06-0697-4440-a67f-c32720d714f3"
-			"9d1a297c-aa52-4ff7-bb10-a343c5602381" "9f87b0b0-f26b-44dd-8fda-52403b755fb7"
-			"a2f10698-ffde-46c8-8519-f806c3dd4742" "ad9818c5-c432-47a2-b533-b0b8ffde5d3d"
-			"c860acc2-2ea1-4b2e-b93c-ce5e83cd536b" "d1dbb36c-dd21-44fb-8f9c-055090f6d1a6"
-			"d992b2fa-e0c7-4d16-b386-097116bffc40" "da0cdd17-b532-4430-b357-ed677d57b24c"
-			"eb88c730-9920-49b7-bceb-fca374e81791" "f2b9d823-ba28-4ee1-a715-c583537fdc2d"
-			"f9592511-83c0-4003-ba96-6caf06ddf103" "fc5cb574-912f-429f-acac-2c80450f96bc"
-		)
-	)
 	(group "DCDC_LMR544060"
-		(uuid "bdc4375c-04b6-40cc-bfbf-ec5c292bc9a9")
-		(lib_id "dcdc_sw:DCDC_LMR544060")
-		(members "045d2508-22d9-45c4-8287-9260665b9ad0" "058a1874-5b25-4672-b67a-8fa7ff0563d2"
-			"082983a2-ef38-4909-87fc-02ab1561380f" "0aaa86ac-67cc-4d9a-b556-7dc4e62a3ce4"
-			"0c5a651f-2d78-467f-8d83-f9f006aede95" "0ef8cf4d-2f69-4ffb-b6ac-10be32d2a991"
-			"1790d66f-3553-4ccb-aeea-01437161b75e" "1ca4125a-3d1b-4c6c-a07f-d8c1deed7377"
-			"1f4fec2f-f5d7-45b1-a188-83ab5a58c207" "2132680a-e572-4bd7-bf52-7a60a3209c56"
-			"21dcae7b-1541-4bc6-a7e2-09cc6c241637" "22e343b2-6464-45af-b003-09e184497e76"
-			"23a58a11-21e8-442d-884c-bf9425e18e93" "24e73d74-7856-4747-ad76-fcc01c29022b"
-			"25914bde-24df-42b4-bdf4-633096424b94" "3193d417-afdb-4512-b04b-c8238ef1f9c5"
-			"3590cf87-d5e4-46e0-b9d3-e4c71b8a0e74" "35d8c716-451f-4e35-8f53-880892479593"
-			"36e8f6f7-ab3f-456f-8e72-7bae36c274fa" "370d5437-1f13-4f86-b3c3-4ccf83c33b27"
-			"3938f4bb-bc2f-4402-90e9-225717053e83" "4400241c-3006-4d1f-b147-405a29d2ea44"
-			"491e4011-f2b2-43c3-a786-e1333a0b1e78" "4cf08774-4ad6-4ac1-9821-52c421ca36ea"
-			"4d347f68-68fa-4d69-8d49-279da4478d0a" "504084f7-fb61-4c63-b16e-ab1804fd9d23"
-			"5b021a70-997a-4b2d-b91a-31b7a2ed61c9" "5deaf6cc-7db1-4ebc-adda-e4fd5757f132"
-			"63501c5e-b413-44bf-84cb-75a8775b7e03" "6a0ffa03-5718-4c31-b18a-8a4e22305355"
-			"6bd379f3-0e4e-4de4-84f8-9817fd1472b7" "6d6aa3a8-927d-4f63-9791-c6cef9eb925b"
-			"6f10fab1-4215-4fe9-af83-f3f188077c5d" "6fd988fa-ab16-47de-851d-f7c5d8c8c157"
-			"70d57abe-896a-4b3f-be97-10ce9f40c8fd" "78c69c17-56f5-49f4-b08c-683a79536c2f"
-			"825a3daa-6051-4893-b21c-64958955d4fb" "8348bb1c-9bb0-436e-aa1e-74c9b7f86fd1"
-			"83c6cdb6-3bf8-4e3b-a5ac-c2626a53abdf" "874bff08-58f1-4e98-b69a-fa4282722259"
-			"88c60945-d3c1-48e2-be99-731e394db7df" "8b787a2c-53e1-4aae-a3ba-b74da894bcd9"
-			"8ce37b43-32e3-4d84-afc9-85792cec1921" "9176afe6-e3c7-4b7c-a3e9-1d487b623059"
-			"954438f4-4076-440b-b741-d2aa99df7ae3" "96d5909b-671e-44e7-be27-a13428c33225"
-			"976fc8fb-82e3-427b-8c68-1dd90c026cd2" "987cce70-eeaa-49d7-b446-c969f8fcc364"
-			"9eeace40-1f7b-4c73-b1cb-72297b76992b" "a3600cb7-5a44-48e0-8723-ec1a337516ec"
-			"a9625c8f-2b03-4686-bc4c-b2b57e1e57a2" "a9c329c4-7076-4173-968e-584a9b5c3355"
-			"aca66297-985f-4af0-b9c3-a540406a5d1e" "aedf631f-d55a-4835-a632-cd47a87eb44b"
-			"c22ca3ac-9223-45e7-9a48-4930aebfbda7" "c6d3b4c0-1588-4cb3-9ad4-c32fbb3fdda3"
-			"ca1b7c5c-452c-4a46-b5e7-4579ccf37fc0" "ca9a01f6-2891-4d8c-aa24-3e96bcc83660"
-			"ce22da76-c260-4d1a-990f-6b714b75c203" "cf1b7ec3-de97-45be-b640-b2132a7442b0"
-			"d74f2649-5034-4892-be25-50edc1396cdf" "f0284f1f-8e9e-4f7f-b3a8-3a1c86dffd9b"
-			"f4e7a83c-f265-4be4-b4b1-9bfbefa25ae8" "f84c5de0-75ac-47b9-9d01-1704064d283c"
-			"fa0fd0e0-c1f2-4bd0-b608-142373744cfc" "fb65f4ed-f78e-49b2-bcf1-0492be0fc792"
-		)
-	)
-	(group "DCDC_LMR544060"
-		(uuid "bdc4375c-04b6-40cc-bfbf-ec5c292bc9a9")
+		(uuid "bdc4375c-04b6-40cc-bfbf-ec5c292bc9aa")
 		(lib_id "dcdc_sw:DCDC_LMR544060")
 		(members "045d2508-22d9-45c4-8287-9260665b9ad0" "058a1874-5b25-4672-b67a-8fa7ff0563d2"
 			"082983a2-ef38-4909-87fc-02ab1561380f" "0aaa86ac-67cc-4d9a-b556-7dc4e62a3ce4"

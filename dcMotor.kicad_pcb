@@ -224,7 +224,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -1563,7 +1563,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2439,7 +2439,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4155,7 +4155,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -5150,7 +5150,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -8671,12 +8671,25 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C5270317"
+		(property "LCSC Part #" "C529355"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ee88e13a-efb4-4bbf-ad2d-108255d269bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4247b1f6-1e52-436d-b41a-6921eb00149d")
 			(effects
 				(font
 					(size 1 1)
@@ -8692,8 +8705,8 @@
 			(unit
 				(name "A")
 				(pins "20" "7" "5" "6" "2" "3" "4" "16" "17" "18" "40" "41" "42" "43"
-					"44" "45" "46" "22" "25" "26" "27" "28" "29" "1" "24" "36" "35" "23"
-					"47" "48" "19" "21" "8" "9" "10" "11" "12" "13" "14" "15" "30" "31"
+					"44" "45" "46" "22" "25" "26" "27" "28" "29" "1" "24" "36" "23" "47"
+					"35" "48" "19" "21" "8" "9" "10" "11" "12" "13" "14" "15" "30" "31"
 					"32" "33" "34" "37" "38" "39"
 				)
 			)
@@ -10146,7 +10159,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 2.2 -2.05)
@@ -10373,7 +10386,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11119,6 +11132,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c60cbf4e-cb7b-4c83-a995-1e955be321bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc50567b-9c38-4703-aeaf-293b0d17ad3d")
 			(effects
 				(font
 					(size 1 1)
@@ -12348,6 +12374,19 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46d60031-ac4a-4116-bedb-535e674987f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/62eb1b22-1bc0-466d-9945-2763405ac991")
 		(sheetname "/")
@@ -12358,7 +12397,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.38 1.27)
@@ -12798,7 +12837,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0.3 -5.71)
@@ -13323,6 +13362,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "394b0206-30c0-4752-a8bb-d1f3035fe16a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "270"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bbd4a3b-d309-485a-8c0a-5ff9e3436b27")
 			(effects
 				(font
 					(size 1 1)
@@ -14112,7 +14164,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -15319,6 +15371,19 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60ceb185-de8e-4233-86bd-cd74e50dafac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/a83a0dd2-c99a-41fe-9bb2-9d14c2de9d43")
 		(sheetname "/")
@@ -15851,7 +15916,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16617,7 +16682,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17119,7 +17184,7 @@
 			)
 		)
 		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm*")
-		(path "/b56b6410-4d37-408f-8c0e-9dfb026514b8")
+		(path "/fb68a25f-d3d9-4129-b080-5da2d30d4b07")
 		(sheetname "/")
 		(sheetfile "dcMotor.kicad_sch")
 		(units
@@ -17966,7 +18031,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "S1" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+				(pins "S1" "B1" "B12" "A1" "A12" "A9" "B4" "B9" "A4" "A5" "B5" "A7" "B7"
 					"A6" "B6" "A8" "B8"
 				)
 			)
@@ -19160,7 +19225,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -19409,7 +19474,7 @@
 				(pins "3" "4" "2" "1")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 0)
@@ -21754,7 +21819,7 @@
 		(units
 			(unit
 				(name "A")
-				(pins "S1" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+				(pins "S1" "B1" "B12" "A1" "A12" "A9" "B4" "B9" "A4" "A5" "B5" "A7" "B7"
 					"A6" "B6" "A8" "B8"
 				)
 			)
@@ -22192,7 +22257,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -22759,7 +22824,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C440198"
+		(property "LCSC Part #" "C15850"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23850,7 +23915,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -24010,7 +24075,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10µF"
 			(at 0 1.68 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25842,7 +25907,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -2.1 -1.2)
@@ -27951,7 +28016,7 @@
 		)
 	)
 	(gr_text "for DFRobot FIT0186"
-		(at 116.721221 60.452 0)
+		(at 116.721221 60.96 0)
 		(layer "F.SilkS")
 		(uuid "36aff58d-b897-4fb8-a0b2-23ac6429b65a")
 		(effects
@@ -27986,7 +28051,7 @@
 		)
 	)
 	(gr_text "DC-Motor Board V${REVISION}"
-		(at 116.213221 56.642 0)
+		(at 116.213221 57.15 0)
 		(layer "F.SilkS")
 		(uuid "035e45e9-4d1f-4b47-908f-0292e916c8ef")
 		(effects
@@ -27997,7 +28062,7 @@
 		)
 	)
 	(gr_text "Franz Patz\nJuli 2026"
-		(at 165.133965 57.333178 0)
+		(at 170.434 57.333178 0)
 		(layer "B.SilkS")
 		(uuid "98e1ef04-c7e4-4d1e-80be-fc0831aeb595")
 		(effects
