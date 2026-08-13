@@ -10751,7 +10751,7 @@
 				)
 			)
 		)
-		(property "Description" "dummy 3D model"
+		(property "Description" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10764,29 +10764,10 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
-			(at 0 0 270)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5097d2bc-0b17-4c82-a503-8fecd90e3e99")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/e1815b7b-fdbc-4017-88af-cd1ec9622e05")
 		(sheetname "/")
 		(sheetfile "dcMotor.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 270)
@@ -10806,52 +10787,58 @@
 			(layer "F.Cu")
 			(uuid "001826e2-9f87-41b1-bee8-83e0167a2d74")
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at -7 -13 270)
-			(size 1 1)
+			(size 5 5)
 			(drill 3.5)
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "f7029992-19d9-45b5-b66b-983345b9147a")
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at -7 13 270)
-			(size 1 1)
+			(size 5 5)
 			(drill 3.5)
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "09a2e3a0-cc51-4309-9b67-bd0b217e5c5a")
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at -2 0 270)
-			(size 1.27 1.27)
+			(size 6 6)
 			(drill 4)
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "1ece4f39-04ea-4fc8-b1ae-3ab21a1c46f8")
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 23 0 270)
-			(size 1.27 1.27)
+			(size 6 6)
 			(drill 4)
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "c74e0a9b-a750-4bf2-9b0f-4c7438b1966a")
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 24 -13 270)
-			(size 1 1)
+			(size 5 5)
 			(drill 3.5)
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "f83aaba3-9c9d-4b10-81e0-66db09712eef")
 		)
-		(pad "" np_thru_hole circle
+		(pad "" thru_hole circle
 			(at 24 13 270)
-			(size 1 1)
+			(size 5 5)
 			(drill 3.5)
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(uuid "e0b625fc-4d43-4aa4-b2ef-0e26a343cb49")
 		)
 		(embedded_fonts no)
