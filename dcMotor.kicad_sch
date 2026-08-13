@@ -11591,6 +11591,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 59.69) (xy 162.56 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f07c17-18ae-4b06-b371-a102c0dd041c")
+	)
+	(wire
+		(pts
 			(xy 294.64 64.77) (xy 304.8 64.77)
 		)
 		(stroke
@@ -13431,6 +13441,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 54.61) (xy 171.45 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d034dece-d207-4c0f-9d06-11e3cf331559")
+	)
+	(wire
+		(pts
 			(xy 95.25 250.19) (xy 109.22 250.19)
 		)
 		(stroke
@@ -13801,6 +13821,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 57.15) (xy 170.18 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecad2df8-c16a-479e-83dc-17c34ae8c8fb")
+	)
+	(wire
+		(pts
 			(xy 257.81 158.75) (xy 242.57 158.75)
 		)
 		(stroke
@@ -13971,6 +14001,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 52.07) (xy 171.45 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4c25a20-5a16-4076-8b00-dcc4f5e86f7d")
+	)
+	(wire
+		(pts
 			(xy 81.28 39.37) (xy 91.44 39.37)
 		)
 		(stroke
@@ -14138,6 +14178,16 @@
 			(justify right bottom)
 		)
 		(uuid "0c350f5b-097d-4aea-b31f-8771f0475e6d")
+	)
+	(label "I2C2_SCL"
+		(at 171.45 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "14786959-addf-42dd-90db-66b241bec77f")
 	)
 	(label "SWCLK"
 		(at 257.81 173.99 180)
@@ -14578,6 +14628,16 @@
 			(justify right bottom)
 		)
 		(uuid "d3bbc5f9-c14d-4fc6-8251-b58141efceb1")
+	)
+	(label "I2C2_SDA"
+		(at 171.45 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6bdb460-1660-4ef5-beef-52d10094db9a")
 	)
 	(label "TIM1_CH1"
 		(at 330.2 149.86 0)
@@ -22742,7 +22802,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 154.94 54.61 0)
+		(at 154.94 57.15 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22750,10 +22811,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "62eb1b22-1bc0-466d-9945-2763405ac991")
 		(property "Reference" "J7"
-			(at 155.575 46.99 0)
+			(at 155.575 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22763,7 +22823,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 155.575 49.53 0)
+			(at 155.575 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22773,7 +22833,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 154.94 54.61 0)
+			(at 154.94 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22784,7 +22844,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590908656076869632-C7430360.pdf?response-content-disposition=attachment%3B%20filename%3DC7430360.pdf%3B%20filename%2A%3DUTF-8%27%27C7430360.pdf&x-oss-date=20260803T060238Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mMDMrQ3ugT1IisQ0KFpVMBWrtIjbbCoDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYV161ZV4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWorKE09jitHD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIzVToo6KWD5sagAFvYbpT7M4nKzV9x9nG0KVt6L9PAQwcrMXPLAqBWLfjjl5RjllW3eVSTNXt%2F6qUNa4JzQr3WbjAO3ylgIsIr1rmH1qmomnc5ro9zTqD80vC%2BHI%2B1cBZ6acWZAaNL8CKJQhHlU474BssQ3TqMWqi0fbuUZIeUyi0gR7g0jSOj3oNhSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ9Gpd372cJGAd4ASTV4dbsiB%2F20260803%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=589712091c6788fe5c51930447157b69597e4cec471ecd001fa8bdaaec699515"
-			(at 154.94 54.61 0)
+			(at 154.94 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22795,7 +22855,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 154.94 54.61 0)
+			(at 154.94 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22806,7 +22866,7 @@
 			)
 		)
 		(property "LCSC Part #" "C7430360"
-			(at 154.94 54.61 0)
+			(at 154.94 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22817,7 +22877,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "90"
-			(at 154.94 54.61 0)
+			(at 154.94 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31033,6 +31093,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 162.56 59.69 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c280a432-2271-49f5-ad03-88994dd0d0ea")
+		(property "Reference" "#PWR0100"
+			(at 168.91 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a2c15d4-2e66-42f8-b867-bb2a748cc796")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 196.85 24.13 90)
 		(unit 1)
 		(body_style 1)
@@ -32244,6 +32381,83 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 170.18 57.15 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6de1564-cd6b-4ee5-8727-1fc2d3c06fe0")
+		(property "Reference" "#PWR0101"
+			(at 166.37 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 173.99 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 170.18 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a19624bc-c98d-4f86-98ee-d903b9259205")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
