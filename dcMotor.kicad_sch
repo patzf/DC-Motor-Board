@@ -10689,6 +10689,16 @@
 		)
 		(uuid "0aaa86ac-67cc-4d9a-b556-7dc4e62a3ce4")
 	)
+	(text "dummy symbol to include motor mechanical step"
+		(exclude_from_sim no)
+		(at 548.132 321.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0d24eaff-369b-4b21-8b19-c9a837921087")
+	)
 	(text "12V -> 3.3V"
 		(exclude_from_sim no)
 		(at 132.08 155.194 0)
@@ -10978,9 +10988,9 @@
 		)
 		(uuid "b2240e54-170e-40a9-bcf9-9d1d27d7fa58")
 	)
-	(text "USBC Power, OPTIONAL\nNOT used for first experiments(only If we want to power the Board with 9/12V via USBC-PD later)"
+	(text "USB Data onboard µC<->PC. USBC Power OPTIONAL\nNOT used for first experiments\nonly If we want to power the Board with 9/12V via USBC-PD later\n(not sure if usbcpd negotiation hsa trouble with D2/D5)"
 		(exclude_from_sim no)
-		(at 18.288 71.882 0)
+		(at 78.486 75.438 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -11213,7 +11223,7 @@
 		(uuid "0bcf2036-4431-4138-8f22-7c5e1eafd175")
 	)
 	(junction
-		(at 139.7 109.22)
+		(at 139.7 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f940814-0777-4ad8-b80d-ed642b2bec28")
@@ -11633,6 +11643,12 @@
 		(uuid "e05c885d-63e2-4cc6-a5ef-5b50fae16c00")
 	)
 	(junction
+		(at 50.8 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8ab9783-45bb-422c-9a85-6562c03e97ab")
+	)
+	(junction
 		(at 328.93 278.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11918,7 +11934,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 109.22) (xy 157.48 109.22)
+			(xy 139.7 107.95) (xy 154.94 107.95)
 		)
 		(stroke
 			(width 0)
@@ -12068,7 +12084,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 118.11) (xy 132.08 120.65)
+			(xy 132.08 116.84) (xy 132.08 119.38)
 		)
 		(stroke
 			(width 0)
@@ -12228,7 +12244,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 82.55) (xy 50.8 95.25)
+			(xy 50.8 82.55) (xy 50.8 87.63)
 		)
 		(stroke
 			(width 0)
@@ -12848,7 +12864,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 107.95) (xy 139.7 109.22)
+			(xy 139.7 106.68) (xy 139.7 107.95)
 		)
 		(stroke
 			(width 0)
@@ -12905,6 +12921,16 @@
 			(type default)
 		)
 		(uuid "4687d529-1a82-4455-a8a9-c70e8c0ba493")
+	)
+	(wire
+		(pts
+			(xy 139.7 87.63) (xy 139.7 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c938b1-c0aa-4eb5-b8e8-0696398585e2")
 	)
 	(wire
 		(pts
@@ -12998,6 +13024,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 87.63) (xy 139.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df30e7e-ebf2-4ab0-afae-c52d8fd557ec")
+	)
+	(wire
+		(pts
 			(xy 92.71 115.57) (xy 92.71 119.38)
 		)
 		(stroke
@@ -13028,7 +13064,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 110.49) (xy 132.08 109.22)
+			(xy 132.08 109.22) (xy 132.08 107.95)
 		)
 		(stroke
 			(width 0)
@@ -13425,6 +13461,16 @@
 			(type default)
 		)
 		(uuid "6b2dded4-325f-4b38-84d3-ef09894f69dd")
+	)
+	(wire
+		(pts
+			(xy 50.8 87.63) (xy 50.8 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b459be4-9e51-4054-ac74-dfd71706924b")
 	)
 	(wire
 		(pts
@@ -14388,16 +14434,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 97.79) (xy 139.7 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa52f513-5bec-4f45-90a2-b0c1a59ceff3")
-	)
-	(wire
-		(pts
 			(xy 261.62 101.6) (xy 261.62 88.9)
 		)
 		(stroke
@@ -15148,7 +15184,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 109.22) (xy 139.7 110.49)
+			(xy 139.7 107.95) (xy 139.7 109.22)
 		)
 		(stroke
 			(width 0)
@@ -15468,7 +15504,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 109.22) (xy 139.7 109.22)
+			(xy 132.08 107.95) (xy 139.7 107.95)
 		)
 		(stroke
 			(width 0)
@@ -15558,7 +15594,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 118.11) (xy 139.7 120.65)
+			(xy 139.7 116.84) (xy 139.7 119.38)
 		)
 		(stroke
 			(width 0)
@@ -16386,7 +16422,7 @@
 		(uuid "0a3cefa6-e7fd-49b6-9268-9f3127677986")
 	)
 	(label "VBUS_SENSE"
-		(at 157.48 109.22 180)
+		(at 154.94 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18684,7 +18720,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 27.94 39.37 0)
+		(at 27.94 41.91 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18692,10 +18729,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "174b7c18-c2cc-4a30-9596-3d4bb5c41906")
 		(property "Reference" "J6"
-			(at 28.575 34.29 0)
+			(at 28.575 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18705,7 +18741,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 28.575 36.83 0)
+			(at 28.575 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18715,7 +18751,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical"
-			(at 27.94 39.37 0)
+			(at 27.94 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18726,7 +18762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 39.37 0)
+			(at 27.94 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18737,7 +18773,7 @@
 			)
 		)
 		(property "Description" "Phönix 1755736"
-			(at 27.94 39.37 0)
+			(at 27.94 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18748,7 +18784,7 @@
 			)
 		)
 		(property "LCSC Part #" " C480503 "
-			(at 27.94 39.37 0)
+			(at 27.94 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19932,7 +19968,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 120.65 0)
+		(at 139.7 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19942,7 +19978,7 @@
 		(dnp no)
 		(uuid "27724346-2434-49b9-af74-fe82230f17b4")
 		(property "Reference" "#PWR040"
-			(at 139.7 127 0)
+			(at 139.7 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19953,7 +19989,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 124.968 0)
+			(at 139.7 123.698 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19963,7 +19999,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 120.65 0)
+			(at 139.7 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19974,7 +20010,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 120.65 0)
+			(at 139.7 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19985,7 +20021,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 120.65 0)
+			(at 139.7 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23484,83 +23520,6 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "NT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 139.7 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4f7917ce-9a1c-45d5-bbe0-f2936075a8f4")
-		(property "Reference" "#PWR039"
-			(at 139.7 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 139.7 93.726 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 139.7 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "41780cf8-f5a9-4142-ac92-33a26645bf0c")
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -28545,7 +28504,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 132.08 114.3 0)
+		(at 132.08 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28555,7 +28514,7 @@
 		(dnp no)
 		(uuid "7ce18cad-94eb-4e48-a302-d1db64a5fc69")
 		(property "Reference" "C10"
-			(at 126.238 113.284 0)
+			(at 126.238 112.014 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28565,7 +28524,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 126.746 115.316 0)
+			(at 126.746 114.046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28575,7 +28534,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 133.0452 118.11 0)
+			(at 133.0452 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28586,7 +28545,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8554627388276903936-C307331.pdf?response-content-disposition=attachment%3B%20filename%3DC307331.pdf%3B%20filename%2A%3DUTF-8%27%27C307331.pdf&x-oss-date=20260505T162742Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5qGBsPcnZEZ3Ya8ThTeo2EPXbx2q7HFmjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qftp%2BCp24J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrty8pRbnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIHgGDfqKWD5sagAF6VgUKivbVMIBYAHtPbEarcjdLKB%2Fv3R3XC7QrUkcxIbGKHkBmaxKBu%2BGtj%2FHQPAyPjesVk27QjSsWunbsWcdoaKfP5rLgen%2BoButIbAdnf%2Bqw11q%2FkZftS7ZxbIUiFvZ7qlrREHh2ZWByiFa3lk1Cu9tITyaRM80B9EW6%2F3i7dCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY3MyhpN8jDWL2oGaZQ3ZDtnx%2F20260505%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f4933891084f8fd6e75212da0ccaabda9059efdd5eed7cf7fcbc104cfadb9c80"
-			(at 132.08 114.3 0)
+			(at 132.08 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28597,7 +28556,7 @@
 			)
 		)
 		(property "Description" "50V X7R ±10%"
-			(at 136.144 114.3 90)
+			(at 136.144 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28608,7 +28567,7 @@
 			)
 		)
 		(property "LCSC Part #" "C307331"
-			(at 132.08 114.3 90)
+			(at 132.08 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28619,7 +28578,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 132.08 114.3 0)
+			(at 132.08 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29122,7 +29081,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 114.3 180)
+		(at 139.7 113.03 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29132,7 +29091,7 @@
 		(dnp no)
 		(uuid "85f92b6f-216a-42ab-b179-da5115756801")
 		(property "Reference" "R15"
-			(at 141.478 113.792 0)
+			(at 141.478 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29143,7 +29102,7 @@
 			)
 		)
 		(property "Value" "40.2k"
-			(at 141.478 115.5701 0)
+			(at 141.478 114.3001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29154,7 +29113,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 141.478 114.3 90)
+			(at 141.478 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29165,7 +29124,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 114.3 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29176,7 +29135,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 114.3 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29187,7 +29146,7 @@
 			)
 		)
 		(property "LCSC Part #" "C12447"
-			(at 139.7 114.3 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29198,7 +29157,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 139.7 114.3 0)
+			(at 139.7 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29208,7 +29167,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 139.7 114.3 0)
+			(at 139.7 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29218,7 +29177,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 139.7 114.3 0)
+			(at 139.7 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29477,7 +29436,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 120.65 0)
+		(at 132.08 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29487,7 +29446,7 @@
 		(dnp no)
 		(uuid "891c980f-555c-4f49-8e00-286f8138a315")
 		(property "Reference" "#PWR034"
-			(at 132.08 127 0)
+			(at 132.08 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29498,7 +29457,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 124.968 0)
+			(at 132.08 123.698 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29508,7 +29467,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 120.65 0)
+			(at 132.08 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29519,7 +29478,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 120.65 0)
+			(at 132.08 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29530,7 +29489,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 120.65 0)
+			(at 132.08 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30330,7 +30289,7 @@
 				)
 			)
 		)
-		(property "Value" "NUCLEO-F411RE"
+		(property "Value" "NUCLEO-F411RE:NUCLEO-F411RE"
 			(at 128.27 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30961,7 +30920,7 @@
 				)
 			)
 		)
-		(property "Value" "NUCLEO-F411RE"
+		(property "Value" "NUCLEO-F411RE:NUCLEO-F411RE"
 			(at 60.96 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33460,7 +33419,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 104.14 180)
+		(at 139.7 102.87 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33470,7 +33429,7 @@
 		(dnp no)
 		(uuid "bb7a82d9-5f61-46a5-bfed-be5179af1260")
 		(property "Reference" "R14"
-			(at 141.478 103.124 0)
+			(at 141.478 101.854 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33481,7 +33440,7 @@
 			)
 		)
 		(property "Value" "200k"
-			(at 141.478 105.1561 0)
+			(at 141.478 103.8861 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33492,7 +33451,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 141.478 104.14 90)
+			(at 141.478 102.87 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33503,7 +33462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 104.14 0)
+			(at 139.7 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33514,7 +33473,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 104.14 0)
+			(at 139.7 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33525,7 +33484,7 @@
 			)
 		)
 		(property "LCSC Part #" "C25811"
-			(at 139.7 104.14 0)
+			(at 139.7 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33536,7 +33495,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 139.7 104.14 0)
+			(at 139.7 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33546,7 +33505,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 139.7 104.14 0)
+			(at 139.7 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33556,7 +33515,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 139.7 104.14 0)
+			(at 139.7 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35694,7 +35653,7 @@
 				)
 			)
 		)
-		(property "Value" "NUCLEO-F411RE"
+		(property "Value" "NUCLEO-F411RE:NUCLEO-F411RE"
 			(at 184.15 359.41 0)
 			(show_name no)
 			(do_not_autoplace no)
