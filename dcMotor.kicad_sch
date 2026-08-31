@@ -10612,8 +10612,8 @@
 		)
 	)
 	(rectangle
-		(start 17.78 313.69)
-		(end 281.94 403.86)
+		(start 16.51 313.69)
+		(end 300.99 403.86)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -10833,7 +10833,7 @@
 	)
 	(text "(=MOTOR_DRV_IN1)"
 		(exclude_from_sim no)
-		(at -27.686 348.488 0)
+		(at 30.226 382.778 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10972,7 +10972,7 @@
 	)
 	(text "CN7"
 		(exclude_from_sim no)
-		(at 50.8 380.746 0)
+		(at 76.2 380.746 0)
 		(effects
 			(font
 				(size 2 2)
@@ -11045,7 +11045,7 @@
 	)
 	(text "(=HALL_A)"
 		(exclude_from_sim no)
-		(at -31.496 392.938 0)
+		(at 34.29 390.398 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11127,16 +11127,6 @@
 		)
 		(uuid "b2240e54-170e-40a9-bcf9-9d1d27d7fa58")
 	)
-	(text "(=ADC2_IN1)"
-		(exclude_from_sim no)
-		(at -62.484 392.938 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b61c61f6-b42e-4505-8f6a-b13a00ce01a7")
-	)
 	(text "USB Data onboard µC<->PC. USBC Power OPTIONAL\nNOT used for first experiments\nonly If we want to power the Board with 9/12V via USBC-PD later\n(not sure if usbcpd negotiation hsa trouble with D2/D5)"
 		(exclude_from_sim no)
 		(at 78.486 75.438 0)
@@ -11147,16 +11137,6 @@
 			(justify left)
 		)
 		(uuid "b8033273-8244-4281-be39-afc9125a2fe9")
-	)
-	(text "(=ADC2_IN14)"
-		(exclude_from_sim no)
-		(at -82.804 384.302 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "bb5f3291-9ff5-44cb-8191-38989199e5e4")
 	)
 	(text "Achtung:\nFür <>12V: C15850 statt C440198\nC1, C29, C30, C37 da für 12V ok und günstiger"
 		(exclude_from_sim no)
@@ -11192,7 +11172,7 @@
 	)
 	(text "(=HALL_B)"
 		(exclude_from_sim no)
-		(at -31.496 389.128 0)
+		(at 34.29 387.858 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11210,26 +11190,6 @@
 		)
 		(uuid "c8808e4c-9f56-424c-a66d-3dbf5992b2a6")
 	)
-	(text "(=ADC1_IN5)"
-		(exclude_from_sim no)
-		(at -84.582 403.098 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c990c146-b90a-4111-a468-4dc49355ff6e")
-	)
-	(text "(=ADC2_IN2)"
-		(exclude_from_sim no)
-		(at -62.484 395.478 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cc7fb290-37f3-4c2c-a150-625860aea80b")
-	)
 	(text "General Purpose Timers: 2,3,4,5"
 		(exclude_from_sim no)
 		(at 209.042 100.33 0)
@@ -11242,7 +11202,7 @@
 	)
 	(text "CN10"
 		(exclude_from_sim no)
-		(at 118.872 381.254 0)
+		(at 136.398 381.254 0)
 		(effects
 			(font
 				(size 2 2)
@@ -11306,7 +11266,7 @@
 	)
 	(text "(=MOTOR_DRV_IN2)"
 		(exclude_from_sim no)
-		(at -43.18 356.362 0)
+		(at 30.226 385.318 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11923,7 +11883,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 358.14) (xy 74.93 358.14)
+			(xy 54.61 358.14) (xy 52.07 358.14)
 		)
 		(stroke
 			(width 0)
@@ -11953,7 +11913,7 @@
 	)
 	(wire
 		(pts
-			(xy -85.09 393.7) (xy -69.85 393.7)
+			(xy 156.21 393.7) (xy 175.26 393.7)
 		)
 		(stroke
 			(width 0)
@@ -12753,7 +12713,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 373.38) (xy 31.75 373.38)
+			(xy 96.52 373.38) (xy 95.25 373.38)
 		)
 		(stroke
 			(width 0)
@@ -12803,16 +12763,6 @@
 	)
 	(wire
 		(pts
-			(xy -8.89 393.7) (xy -25.4 393.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34b3df54-d148-4942-a15c-e590df4f6770")
-	)
-	(wire
-		(pts
 			(xy 49.53 109.22) (xy 49.53 110.49)
 		)
 		(stroke
@@ -12823,7 +12773,7 @@
 	)
 	(wire
 		(pts
-			(xy -60.96 384.81) (xy -74.93 384.81)
+			(xy 54.61 393.7) (xy 40.64 393.7)
 		)
 		(stroke
 			(width 0)
@@ -12863,7 +12813,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 375.92) (xy 76.2 375.92)
+			(xy 54.61 375.92) (xy 52.07 375.92)
 		)
 		(stroke
 			(width 0)
@@ -13033,6 +12983,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 391.16) (xy 40.64 391.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ddcd306-5668-499b-b982-9a3ddd008a6f")
+	)
+	(wire
+		(pts
 			(xy 326.39 279.4) (xy 330.2 279.4)
 		)
 		(stroke
@@ -13073,7 +13033,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 360.68) (xy 99.06 360.68)
+			(xy 160.02 360.68) (xy 156.21 360.68)
 		)
 		(stroke
 			(width 0)
@@ -13433,7 +13393,7 @@
 	)
 	(wire
 		(pts
-			(xy -33.02 356.87) (xy -19.05 356.87)
+			(xy 40.64 386.08) (xy 54.61 386.08)
 		)
 		(stroke
 			(width 0)
@@ -14043,7 +14003,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 381) (xy 86.36 381)
+			(xy 156.21 381) (xy 168.91 381)
 		)
 		(stroke
 			(width 0)
@@ -14103,7 +14063,7 @@
 	)
 	(wire
 		(pts
-			(xy -25.4 389.89) (xy -11.43 389.89)
+			(xy 40.64 388.62) (xy 54.61 388.62)
 		)
 		(stroke
 			(width 0)
@@ -14583,7 +14543,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 388.62) (xy 144.78 388.62)
+			(xy 115.57 388.62) (xy 113.03 388.62)
 		)
 		(stroke
 			(width 0)
@@ -14633,7 +14593,7 @@
 	)
 	(wire
 		(pts
-			(xy -62.23 403.86) (xy -76.2 403.86)
+			(xy 54.61 396.24) (xy 40.64 396.24)
 		)
 		(stroke
 			(width 0)
@@ -15323,7 +15283,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 388.62) (xy 99.06 388.62)
+			(xy 168.91 388.62) (xy 156.21 388.62)
 		)
 		(stroke
 			(width 0)
@@ -15353,7 +15313,7 @@
 	)
 	(wire
 		(pts
-			(xy -85.09 396.24) (xy -69.85 396.24)
+			(xy 156.21 396.24) (xy 175.26 396.24)
 		)
 		(stroke
 			(width 0)
@@ -15463,7 +15423,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 396.24) (xy 99.06 396.24)
+			(xy 168.91 386.08) (xy 156.21 386.08)
 		)
 		(stroke
 			(width 0)
@@ -15513,7 +15473,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 393.7) (xy 99.06 393.7)
+			(xy 168.91 383.54) (xy 156.21 383.54)
 		)
 		(stroke
 			(width 0)
@@ -15613,7 +15573,7 @@
 	)
 	(wire
 		(pts
-			(xy -38.1 349.25) (xy -53.34 349.25)
+			(xy 40.64 383.54) (xy 54.61 383.54)
 		)
 		(stroke
 			(width 0)
@@ -16072,7 +16032,7 @@
 		(uuid "ffa42839-c9b0-4023-84fd-cec4772f2dc6")
 	)
 	(image
-		(at 220.98 359.41)
+		(at 240.03 358.14)
 		(scale 1.83333)
 		(uuid "0cce7d3c-a84b-4b19-aa68-13957ca85803")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAtAAAAIcCAIAAABQHw4EAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
@@ -24658,7 +24618,7 @@
 		(uuid "15d327c1-f15d-4f2b-bf22-12cb28433156")
 	)
 	(label "TIM1_CH2N"
-		(at -33.02 356.87 0)
+		(at 40.64 386.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -24758,22 +24718,22 @@
 		(uuid "29ed8a09-5335-413f-b5ad-073be15ebf38")
 	)
 	(label "TIM1_CH1"
-		(at -38.1 349.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "420e7151-db06-4d2b-85bc-e9b921683554")
-	)
-	(label "I2C2_SCL"
-		(at 86.36 381 0)
+		(at 40.64 383.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "420e7151-db06-4d2b-85bc-e9b921683554")
+	)
+	(label "I2C2_SCL"
+		(at 168.91 381 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "4390d050-3ca2-44fd-a875-76d8222c7895")
 	)
@@ -24848,7 +24808,7 @@
 		(uuid "50272ac8-ce04-4566-b224-fcc4aaa867e2")
 	)
 	(label "TIM2_CH2"
-		(at -25.4 389.89 0)
+		(at 40.64 388.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -24858,12 +24818,12 @@
 		(uuid "503f9eb8-be18-4b5e-8ba7-66c6c8d70262")
 	)
 	(label "I2C2_SDA"
-		(at 86.36 388.62 0)
+		(at 168.91 388.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "505c00b2-9318-4334-afb0-bed65b7bb09a")
 	)
@@ -24878,7 +24838,7 @@
 		(uuid "5592b8d4-de03-4686-bafe-c56eae124335")
 	)
 	(label "MOTOR+_SENSE"
-		(at -69.85 393.7 180)
+		(at 175.26 393.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -24918,7 +24878,7 @@
 		(uuid "721e37e6-7eae-4f8e-8f06-337e62be9e17")
 	)
 	(label "POT"
-		(at -76.2 403.86 0)
+		(at 40.64 396.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25048,12 +25008,12 @@
 		(uuid "a808ba22-ad3d-495b-b58b-6826b74769d2")
 	)
 	(label "BUTTON1"
-		(at 86.36 396.24 0)
+		(at 168.91 386.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ab6abba6-3de1-4806-b04a-2950b8e67688")
 	)
@@ -25128,7 +25088,7 @@
 		(uuid "cc2cd6f5-d517-435d-a57b-d65d4d8e69f6")
 	)
 	(label "MOTOR-_SENSE"
-		(at -69.85 396.24 180)
+		(at 175.26 396.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25208,7 +25168,7 @@
 		(uuid "e0677a78-903a-4d27-afbb-d1759e3e5e29")
 	)
 	(label "IPROPI"
-		(at -74.93 384.81 0)
+		(at 40.64 393.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25218,7 +25178,7 @@
 		(uuid "e12b3f63-c39a-4b2e-8f0f-a3b11951ce33")
 	)
 	(label "TIM2_CH1"
-		(at -25.4 393.7 0)
+		(at 40.64 391.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25298,12 +25258,12 @@
 		(uuid "fbd1f915-9275-4804-87ed-44c1f507bd31")
 	)
 	(label "EN_PHOTO"
-		(at 86.36 393.7 0)
+		(at 168.91 383.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fdc427ce-4cfc-4a5c-bf80-357f5ce32925")
 	)
@@ -25603,83 +25563,6 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 144.78 373.38 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "07320e91-0b00-483e-9bae-1782d645bd47")
-		(property "Reference" "#PWR0110"
-			(at 151.13 373.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 373.126 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 373.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 373.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 373.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ea4ddfe-e343-42e6-b91e-b96edabb1195")
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -26409,7 +26292,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 388.62 90)
+		(at 113.03 388.62 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26419,7 +26303,7 @@
 		(dnp no)
 		(uuid "0ed6c6a8-bb53-44b2-8972-d9f7c7f63100")
 		(property "Reference" "#PWR0109"
-			(at 151.13 388.62 0)
+			(at 106.68 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26430,7 +26314,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 388.366 0)
+			(at 109.22 388.366 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26440,7 +26324,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 388.62 0)
+			(at 113.03 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26451,7 +26335,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 388.62 0)
+			(at 113.03 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26462,7 +26346,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 388.62 0)
+			(at 113.03 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26479,83 +26363,6 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR0109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 157.48 383.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0ee57f4e-865b-4940-a228-988ff56cf65d")
-		(property "Reference" "#PWR0111"
-			(at 157.48 387.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 157.48 379.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 383.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 383.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 157.48 383.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58666dd7-9fff-4697-9439-37f924a7cb52")
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -27738,7 +27545,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 360.68 270)
+		(at 160.02 360.68 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27748,7 +27556,7 @@
 		(dnp no)
 		(uuid "21fb02eb-e8ac-4dcf-a32a-1eb375811409")
 		(property "Reference" "#PWR0108"
-			(at 88.9 360.68 0)
+			(at 166.37 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27759,7 +27567,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 360.934 0)
+			(at 163.83 360.934 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27769,7 +27577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 360.68 0)
+			(at 160.02 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27780,7 +27588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 360.68 0)
+			(at 160.02 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27791,7 +27599,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 360.68 0)
+			(at 160.02 360.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29373,7 +29181,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 358.14 90)
+		(at 52.07 358.14 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29383,7 +29192,7 @@
 		(dnp no)
 		(uuid "3432a023-41e3-4c8c-badb-d8f6d7495957")
 		(property "Reference" "#PWR0105"
-			(at 81.28 358.14 0)
+			(at 45.72 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29394,7 +29203,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 357.886 0)
+			(at 48.26 357.886 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29404,7 +29213,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 358.14 0)
+			(at 52.07 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29415,7 +29224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 358.14 0)
+			(at 52.07 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29426,7 +29235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 358.14 0)
+			(at 52.07 358.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30354,7 +30163,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 375.92 90)
+		(at 52.07 375.92 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -30364,7 +30174,7 @@
 		(dnp no)
 		(uuid "3eba575e-01a7-46ad-a757-8345e7e425d2")
 		(property "Reference" "#PWR0106"
-			(at 82.55 375.92 0)
+			(at 45.72 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30375,7 +30185,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 375.666 0)
+			(at 48.26 375.666 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30385,7 +30195,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 375.92 0)
+			(at 52.07 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30396,7 +30206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 375.92 0)
+			(at 52.07 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30407,7 +30217,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 375.92 0)
+			(at 52.07 375.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33679,7 +33489,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 373.38 270)
+		(at 96.52 373.38 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33689,7 +33500,7 @@
 		(dnp no)
 		(uuid "60800c55-4366-4c80-a2ed-55dc77841fe2")
 		(property "Reference" "#PWR0107"
-			(at 20.32 373.38 0)
+			(at 102.87 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33700,7 +33511,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 373.634 0)
+			(at 100.33 373.634 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33710,7 +33521,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 373.38 0)
+			(at 96.52 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33721,7 +33532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 373.38 0)
+			(at 96.52 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33732,7 +33543,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 373.38 0)
+			(at 96.52 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38661,7 +38472,8 @@
 	)
 	(symbol
 		(lib_id "NUCLEO-F411RE:NUCLEO-F411RE")
-		(at 119.38 373.38 0)
+		(at 135.89 373.38 0)
+		(mirror y)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38672,7 +38484,7 @@
 		(fields_autoplaced yes)
 		(uuid "93aed8cb-48ec-4a1b-a37e-2862ecc4250c")
 		(property "Reference" "U12"
-			(at 119.38 342.9 0)
+			(at 135.89 342.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38682,7 +38494,7 @@
 			)
 		)
 		(property "Value" "NUCLEO-F411RE:NUCLEO-F411RE"
-			(at 119.38 345.44 0)
+			(at 135.89 345.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38692,7 +38504,7 @@
 			)
 		)
 		(property "Footprint" "BOARD_NUCLEO-F411RE"
-			(at 119.38 373.38 0)
+			(at 135.89 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38704,7 +38516,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 373.38 0)
+			(at 135.89 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38715,7 +38527,7 @@
 			)
 		)
 		(property "Description" "STM32F411RE, mbed-Enabled Development Nucleo-64 STM32F4 ARM® Cortex®-M4 MCU 32-Bit Embedded Evaluation Board"
-			(at 119.38 373.38 0)
+			(at 135.89 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38727,7 +38539,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 119.38 373.38 0)
+			(at 135.89 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38738,7 +38550,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 119.38 373.38 0)
+			(at 135.89 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39292,7 +39104,8 @@
 	)
 	(symbol
 		(lib_id "NUCLEO-F411RE:NUCLEO-F411RE")
-		(at 52.07 373.38 0)
+		(at 74.93 373.38 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39303,7 +39116,7 @@
 		(fields_autoplaced yes)
 		(uuid "963c482a-ad99-47ce-bf1c-cb8c0f693fd2")
 		(property "Reference" "U12"
-			(at 52.07 342.9 0)
+			(at 74.93 342.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39313,7 +39126,7 @@
 			)
 		)
 		(property "Value" "NUCLEO-F411RE:NUCLEO-F411RE"
-			(at 52.07 345.44 0)
+			(at 74.93 345.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39323,7 +39136,7 @@
 			)
 		)
 		(property "Footprint" "BOARD_NUCLEO-F411RE"
-			(at 52.07 373.38 0)
+			(at 74.93 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39335,7 +39148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 373.38 0)
+			(at 74.93 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39346,7 +39159,7 @@
 			)
 		)
 		(property "Description" "STM32F411RE, mbed-Enabled Development Nucleo-64 STM32F4 ARM® Cortex®-M4 MCU 32-Bit Embedded Evaluation Board"
-			(at 52.07 373.38 0)
+			(at 74.93 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39358,7 +39171,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 52.07 373.38 0)
+			(at 74.93 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39369,7 +39182,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 52.07 373.38 0)
+			(at 74.93 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44025,7 +43838,8 @@
 	)
 	(symbol
 		(lib_id "NUCLEO-F411RE:NUCLEO-F411RE")
-		(at 119.38 331.47 0)
+		(at 135.89 328.93 0)
+		(mirror y)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44033,10 +43847,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d6af2dad-f8a2-47b4-b923-757248507446")
 		(property "Reference" "U12"
-			(at 119.38 323.85 0)
+			(at 135.89 321.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44046,7 +43859,7 @@
 			)
 		)
 		(property "Value" "NUCLEO-F411RE:NUCLEO-F411RE"
-			(at 119.38 326.39 0)
+			(at 135.89 323.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44056,7 +43869,7 @@
 			)
 		)
 		(property "Footprint" "BOARD_NUCLEO-F411RE"
-			(at 119.38 331.47 0)
+			(at 135.89 328.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44068,7 +43881,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 331.47 0)
+			(at 135.89 328.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44079,7 +43892,7 @@
 			)
 		)
 		(property "Description" "STM32F411RE, mbed-Enabled Development Nucleo-64 STM32F4 ARM® Cortex®-M4 MCU 32-Bit Embedded Evaluation Board"
-			(at 119.38 331.47 0)
+			(at 135.89 328.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44091,7 +43904,7 @@
 			)
 		)
 		(property "LCSC Part #" ""
-			(at 119.38 331.47 0)
+			(at 135.89 328.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44102,7 +43915,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 119.38 331.47 0)
+			(at 135.89 328.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
