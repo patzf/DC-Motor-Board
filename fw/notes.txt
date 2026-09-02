@@ -1,0 +1,14 @@
+Alle STM32G4 closk standardmäßig auf 170MHz
+PWM frequency: 10kHz
+-> TIM1_ARR soll alle 100µs überlaufen
+	-> TIM1_ARR = 100E-6*170E6/(TIM1_PSC+1)    # muss kleiner als 65535 sein, sonst PSC erhöhen, siehe RM0440 29.6.13, 29.6.14
+		-> TIM1_ARR = 17000. TIM1_PSC = 0
+-> Auto-reload-preload enabled
+
+->PWM on TIM1_CH1
+	-> mode 1
+	-> Pulse = 8500 #für duty cycle = 50%
+
+->PWM on TIM1_CH2
+	-> mode 1
+	-> Pulse = 0 (0% duty cycle)
