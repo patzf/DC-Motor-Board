@@ -21,6 +21,7 @@
 #include "adc.h"
 #include "i2c.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -58,6 +59,72 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+void quickCheck(void)
+{
+	// Spin through duty cycles 90%, 80%, .... 10%
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+	for(int i = 10; i >= 1; i--)
+	{
+		int duty = i*680;
+		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+		HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+		HAL_Delay(5000);
+		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+		HAL_Delay(3000);
+	}
+}
+
+
+// Prepare TIM2 for counting pulses.
+// We count the number of pulses inside a fixed time window of 1ms
+// at no load : HALL Sensor delivers pulses with 2.8kHz -> 2.8kHz/16 = 175 RPS = 175*60 = 10500 RPM
+// in 1ms, we would count 2.8 pulses
+// we need to count at least 2 pulses to estimate frequency.
+// With 16 RPC
+// -> if we want to measure down to 1 RPS we need to wait for at least 2*1/*16 = 125ms
+// -> for measuring 10RPS, we need to measure for 12,5ms
+// if we wait for 10ms, we can measure down to ~ 2/16 Umdrehungen/10ms = 1/8*100 = 12.5 RPS
+void recordStepResponse(void)
+{
+	HAL_TIM_Base_Start_IT(&htim3); // this will fire period elapsed callback on TIM3 every 10ms
+	HAL_TIM_IC_Start(&htim2, TIM_CHANNEL_1); // this will start TIM2 counting and waiting for pulses with input capture
+
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 6800); // always high for 100% duty cycle
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0); // keeping that zero uses coast mode
+
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+
+}
+
+
+
+void setMotorRPM(float rpm)
+{
+	static volatile int a = 0;
+}
+
+void setMotorDuty(void)
+{
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+	for(int i = 10; i >= 1; i--)
+	{
+		int duty = i*680;
+		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+		HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+		HAL_Delay(5000);
+		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+		HAL_Delay(3000);
+	}
+}
+
+
 /* USER CODE END 0 */
 
 /**
@@ -92,6 +159,9 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM1_Init();
   MX_ADC1_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -100,24 +170,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 
-  //
-  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-
-  for(int i = 10; i >= 1; i--)
-  {
-	  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
-	  HAL_Delay(4000);
-	  int duty = i*680;
-	  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
-	  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-	  HAL_Delay(3000);
-
-  }
+  recordStepResponse();
 
   while (1)
   {
+
+	  //stop reporting of values
+	  if(f_measurement_finished)
+	  {
+		HAL_TIM_Base_Stop_IT(&htim3);
+		HAL_TIM_IC_Stop(&htim2, TIM_CHANNEL_1);
+
+		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
+
+		//send values to PC
+		HAL_UART_Transmit(&huart2, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
+		f_measurement_finished = 0;
+		//memset(motor_rpm, 0, sizeof(motor_rpm));
+
+	  }
 
     /* USER CODE END WHILE */
 
