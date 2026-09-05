@@ -40,7 +40,7 @@ extern TIM_HandleTypeDef htim3;
 
 /* USER CODE BEGIN Private defines */
 extern volatile uint32_t f_measurement_finished;
-extern volatile float motor_rpm[200];
+extern volatile float motor_rpm[500];
 /* USER CODE END Private defines */
 
 void MX_TIM1_Init(void);

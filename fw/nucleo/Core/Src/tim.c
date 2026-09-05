@@ -24,7 +24,7 @@
 
 
 static volatile uint32_t cycles = 0;
-volatile float motor_rpm[200] = {0};
+volatile float motor_rpm[500] = {0};
 volatile uint32_t f_measurement_finished = 0;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
@@ -227,7 +227,7 @@ void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 31;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 53125;
+  htim3.Init.Period = 5313;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)

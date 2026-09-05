@@ -90,7 +90,7 @@ void quickCheck(void)
 void recordStepResponse(void)
 {
 	HAL_TIM_Base_Start_IT(&htim3); // this will fire period elapsed callback on TIM3 every 10ms
-	HAL_TIM_IC_Start(&htim2, TIM_CHANNEL_1); // this will start TIM2 counting and waiting for pulses with input capture
+	HAL_TIM_IC_Start_IT(&htim2, TIM_CHANNEL_1); // this will start TIM2 counting and waiting for pulses with input capture
 
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 6800); // always high for 100% duty cycle
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0); // keeping that zero uses coast mode
@@ -170,6 +170,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 
+  HAL_Delay(2000);
   recordStepResponse();
 
   while (1)
