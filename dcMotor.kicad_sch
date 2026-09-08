@@ -3999,6 +3999,195 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Bridged*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Bridged_0_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 0.508 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:SolderJumper_3_Bridged12"
 			(pin_names
 				(offset 0)
@@ -5569,105 +5758,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
@@ -10862,7 +10952,7 @@
 	)
 	(rectangle
 		(start 16.51 313.69)
-		(end 300.99 403.86)
+		(end 313.69 403.86)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -11106,7 +11196,7 @@
 	)
 	(text "(=MOTOR_DRV_IN1)"
 		(exclude_from_sim no)
-		(at 178.562 387.604 0)
+		(at 188.722 387.604 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11329,7 +11419,7 @@
 	)
 	(text "(=HALL_A)"
 		(exclude_from_sim no)
-		(at 176.53 379.222 0)
+		(at 185.928 378.206 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11467,7 +11557,7 @@
 	)
 	(text "(=HALL_B)"
 		(exclude_from_sim no)
-		(at 176.53 381.762 0)
+		(at 185.928 380.746 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11583,7 +11673,7 @@
 	)
 	(text "(=MOTOR_DRV_IN2)"
 		(exclude_from_sim no)
-		(at 178.562 385.064 0)
+		(at 188.722 385.064 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11703,6 +11793,16 @@
 			)
 		)
 		(uuid "f31f5dce-adb7-41e4-8917-5b45f0e85dc5")
+	)
+	(text "reserved for VCP (Serial)"
+		(exclude_from_sim no)
+		(at 139.7 401.574 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f4f3ac52-5a8b-42a9-bdf2-f79ad28076d5")
 	)
 	(text "DC Motor Driver Board\nElektronik & Technische Informatik\nHTL Graz-Gösting"
 		(exclude_from_sim no)
@@ -12098,6 +12198,12 @@
 		(uuid "a91dacf7-0eb9-46fd-8e97-f18d8137e3db")
 	)
 	(junction
+		(at 29.21 359.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9793dbf-ee09-4e4c-acaf-f8bf8497bf27")
+	)
+	(junction
 		(at 254 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12291,6 +12397,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 378.46) (xy 179.07 378.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d2a756-082c-4676-af4b-d25e24992b4c")
+	)
+	(wire
+		(pts
 			(xy 36.83 41.91) (xy 36.83 44.45)
 		)
 		(stroke
@@ -12298,6 +12414,16 @@
 			(type default)
 		)
 		(uuid "022ac946-c0b6-4ead-a7f1-bed4171f780d")
+	)
+	(wire
+		(pts
+			(xy 29.21 354.33) (xy 29.21 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02c64b9d-7e9f-4f14-8897-5f10555ea3da")
 	)
 	(wire
 		(pts
@@ -12321,7 +12447,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 391.16) (xy 54.61 391.16)
+			(xy 21.59 391.16) (xy 40.64 391.16)
 		)
 		(stroke
 			(width 0)
@@ -12361,7 +12487,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 386.08) (xy 38.1 386.08)
+			(xy 21.59 386.08) (xy 40.64 386.08)
 		)
 		(stroke
 			(width 0)
@@ -12528,6 +12654,16 @@
 			(type default)
 		)
 		(uuid "0a5938c7-48ab-4509-84ac-84f389f91ae6")
+	)
+	(wire
+		(pts
+			(xy 20.32 368.3) (xy 20.32 372.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a67818f-bf4c-40fe-b66d-373c59619b48")
 	)
 	(wire
 		(pts
@@ -12878,6 +13014,26 @@
 			(type default)
 		)
 		(uuid "1f5f0759-d23b-4ca7-9c4c-3525c0a263fb")
+	)
+	(wire
+		(pts
+			(xy 156.21 381) (xy 160.02 381)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fc1272a-d26b-43a1-a9f2-764b3fcee5a8")
+	)
+	(wire
+		(pts
+			(xy 167.64 386.08) (xy 179.07 386.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ff8eca9-f0d7-4a1f-8eb1-97598e37b451")
 	)
 	(wire
 		(pts
@@ -13301,6 +13457,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 393.7) (xy 54.61 393.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32a35218-3bf2-4a18-aa4d-2ed097f7ce1b")
+	)
+	(wire
+		(pts
 			(xy 96.52 373.38) (xy 95.25 373.38)
 		)
 		(stroke
@@ -13371,7 +13537,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 393.7) (xy 54.61 393.7)
+			(xy 21.59 393.7) (xy 40.64 393.7)
 		)
 		(stroke
 			(width 0)
@@ -13388,6 +13554,16 @@
 			(type default)
 		)
 		(uuid "3590cf87-d5e4-46e0-b9d3-e4c71b8a0e74")
+	)
+	(wire
+		(pts
+			(xy 48.26 378.46) (xy 54.61 378.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35bfb08f-2613-48e8-af84-5dd61f97e157")
 	)
 	(wire
 		(pts
@@ -13461,6 +13637,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 386.08) (xy 160.02 386.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "377c4b6a-7b48-4f0e-ab7e-b543d69d3d26")
+	)
+	(wire
+		(pts
 			(xy 513.08 81.28) (xy 516.89 81.28)
 		)
 		(stroke
@@ -13478,6 +13664,16 @@
 			(type default)
 		)
 		(uuid "385bf520-d4a7-4f19-aca4-75cf0046bb69")
+	)
+	(wire
+		(pts
+			(xy 48.26 383.54) (xy 54.61 383.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387310b6-2669-4ec7-ab67-5dac3c1d4016")
 	)
 	(wire
 		(pts
@@ -13611,16 +13807,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 378.46) (xy 170.18 378.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ddcd306-5668-499b-b982-9a3ddd008a6f")
-	)
-	(wire
-		(pts
 			(xy 252.73 269.24) (xy 256.54 269.24)
 		)
 		(stroke
@@ -13678,16 +13864,6 @@
 			(type default)
 		)
 		(uuid "419e2c8c-542e-43a9-977d-00059f77e6a3")
-	)
-	(wire
-		(pts
-			(xy 156.21 386.08) (xy 168.91 386.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "420768aa-5490-4040-8aeb-13081ddcb6b1")
 	)
 	(wire
 		(pts
@@ -14261,7 +14437,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 388.62) (xy 54.61 388.62)
+			(xy 21.59 388.62) (xy 40.64 388.62)
 		)
 		(stroke
 			(width 0)
@@ -14331,6 +14507,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 378.46) (xy 160.02 378.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624fdf32-b99f-4a9e-b543-c6f099da0369")
+	)
+	(wire
+		(pts
 			(xy 293.37 223.52) (xy 293.37 219.71)
 		)
 		(stroke
@@ -14341,6 +14527,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 381) (xy 179.07 381)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62791053-2040-46be-8aa8-84e8698a940a")
+	)
+	(wire
+		(pts
 			(xy 449.58 181.61) (xy 452.12 181.61)
 		)
 		(stroke
@@ -14348,6 +14544,16 @@
 			(type default)
 		)
 		(uuid "63c10db9-a783-4ab3-ad4b-2adabdc03481")
+	)
+	(wire
+		(pts
+			(xy 29.21 359.41) (xy 38.1 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "641a0a4b-d464-4280-bf12-237893a9bf71")
 	)
 	(wire
 		(pts
@@ -14418,6 +14624,16 @@
 			(type default)
 		)
 		(uuid "69b3ac17-949f-496e-98db-28b530343d17")
+	)
+	(wire
+		(pts
+			(xy 29.21 368.3) (xy 29.21 372.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69f5095e-d229-4667-a004-b59f2f886405")
 	)
 	(wire
 		(pts
@@ -14571,6 +14787,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 386.08) (xy 54.61 386.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "702acd19-8d7e-4cad-851a-1c2b64ca07b3")
+	)
+	(wire
+		(pts
 			(xy 85.09 171.45) (xy 85.09 172.72)
 		)
 		(stroke
@@ -14588,6 +14814,16 @@
 			(type default)
 		)
 		(uuid "710d709a-0085-4645-a1ce-3500af74c3cb")
+	)
+	(wire
+		(pts
+			(xy 20.32 359.41) (xy 29.21 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7112f5a8-6e8b-4bd8-918f-a5100a85b353")
 	)
 	(wire
 		(pts
@@ -14761,6 +14997,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.6608 388.62) (xy 179.07 388.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d8df066-b4c0-4d12-86e2-cf75c1e13f28")
+	)
+	(wire
+		(pts
 			(xy 110.49 240.03) (xy 110.49 238.76)
 		)
 		(stroke
@@ -14861,16 +15107,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 381) (xy 156.21 381)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8459ee11-e6b4-4cf9-b1fb-103483072d40")
-	)
-	(wire
-		(pts
 			(xy 356.87 121.92) (xy 351.79 121.92)
 		)
 		(stroke
@@ -14888,6 +15124,16 @@
 			(type default)
 		)
 		(uuid "866feb60-dbc8-4d02-b7b3-0476b2764ec3")
+	)
+	(wire
+		(pts
+			(xy 38.1 359.41) (xy 38.1 378.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86a65025-d901-4076-9d5a-db3777e53351")
 	)
 	(wire
 		(pts
@@ -15101,6 +15347,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 396.24) (xy 54.61 396.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94e18769-dbaf-43bd-8f3c-bf30ecc75ff8")
+	)
+	(wire
+		(pts
 			(xy 400.05 316.23) (xy 400.05 320.04)
 		)
 		(stroke
@@ -15181,6 +15437,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 391.16) (xy 54.61 391.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "990325a1-ae1b-4a0a-a229-1b8ef02ee643")
+	)
+	(wire
+		(pts
 			(xy 458.47 327.66) (xy 458.47 325.12)
 		)
 		(stroke
@@ -15228,6 +15494,16 @@
 			(type default)
 		)
 		(uuid "9c34fcd3-d739-4bfa-8cb7-442e791ad0e3")
+	)
+	(wire
+		(pts
+			(xy 167.64 383.54) (xy 179.07 383.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c9cf720-4157-4b47-875d-d8fe4d84e8cb")
 	)
 	(wire
 		(pts
@@ -15771,6 +16047,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 359.41) (xy 29.21 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b266aeeb-dbdc-4700-b010-3c14c2534e9e")
+	)
+	(wire
+		(pts
 			(xy 276.86 147.32) (xy 292.1 147.32)
 		)
 		(stroke
@@ -15808,6 +16094,16 @@
 			(type default)
 		)
 		(uuid "b4097eb0-9b10-4d26-b575-ce9494dba0b0")
+	)
+	(wire
+		(pts
+			(xy 20.32 360.68) (xy 20.32 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b44f3882-0004-466c-85fa-3a9a773d0746")
 	)
 	(wire
 		(pts
@@ -15911,7 +16207,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 396.24) (xy 54.61 396.24)
+			(xy 21.59 396.24) (xy 40.64 396.24)
 		)
 		(stroke
 			(width 0)
@@ -16018,6 +16314,16 @@
 			(type default)
 		)
 		(uuid "bef3d97c-01e8-486a-9f37-dc11c70ef5a3")
+	)
+	(wire
+		(pts
+			(xy 156.21 383.54) (xy 160.02 383.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf1b4ede-3ba4-4460-902b-881fe1739a29")
 	)
 	(wire
 		(pts
@@ -16301,7 +16607,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 383.54) (xy 38.1 383.54)
+			(xy 21.59 383.54) (xy 40.64 383.54)
 		)
 		(stroke
 			(width 0)
@@ -16368,6 +16674,16 @@
 			(type default)
 		)
 		(uuid "d5805764-e8f0-49bb-b7a1-d4b10fbd6dee")
+	)
+	(wire
+		(pts
+			(xy 48.26 388.62) (xy 54.61 388.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5b33a5a-f26b-4288-bdbc-b14e9d92a1ec")
 	)
 	(wire
 		(pts
@@ -16438,16 +16754,6 @@
 			(type default)
 		)
 		(uuid "d7eccc19-3438-4b67-b676-28115692cce9")
-	)
-	(wire
-		(pts
-			(xy 168.91 383.54) (xy 156.21 383.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8ad2f68-46ba-4715-a1e8-a4dd7bfe04a1")
 	)
 	(wire
 		(pts
@@ -16541,6 +16847,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 388.62) (xy 160.0408 388.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3812136-528a-47ec-8dae-2fe1356fd678")
+	)
+	(wire
+		(pts
 			(xy 115.57 92.71) (xy 115.57 97.79)
 		)
 		(stroke
@@ -16598,16 +16914,6 @@
 			(type default)
 		)
 		(uuid "e66c6005-f52b-4294-9ec1-b628599621e9")
-	)
-	(wire
-		(pts
-			(xy 168.91 388.62) (xy 156.21 388.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e73020ef-0843-45b3-92eb-adfed6afea34")
 	)
 	(wire
 		(pts
@@ -17140,7 +17446,7 @@
 		(uuid "ff0fedfc-69ef-4fe9-956b-657ae517034f")
 	)
 	(image
-		(at 240.03 358.14)
+		(at 255.27 358.14)
 		(scale 1.83333)
 		(uuid "0cce7d3c-a84b-4b19-aa68-13957ca85803")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAtAAAAIcCAIAAABQHw4EAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
@@ -25736,7 +26042,7 @@
 		(uuid "15d327c1-f15d-4f2b-bf22-12cb28433156")
 	)
 	(label "TIM1_CH2"
-		(at 168.91 386.08 180)
+		(at 179.07 386.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25866,7 +26172,7 @@
 		(uuid "3d56acd2-256b-47b7-8639-6e03cbefeb35")
 	)
 	(label "TIM1_CH1"
-		(at 168.91 388.62 180)
+		(at 179.07 388.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25946,7 +26252,7 @@
 		(uuid "50272ac8-ce04-4566-b224-fcc4aaa867e2")
 	)
 	(label "TIM2_CH2"
-		(at 170.18 381 180)
+		(at 179.07 381 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25966,7 +26272,7 @@
 		(uuid "5592b8d4-de03-4686-bafe-c56eae124335")
 	)
 	(label "MOTOR+_SENSE"
-		(at 38.1 386.08 0)
+		(at 21.59 386.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26016,7 +26322,7 @@
 		(uuid "721e37e6-7eae-4f8e-8f06-337e62be9e17")
 	)
 	(label "POT"
-		(at 38.1 391.16 0)
+		(at 21.59 391.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26126,7 +26432,7 @@
 		(uuid "9ad6dc3d-30d0-47a2-aa08-305c6bb65728")
 	)
 	(label "EN_PHOTO"
-		(at 38.1 388.62 0)
+		(at 21.59 388.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26156,7 +26462,7 @@
 		(uuid "a808ba22-ad3d-495b-b58b-6826b74769d2")
 	)
 	(label "BUTTON1"
-		(at 168.91 383.54 180)
+		(at 179.07 383.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26246,7 +26552,7 @@
 		(uuid "cc48c755-7a58-4a27-914c-2e8beabe1671")
 	)
 	(label "MOTOR-_SENSE"
-		(at 38.1 383.54 0)
+		(at 21.59 383.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26356,7 +26662,7 @@
 		(uuid "e0677a78-903a-4d27-afbb-d1759e3e5e29")
 	)
 	(label "IMOTOR"
-		(at 38.1 393.7 0)
+		(at 21.59 393.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26366,7 +26672,7 @@
 		(uuid "e12b3f63-c39a-4b2e-8f0f-a3b11951ce33")
 	)
 	(label "TIM2_CH1"
-		(at 170.18 378.46 180)
+		(at 179.07 378.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26426,7 +26732,7 @@
 		(uuid "ee569be6-9ff3-46cf-8377-0de444aea0ba")
 	)
 	(label "UMOTOR"
-		(at 38.1 396.24 0)
+		(at 21.59 396.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30780,82 +31086,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 312.42 388.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f9990da-367b-4824-bee7-ec30e5efd312")
-		(property "Reference" "H1"
-			(at 314.96 387.3499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 314.96 389.8899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 312.42 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "dcMotor"
-				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 453.39 237.49 0)
 		(unit 1)
@@ -34649,6 +34879,221 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 163.83 378.46 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "53ab7a1a-41b5-4cbd-8d6b-770f2989771a")
+		(property "Reference" "R39"
+			(at 170.942 390.906 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 172.974 390.906 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 163.83 376.682 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 163.83 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 163.83 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 163.83 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 163.83 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "611343b7-6d99-47ae-9dab-f21d987f94d5")
+		)
+		(pin "1"
+			(uuid "c38eec79-4ac4-409b-a5ef-2e2da95e9bec")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 20.32 364.49 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "53ed149d-f94a-4460-bc35-a4282a172325")
+		(property "Reference" "C49"
+			(at 24.384 363.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 24.384 365.252 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 19.3548 360.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V X7R ±10% MLCC"
+			(at 20.32 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C28323"
+			(at 20.32 364.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 20.32 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "13d41ba4-a3db-4e6a-a818-4cc2562c0200")
+		)
+		(pin "1"
+			(uuid "ef8d1c0c-8f7f-4fa7-9811-ed9a5d0d8bb5")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 349.25 393.7 0)
 		(unit 1)
@@ -37119,6 +37564,120 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 44.45 388.62 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c98b0ca-6ddc-4f35-bce3-6f52a6901a74")
+		(property "Reference" "R50"
+			(at 38.1 394.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 40.132 394.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 386.842 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 44.45 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 44.45 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 44.45 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 44.45 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8efa0095-a732-4377-af13-919733e8c2ff")
+		)
+		(pin "1"
+			(uuid "676ef5ae-6f42-4f00-8b07-0ef8c9f99d6c")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 41.91 223.52 270)
 		(unit 1)
 		(body_style 1)
@@ -37604,6 +38163,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 383.54 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70fe06c3-9344-4826-a0a6-ffdb1a1f4224")
+		(property "Reference" "R52"
+			(at 38.1 389.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 40.132 389.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 381.762 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 44.45 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 44.45 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 44.45 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 44.45 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e480e860-4616-493a-a16d-e6109ed3fd58")
+		)
+		(pin "1"
+			(uuid "a316cf06-2442-4ff3-a0c5-8101ddb32923")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -39660,6 +40333,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 163.83 383.54 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f2a9bb4-eba7-4b76-84aa-398b55d48b3c")
+		(property "Reference" "R44"
+			(at 170.942 395.986 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 172.974 395.986 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 163.83 381.762 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 163.83 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 163.83 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 163.83 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 163.83 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2c5a1be1-5d8a-4b6d-b597-4032a7ddc64e")
+		)
+		(pin "1"
+			(uuid "31bbb094-5197-44fe-871d-4d9d90111cdc")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PZ:TP_Keystone_5010-5014_Multipurpose")
 		(at 146.05 237.49 0)
 		(unit 1)
@@ -40178,6 +40965,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 396.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85755f70-2b53-4481-a99d-2b41eaa5e364")
+		(property "Reference" "R48"
+			(at 38.1 402.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 40.132 402.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 394.462 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 44.45 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 44.45 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 44.45 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 44.45 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "990b7ede-9552-4883-bc3a-15ad991b3f00")
+		)
+		(pin "1"
+			(uuid "81ad3b8b-5ecf-4598-bd98-174cfbab4fe2")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -40998,6 +41899,107 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 29.21 364.49 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8c86b5a3-7079-4b96-94cf-491f629e49b5")
+		(property "Reference" "C36"
+			(at 33.274 363.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 33.274 365.252 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 28.2448 360.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "50V X7R ±10% MLCC"
+			(at 29.21 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C28323"
+			(at 29.21 364.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 29.21 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9675a68f-4635-4b75-b268-b7d026388a72")
+		)
+		(pin "1"
+			(uuid "8a9b5126-a70b-4dd4-ba9a-47bfb412101f")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -43230,6 +44232,234 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 44.45 391.16 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9966b6a5-38c7-4a62-8e9b-4a6df90ea4ba")
+		(property "Reference" "R49"
+			(at 38.1 397.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 40.132 397.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 389.382 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 391.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 44.45 391.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 44.45 391.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 44.45 391.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 44.45 391.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3056cc66-2538-474f-8232-9d4f0d4e032e")
+		)
+		(pin "1"
+			(uuid "45cc557e-6fec-423c-aa7c-4bc76bd40ef3")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 393.7 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9afd9ade-de48-4412-b616-246c0c7dcd93")
+		(property "Reference" "R47"
+			(at 38.1 400.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 40.132 400.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 391.922 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 393.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 44.45 393.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 44.45 393.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 44.45 393.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 44.45 393.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9644b7d7-c2c3-4c0b-8049-9dbfe6bb4ff1")
+		)
+		(pin "1"
+			(uuid "9d91a3ed-a0dd-4a1b-b5a4-fd8bad495cc3")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 49.53 250.19 180)
 		(unit 1)
@@ -43852,6 +45082,175 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 20.32 372.11 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a335ce5b-cc3c-465f-a9a1-1279ccd74fdc")
+		(property "Reference" "#PWR0122"
+			(at 20.32 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 20.066 375.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 20.32 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "961c1374-2c25-448d-9957-aa9f8d949ce6")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 43.18 378.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a4a02aca-65ba-4868-8904-85e095cc882d")
+		(property "Reference" "JP4"
+			(at 42.926 375.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 43.18 374.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 43.18 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 43.18 383.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 43.18 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "07e635f4-74d4-4580-9ad8-cdf83f859011")
+		)
+		(pin "1"
+			(uuid "6806a78b-1c31-4cd6-bfbd-55e266fce6ac")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -45113,6 +46512,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 29.21 354.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b543aed4-bd87-45b7-9143-8e8675f4fcaa")
+		(property "Reference" "#PWR0120"
+			(at 29.21 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 29.21 350.266 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 354.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 354.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 29.21 354.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "751b34b6-4704-45f6-ab7a-8187df6df5de")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PZ:TLV9152IDR")
 		(at 212.09 278.13 0)
 		(unit 3)
@@ -45885,6 +47361,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 163.83 386.08 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bcc52042-ce1e-432c-a5ad-631d8842d4d3")
+		(property "Reference" "R45"
+			(at 170.942 398.526 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 172.974 398.526 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 163.83 384.302 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 163.83 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 163.83 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 163.83 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 163.83 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9b434a89-174f-46fb-9c31-caeca9f23837")
+		)
+		(pin "1"
+			(uuid "5886567d-2bdb-4065-a99f-b9a5128e746b")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -49405,6 +50995,198 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 29.21 372.11 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de1a7424-2d16-4ba5-bb0c-fa4a9f664cc0")
+		(property "Reference" "#PWR0121"
+			(at 29.21 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 28.956 375.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 29.21 372.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "148a11ce-e73b-4d66-b7d8-3a67859d6528")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 163.8508 388.62 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de824e68-5493-4adf-8835-0a929cde2980")
+		(property "Reference" "R46"
+			(at 170.9628 401.066 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 172.9948 401.066 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 163.8508 386.842 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.8508 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 163.8508 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 163.8508 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 163.8508 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 163.8508 388.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2e9df934-ac05-4b39-b48d-73b44da23b8a")
+		)
+		(pin "1"
+			(uuid "7b2b0eaa-e26d-482e-9304-fe97987a935f")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 513.08 77.47 0)
 		(unit 1)
@@ -50455,6 +52237,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 163.83 381 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5d93ee4-fa94-4bfd-93fd-1cd670fc0f64")
+		(property "Reference" "R41"
+			(at 170.942 393.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 172.974 393.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 163.83 379.222 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 163.83 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 163.83 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 163.83 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 163.83 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8b17980e-2328-4c22-a24a-1755952af327")
+		)
+		(pin "1"
+			(uuid "300b320e-e0b4-4a81-adda-c7e2388b57a3")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -51524,6 +53420,120 @@
 			(project "dcMotor"
 				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 386.08 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f334c3a2-6f6b-4b28-b441-43951e42781f")
+		(property "Reference" "R51"
+			(at 38.1 392.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 40.132 392.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 44.45 384.302 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "125mW 150V Thick Film ±1% ±100ppm/℃"
+			(at 44.45 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C17477"
+			(at 44.45 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 44.45 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 44.45 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6a014f62-048b-4a78-961f-22c012c375cb")
+		)
+		(pin "1"
+			(uuid "a545262a-1580-4568-87fe-2cf641a6eed5")
+		)
+		(instances
+			(project "dcMotor"
+				(path "/cdbcf673-237a-45f1-99a3-f4d168bf6e2e"
+					(reference "R51")
 					(unit 1)
 				)
 			)
