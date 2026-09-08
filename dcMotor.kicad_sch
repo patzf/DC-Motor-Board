@@ -11302,6 +11302,20 @@
 		)
 		(uuid "ed4c2c44-2cc1-4b2b-bef4-857410f87e4e")
 	)
+	(text "JLC: C398355: TLV9062IDR"
+		(exclude_from_sim no)
+		(at 66.802 281.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 15 6 1)
+			)
+			(justify left)
+		)
+		(uuid "026a0680-bd86-43f8-a3cc-2900e3d98da3")
+	)
 	(text "Photo Interruptor"
 		(exclude_from_sim no)
 		(at 324.866 27.432 0)
@@ -11366,6 +11380,20 @@
 		)
 		(uuid "1feda274-c66c-49b6-89e6-02b7f2add354")
 	)
+	(text "USED A4 instead of B4 since in stock"
+		(exclude_from_sim no)
+		(at 383.286 338.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 15 6 1)
+			)
+			(justify left)
+		)
+		(uuid "202d8f77-c26d-405e-ab5d-4811aa47e5e8")
+	)
 	(text "Debug Header"
 		(exclude_from_sim no)
 		(at 208.534 29.972 0)
@@ -11376,6 +11404,20 @@
 			(justify left)
 		)
 		(uuid "24519b4b-c886-4119-a53e-5893025dc756")
+	)
+	(text "ACHTUNG"
+		(exclude_from_sim no)
+		(at 508.508 228.092 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 15 6 1)
+			)
+			(justify left)
+		)
+		(uuid "2679bea5-7759-4d4c-803f-f90697bec2dc")
 	)
 	(text "(=MOTOR_DRV_IN1)"
 		(exclude_from_sim no)
@@ -11590,6 +11632,20 @@
 		)
 		(uuid "8a47c98b-7014-4d22-ad3e-4a730201f33d")
 	)
+	(text "JLC: C398355: TLV9062IDR"
+		(exclude_from_sim no)
+		(at 125.476 227.076 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 15 6 1)
+			)
+			(justify left)
+		)
+		(uuid "8abece64-9ecd-4d8e-a8c2-55adbe2b702c")
+	)
 	(text "(=HALL_B)"
 		(exclude_from_sim no)
 		(at 221.234 144.018 0)
@@ -11748,12 +11804,15 @@
 		)
 		(uuid "c25df666-4da6-45a8-a2b8-6de42811a8dc")
 	)
-	(text "JLC: TLV9061: TLV9062IDR"
+	(text "JLC: C398355: TLV9062IDR"
 		(exclude_from_sim no)
-		(at 85.852 225.552 0)
+		(at 62.992 228.346 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 15 6 1)
 			)
 			(justify left)
 		)
@@ -29193,7 +29252,7 @@
 		(dnp yes)
 		(uuid "1ce3b084-2142-498a-8397-6d5bf09c5609")
 		(property "Reference" "J4"
-			(at 397.256 101.854 0)
+			(at 388.62 101.854 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29570,7 +29629,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20e4ae17-fbea-43b9-aeb3-e7ec96041b5b")
 		(property "Reference" "U11"
@@ -29690,7 +29749,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20e4ae17-fbea-43b9-aeb3-e7ec96041b5c")
 		(property "Reference" "U11"
@@ -29812,7 +29871,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "20e4ae17-fbea-43b9-aeb3-e7ec96041b5d")
 		(property "Reference" "U11"
 			(at 71.12 263.652 0)
@@ -41279,7 +41338,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "83394136-4991-4aa6-95c3-ff6c1df69419")
 		(property "Reference" "U5"
 			(at 71.12 231.902 0)
@@ -45215,7 +45274,7 @@
 				)
 			)
 		)
-		(property "Value" "INA241B4IDR"
+		(property "Value" "INA241A4IDR"
 			(at 370.586 318.516 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45280,7 +45339,18 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C21260962"
+		(property "LCSC Part #" "C22427873"
+			(at 375.92 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 375.92 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -45443,10 +45513,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a0922474-42c1-4a7f-9311-f371e9f4f248")
 		(property "Reference" "JP2"
 			(at 212.09 258.064 0)
@@ -45703,10 +45773,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a4a02aca-65ba-4868-8904-85e095cc882d")
 		(property "Reference" "JP4"
 			(at 42.926 375.92 0)
@@ -45763,6 +45833,17 @@
 			)
 		)
 		(property "LCSC Part #" ""
+			(at 43.18 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 43.18 378.46 0)
 			(hide yes)
 			(show_name no)
@@ -47129,7 +47210,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b56b6410-4d37-408f-8c0e-9dfb026514b8")
 		(property "Reference" "U5"
@@ -49360,10 +49441,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cd92d53f-12a0-4543-b6ff-fe3e467c70f6")
 		(property "Reference" "JP3"
 			(at 412.75 178.054 0)
@@ -55222,7 +55303,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "fb68a25f-d3d9-4129-b080-5da2d30d4b07")
 		(property "Reference" "U5"
 			(at 134.62 231.902 0)

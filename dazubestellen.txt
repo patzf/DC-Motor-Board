@@ -1,0 +1,17 @@
+M3
+Motor: 5
+Phönix
+Gummipuffer
+Normale Stiftleisten
+Testpiunkt
+Poti
+Shunt
+100µF C28
+poti
+debug stecker
+stlink
+push button
+schmitt-trigger
+Testpunkte
+TLV9152IDR as backup
+
