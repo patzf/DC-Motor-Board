@@ -31844,7 +31844,7 @@
 		(dnp no)
 		(uuid "3591aa57-8acb-4566-bf9a-d6536102a468")
 		(property "Reference" "U3"
-			(at 250.19 217.17 0)
+			(at 250.19 214.884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31854,7 +31854,7 @@
 			)
 		)
 		(property "Value" "NCP718ASNADJT1G"
-			(at 260.35 217.17 0)
+			(at 257.81 216.916 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -42814,7 +42814,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "93aed8cb-48ec-4a1b-a37e-2862ecc4250c")
 		(property "Reference" "U12"
@@ -43446,7 +43446,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "963c482a-ad99-47ce-bf1c-cb8c0f693fd2")
 		(property "Reference" "U12"
@@ -49826,7 +49826,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d6af2dad-f8a2-47b4-b923-757248507446")
 		(property "Reference" "U12"
 			(at 135.89 321.31 0)
