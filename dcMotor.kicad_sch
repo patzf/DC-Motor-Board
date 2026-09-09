@@ -11859,17 +11859,6 @@
 		)
 		(uuid "d26302f6-4b45-47d3-aaa6-2b4281644b0d")
 	)
-	(text "RM0444 Rev 5 40.4.4 internal PU PD\ncheapo: Tokmas MBRS340T3G (onsemi@mouser:0,5)\nTokmas@JLC: 0,05"
-		(exclude_from_sim no)
-		(at 183.134 78.232 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d336a722-a986-4ffc-ac68-6e045fdaab56")
-	)
 	(text "Virtual GND for Back-EMF Measurement"
 		(exclude_from_sim no)
 		(at 236.982 201.422 0)
@@ -12025,16 +12014,6 @@
 			)
 		)
 		(uuid "f22dc787-7450-4ddc-8885-aeb377847977")
-	)
-	(text "cheapo: Tokmas MBRS340T3G (onsemi@mouser:0,5), Tokmas@JLC: 0,05"
-		(exclude_from_sim no)
-		(at 201.676 86.868 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f31f5dce-adb7-41e4-8917-5b45f0e85dc5")
 	)
 	(text "reserved for VCP (Serial)"
 		(exclude_from_sim no)
@@ -49679,7 +49658,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PTV09A-1020F-B203"
+		(property "Value" "PTV09A-4025U-B103"
 			(at 346.202 171.196 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -55833,8 +55812,8 @@
 			"994c28c7-fe33-415e-b2d9-f16c7c27b0ec" "9fda32f4-93c3-4b6e-b36f-1133df485bbc"
 			"ae092455-57ff-4f73-9486-5d770a2adb30" "bb1655cc-99e4-4f2d-a898-063b827e8758"
 			"bf11dc07-570a-4517-9cc9-f0277680732e" "c9b75220-e3d7-4c6e-98ba-2567fe62b425"
-			"c9cd42a5-d008-43a6-95bc-b50fe7a808fc" "d336a722-a986-4ffc-ac68-6e045fdaab56"
-			"f09eb9bd-95ad-4ccc-a9cd-6a7316afab23" "fbd1f915-9275-4804-87ed-44c1f507bd31"
+			"c9cd42a5-d008-43a6-95bc-b50fe7a808fc" "f09eb9bd-95ad-4ccc-a9cd-6a7316afab23"
+			"fbd1f915-9275-4804-87ed-44c1f507bd31"
 		)
 	)
 	(group "DCDC_LMR544060"
