@@ -6,14 +6,14 @@ import matplotlib.ticker as ticker
 import pyvisa
 
 # CONFIGURATION
-CHANNELS_TO_ACQUIRE = [1, 2]  # Liste mit den gewuenschten Kanaelen
+CHANNELS_TO_ACQUIRE = [1, 2, 3, 4]  # Liste mit den gewuenschten Kanaelen
 CHANNEL_DESCRIPTIONS = {
-    1: "Motorstrom",
-    2: "Spannung U1",
-    3: "Signal A",
-    4: "Signal B"
+    1: "Hall_A",
+    2: "Motor V+",
+    3: "Driver IN1",
+    4: "Driver IN2"
 }
-VISA_ADDRESS = "TCPIP::172.16.58.66::INSTR"
+VISA_ADDRESS = "TCPIP::192.168.1.26::INSTR"
 
 # Rigol Hardware-Farben fuer das Plotten definieren
 RIGOL_COLORS = {
@@ -41,31 +41,32 @@ valid_options = (1, 2, 3, 4)
 
 try:
     # 2. Force the scope into NORMAL trigger sweep mode (NOT Auto)
-    print("Setting scope trigger sweep mode to NORMAL...")
-    scope.write(":TRIGger:SWEep NORMal")
+    print("Setting scope trigger sweep mode to SINGLE...")
+    scope.write(":RUN")
+    scope.write(":TRIGger:SWEep SINGle")
+    #print(scope.query(":TRIGger:SWEep?"))
     
     # Put the scope in RUN mode so it actively looks for the trigger
-    scope.write(":RUN")
+    #scope.write(":RUN")
     
     # 3. Interactive User-Loop for Trigger Check
-    print("\nThe scope is now armed in NORMAL mode and waiting for your trigger.")
+    print("\nThe scope is now armed in SINGLE mode and waiting for your trigger.")
     
     while True:
-        print("Once the signal is captured on the screen, press ENTER in this terminal to download the data.")
-        input("Press [ENTER] to acquire data...")
 
         # Check if the scope has actually triggered
         # Rigol Status values: RUN, WAIT, T'D, STOP
         status = scope.query(":TRIGger:STATus?").strip()
         
         if status == "WAIT":
-            print("\nNo trigger has happened yet! The scope is still waiting for a signal.")
-            print("Try again once the event occurred.\n")
+            #print("\nNo trigger has happened yet! The scope is still waiting for a signal.")
+            #print("Try again once the event occurred.\n")
             continue
         else:
             # Trigger has happened (Status is T'D or STOP)
             print(f"\nTrigger confirmed! Scope status is: {status}")
             break
+    input("Press [ENTER] to acquire data...")
 
     # 4. Read the current time division from the scope (in seconds, e.g. 0.005)
     time_div_seconds = float(scope.query(":TIMebase:MAIN:SCALe?").strip())
@@ -184,9 +185,6 @@ try:
     # Zwinge die Gitterlinien exakt auf die skalierte Time/Div
     ax.xaxis.set_major_locator(ticker.MultipleLocator(time_div_scaled))
 
-    # Rigol hat 12 Divisionen -> Achsenbegrenzung auf 12 Divs zentrieren
-    half_screen_scaled = time_div_scaled * 6
-    ax.set_xlim(-half_screen_scaled, half_screen_scaled)
 
     # Titel und Label mit sauber getrennten Einheiten setzen
     plt.title(f"Rigol Oscilloscope Data Capture ({time_div_scaled:g} {title_unit}/Div)")
