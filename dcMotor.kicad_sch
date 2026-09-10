@@ -11394,17 +11394,6 @@
 		)
 		(uuid "202d8f77-c26d-405e-ab5d-4811aa47e5e8")
 	)
-	(text "Debug Header"
-		(exclude_from_sim no)
-		(at 208.534 29.972 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left)
-		)
-		(uuid "24519b4b-c886-4119-a53e-5893025dc756")
-	)
 	(text "ACHTUNG"
 		(exclude_from_sim no)
 		(at 508.508 228.092 0)
@@ -11580,10 +11569,10 @@
 	)
 	(text "µC"
 		(exclude_from_sim no)
-		(at 167.64 28.194 0)
+		(at 170.18 28.194 0)
 		(effects
 			(font
-				(size 2 2)
+				(size 3 3)
 			)
 			(justify left)
 		)
@@ -12036,6 +12025,17 @@
 		)
 		(uuid "f901837c-0bf4-40e8-a470-1a1ab27d37ef")
 	)
+	(text "Debug Header"
+		(exclude_from_sim no)
+		(at 192.532 35.56 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "f9166cf8-f41a-45b3-a37c-ada59d501edc")
+	)
 	(text "MOTOR"
 		(exclude_from_sim no)
 		(at 567.944 321.31 90)
@@ -12407,7 +12407,7 @@
 		(uuid "9c12be4a-0f17-4e75-816f-e2bba5ab69b3")
 	)
 	(junction
-		(at 198.12 74.93)
+		(at 194.31 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fda32f4-93c3-4b6e-b36f-1133df485bbc")
@@ -12750,7 +12750,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 50.8) (xy 222.25 50.8)
+			(xy 209.55 59.69) (xy 218.44 59.69)
 		)
 		(stroke
 			(width 0)
@@ -13220,7 +13220,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 43.18) (xy 220.98 43.18)
+			(xy 209.55 52.07) (xy 217.17 52.07)
 		)
 		(stroke
 			(width 0)
@@ -14680,7 +14680,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 34.29) (xy 200.66 38.1)
+			(xy 196.85 43.18) (xy 196.85 46.99)
 		)
 		(stroke
 			(width 0)
@@ -14750,7 +14750,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 73.66) (xy 198.12 74.93)
+			(xy 194.31 82.55) (xy 194.31 83.82)
 		)
 		(stroke
 			(width 0)
@@ -15130,7 +15130,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 66.04) (xy 227.33 66.04)
+			(xy 209.55 74.93) (xy 223.52 74.93)
 		)
 		(stroke
 			(width 0)
@@ -15590,7 +15590,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 68.58) (xy 227.33 68.58)
+			(xy 209.55 77.47) (xy 223.52 77.47)
 		)
 		(stroke
 			(width 0)
@@ -16270,7 +16270,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 48.26) (xy 222.25 48.26)
+			(xy 209.55 57.15) (xy 218.44 57.15)
 		)
 		(stroke
 			(width 0)
@@ -16540,7 +16540,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 74.93) (xy 198.12 76.2)
+			(xy 194.31 83.82) (xy 194.31 85.09)
 		)
 		(stroke
 			(width 0)
@@ -16780,7 +16780,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 74.93) (xy 198.12 74.93)
+			(xy 196.85 83.82) (xy 194.31 83.82)
 		)
 		(stroke
 			(width 0)
@@ -17520,7 +17520,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 73.66) (xy 200.66 74.93)
+			(xy 196.85 82.55) (xy 196.85 83.82)
 		)
 		(stroke
 			(width 0)
@@ -26435,7 +26435,7 @@
 		(uuid "1d9548e2-a6e8-44b4-93af-32e70dcfa1f2")
 	)
 	(label "SWDIO"
-		(at 222.25 50.8 180)
+		(at 218.44 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26485,7 +26485,7 @@
 		(uuid "27f13eb9-ab3b-4258-ad03-d52a8d05d8a5")
 	)
 	(label "SWCLK"
-		(at 222.25 48.26 180)
+		(at 218.44 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26575,7 +26575,7 @@
 		(uuid "4bcd414a-1f8b-453f-89d1-6a8b3a078156")
 	)
 	(label "LPUART1_RX"
-		(at 227.33 66.04 180)
+		(at 223.52 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -26865,7 +26865,7 @@
 		(uuid "c5f4bcf8-d447-4399-8d5b-8e45b331a952")
 	)
 	(label "LPUART1_TX"
-		(at 227.33 68.58 180)
+		(at 223.52 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -27105,7 +27105,7 @@
 		(uuid "f9531ac7-364c-4f2b-8c08-002100ab232c")
 	)
 	(label "~{RST}"
-		(at 220.98 43.18 180)
+		(at 217.17 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33935,7 +33935,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 34.29 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -34112,7 +34112,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 480.06 336.55 0)
 			(hide yes)
 			(show_name no)
@@ -35956,7 +35956,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 433.07 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -39388,7 +39388,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 198.12 76.2 0)
+		(at 194.31 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39398,7 +39398,7 @@
 		(dnp no)
 		(uuid "772584b3-2274-4c7f-b0fb-fc7c220072f4")
 		(property "Reference" "#PWR05"
-			(at 198.12 82.55 0)
+			(at 194.31 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39409,7 +39409,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 80.518 0)
+			(at 194.31 89.408 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39419,7 +39419,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 76.2 0)
+			(at 194.31 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39430,7 +39430,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 76.2 0)
+			(at 194.31 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39441,7 +39441,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 76.2 0)
+			(at 194.31 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41079,7 +41079,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 146.05 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -44690,7 +44690,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 200.66 34.29 0)
+		(at 196.85 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44700,7 +44700,7 @@
 		(dnp no)
 		(uuid "994c28c7-fe33-415e-b2d9-f16c7c27b0ec")
 		(property "Reference" "#PWR08"
-			(at 200.66 38.1 0)
+			(at 196.85 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44711,7 +44711,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 200.66 30.226 0)
+			(at 196.85 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44721,7 +44721,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 34.29 0)
+			(at 196.85 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44732,7 +44732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 34.29 0)
+			(at 196.85 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44743,7 +44743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 200.66 34.29 0)
+			(at 196.85 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46397,7 +46397,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 435.61 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -47531,7 +47531,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 411.48 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -48229,7 +48229,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_ST_STDC14")
-		(at 200.66 55.88 0)
+		(at 196.85 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -48239,7 +48239,7 @@
 		(dnp yes)
 		(uuid "bf11dc07-570a-4517-9cc9-f0277680732e")
 		(property "Reference" "J3"
-			(at 204.47 36.322 0)
+			(at 200.66 45.212 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48250,7 +48250,7 @@
 			)
 		)
 		(property "Value" "Conn_ST_STDC14"
-			(at 218.186 38.608 0)
+			(at 214.376 47.498 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48261,7 +48261,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical"
-			(at 200.66 55.88 0)
+			(at 196.85 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48272,7 +48272,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.77 87.63 90)
+			(at 187.96 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48283,7 +48283,7 @@
 			)
 		)
 		(property "Description" "Amphenol 20021111-00014T1LF"
-			(at 188.722 61.722 90)
+			(at 184.912 70.612 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48293,7 +48293,7 @@
 			)
 		)
 		(property "LCSC Part #" "C3325730"
-			(at 200.66 55.88 0)
+			(at 196.85 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48304,7 +48304,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 200.66 55.88 0)
+			(at 196.85 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48315,7 +48315,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 200.66 55.88 0)
+			(at 196.85 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48552,7 +48552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 382.27 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -49965,7 +49965,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 530.86 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -50257,7 +50257,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 81.28 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -52261,7 +52261,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 34.29 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -53087,7 +53087,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 104.14 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -55723,7 +55723,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 447.04 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -55813,7 +55813,7 @@
 			"ae092455-57ff-4f73-9486-5d770a2adb30" "bb1655cc-99e4-4f2d-a898-063b827e8758"
 			"bf11dc07-570a-4517-9cc9-f0277680732e" "c9b75220-e3d7-4c6e-98ba-2567fe62b425"
 			"c9cd42a5-d008-43a6-95bc-b50fe7a808fc" "f09eb9bd-95ad-4ccc-a9cd-6a7316afab23"
-			"fbd1f915-9275-4804-87ed-44c1f507bd31"
+			"f9166cf8-f41a-45b3-a37c-ada59d501edc" "fbd1f915-9275-4804-87ed-44c1f507bd31"
 		)
 	)
 	(group "DCDC_LMR544060"

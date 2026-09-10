@@ -1766,7 +1766,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3956,7 +3956,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7237,7 +7237,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9719,7 +9719,7 @@
 				)
 			)
 		)
-		(property "Value" "PTV09A-1020F-B203"
+		(property "Value" "PTV09A-4025U-B103"
 			(at 6.05 5.35 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10346,7 +10346,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26287,7 +26287,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27581,7 +27581,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29643,7 +29643,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30537,7 +30537,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30709,7 +30709,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -31068,7 +31068,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -32930,7 +32930,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -35732,7 +35732,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_Keystone_5095"
+		(property "Value" "TP_Keystone_5010"
 			(at 0 2.75 0)
 			(layer "F.Fab")
 			(hide yes)
