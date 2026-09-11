@@ -129,6 +129,7 @@ try:
     scope.write(":RUN")
     scope.write(":TRIGger:SWEep SINGle")
     print("\nThe scope is now armed in SINGLE mode and waiting for your trigger.")
+    time.sleep(10)
     while True:
         status=scope.query(":TRIGger:STATus?").strip()
         if status=="WAIT":
