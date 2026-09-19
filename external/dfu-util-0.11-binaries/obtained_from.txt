@@ -1,0 +1,1 @@
+https://dfu-util.sourceforge.net/releases/dfu-util-0.11-binaries.tar.xz

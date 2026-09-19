@@ -46270,14 +46270,6 @@
 		(uuid "d1e238dd-50f7-408e-bd49-1d918217503e")
 	)
 	(segment
-		(start 74.4093 54.752999)
-		(end 74.2823 54.879999)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "+5.0V")
-		(uuid "da8696cf-b2ed-4c30-9de2-ae82f8141e60")
-	)
-	(segment
 		(start 57.1611 56.595)
 		(end 56.7611 56.195)
 		(width 0.25)

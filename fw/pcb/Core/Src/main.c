@@ -23,11 +23,14 @@
 #include "usart.h"
 #include "tim.h"
 #include "ucpd.h"
-#include "usb.h"
+#include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+//TODO FIXME
+volatile uint8_t dfu_jump_requested;
 
 /* USER CODE END Includes */
 
@@ -60,6 +63,55 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
+
+
+
+// Taken from https://community.st.com/stm32-mcus-60/how-to-jump-to-system-bootloader-from-application-code-on-stm32-microcontrollers-71
+
+
+#include "stm32g4xx_hal.h"
+#include "core_cm4.h"
+
+#define SYSTEM_MEMORY_BASE 0x1FFF0000UL
+typedef void (*pFunction)(void);
+
+void JumpToSystemBootloader(void)
+{
+    uint32_t sp = *(volatile uint32_t *)(SYSTEM_MEMORY_BASE + 0);
+    uint32_t pc = *(volatile uint32_t *)(SYSTEM_MEMORY_BASE + 4);
+    pFunction bootloader = (pFunction)pc;
+
+    __disable_irq();
+    SysTick->CTRL = 0;
+    SysTick->LOAD = 0;
+    SysTick->VAL = 0;
+
+    for (uint32_t i = 0; i < sizeof(NVIC->ICER) / sizeof(NVIC->ICER[0]); i++)
+    {
+        NVIC->ICER[i] = 0xFFFFFFFFUL;
+        NVIC->ICPR[i] = 0xFFFFFFFFUL;
+    }
+
+    HAL_RCC_DeInit();
+
+    __set_MSP(sp);
+    __enable_irq();
+    bootloader();
+
+    while (1) {}
+}
+
+
+
+
+
+
+
+
+
+
 
 void cycleThrough(void)
 {
@@ -115,9 +167,27 @@ void recordStepResponse(void)
 }
 
 
-void setMotorRPM(float rpm)
+void setMotorRPM(uint32_t rpm)
 {
-	static volatile int a = 0;
+	// TODO: remove the hardcoded 6800 form TIM1
+
+	// calc duty cycle needed for given RPM
+
+	// Annahme: linearer Zusammenhang zwischen RPM und UMOTOR
+	// UMotor = rpm/10000.0f*12;
+
+	// Annahme: linearer Zusammenhang zwischen UMOTOR und PWM duty cycle
+	// duty in prozent = UMotor/12.0f*100
+	// 100% duty heißt: TIMER capture compare = Timer overflow (Period)
+	// Timer CCR = UMotor/12.0f*6800
+
+	uint32_t duty = rpm*68/100.0f;
+
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0);
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+
 }
 
 void setMotorDuty(void)
@@ -173,11 +243,11 @@ int main(void)
   MX_ADC2_Init();
   MX_LPUART1_UART_Init();
   MX_UCPD1_Init();
-  MX_USB_PCD_Init();
   MX_TIM2_Init();
   MX_TIM1_Init();
   MX_I2C1_Init();
   MX_TIM3_Init();
+  MX_USB_Device_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -185,11 +255,38 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  quickCheck();
+
+  setMotorRPM(5000);
+  //quickCheck();
   //cycleThrough();
+  //HAL_Delay(3000);
+  //recordStepResponse();
 
   while (1)
   {
+	  // !! DO NOT MODIFY THIS !!
+	  if(dfu_jump_requested)
+	  {
+		  JumpToSystemBootloader();
+	  }
+	  //
+
+	  //stop reporting of values
+	  if(f_measurement_finished)
+	  {
+		HAL_TIM_Base_Stop_IT(&htim3);
+		HAL_TIM_IC_Stop(&htim2, TIM_CHANNEL_1);
+
+		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
+
+		//send values to PC
+		HAL_UART_Transmit(&hlpuart1, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
+		f_measurement_finished = 0;
+		//memset(motor_rpm, 0, sizeof(motor_rpm));
+
+	  }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -245,6 +342,9 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+
+
 
 /* USER CODE END 4 */
 

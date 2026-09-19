@@ -1,0 +1,123 @@
+Würth Webinar 19.5. 10:00 Uhr
+https://event.demio.com/join/7lWtjqiGHp3UwHUJ
+
+
+Überprüfe ob folgende Aussagen richtig sind
+
+
+
+
+		
+		
+
+		
+
+
+AN2606 rev.68 , §49.1 and 49.2
+
+Runterschreiben über USB (in einen leeren µC als erstes experiment, also über ST link µC zuerst erasen oder komplett leerer uC)
+->We need to either temporarily modify option bytes or temporarily pull PB8 pin high to program the G431 via USB DFU
+
+->With PB8 pulled high during reset, running dfu-util -l   shows:
+Found DFU: [0483:df11] ver=0200, devnum=3, cfg=1, intf=0, path="2-2", alt=2, name="@OTP Memory   /0x1FFF7000/01*01Ke", serial="308B335A3036"
+Found DFU: [0483:df11] ver=0200, devnum=3, cfg=1, intf=0, path="2-2", alt=1, name="@Option Bytes   /0x1FFF7800/01*40Be", serial="308B335A3036"
+Found DFU: [0483:df11] ver=0200, devnum=3, cfg=1, intf=0, path="2-2", alt=0, name="@Internal Flash   /0x08000000/64*02Kg", serial="308B335A3036"
+Found Runtime: [5986:2146] ver=5722, devnum=1, cfg=1, intf=4, path="2-3", alt=0, name="APP Mode", serial="01.00.00"
+
+->This shows that we are in ROM bootloader since it exposes three dfu alt locations.
+->So we need to pull PB8 the very first time.
+->In the FW we flash, we need to add the possibility to jump to DFU right by software via USB DFU device class + dfu-util
+->Since after a software triggered jump to ROM bootloader we want to run from flash after flashing we we keep the 10k PD on PB8
+
+
+
+
+
+
+
+Prepare the FW to flash first time that enabled USB DFU device class
+(Konfiguration, um STM32G431CBT6 auf custom PSB mittels USB DFU zu flashen)
+
+Im CubeMX, das USB periperhal einschalten mit USB DFU Device Class
+-> Damit hat de rµC den mötigen Code in der User Application um auch während des ausführens der user app als USB DFU Device sichtbar zu sein
+-> Nur so kann dann ein dfuutil erkennung von seitens de sPC erfolgen
+
+connectivity-USB
+	Device(FS)
+parameter settings
+	Fullspeed
+	internal phy
+	
+Middleware and software packs
+	USB_DEVICE
+		Class for FS IP: DFU
+		
+
+
+
+
+
+-> Firmware flashen und auf PC das dfutil ausführen mit:		
+"C:\tools\OneDrive - Höhere technische Bundeslehranstalt Graz-Gösting\hw\g4\DC-Motor-Board\external\dfu-util-0.11-binaries\win64\dfu-util" -d 0483:df11 -a 0 -c 1 -s 0x08000000:leave -D "C:\tools\OneDrive - Höhere technische Bundeslehranstalt Graz-Gösting\hw\g4\DC-Motor-Board\fw\pcb\Debug\fw.bin"
+
+liefertWarning: Invalid DFU suffix signature
+A valid DFU suffix will be required in a future dfu-util release
+Opening DFU capable USB device...
+Device ID 0483:df11
+Device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Interface #0 ...
+Determining device status...
+DFU state(2) = dfuIDLE, status(0) = No error condition is present
+DFU mode device DFU version 011a
+Device returned transfer size 1024
+DfuSe interface name: "Internal Flash   "
+Downloading element to address = 0x08000000, size = 49952
+Erase           [=========================] 100%        49952 bytes
+Erase    done.
+Download        [=========================] 100%        49952 bytes
+Download done.
+File downloaded successfully
+Submitting leave request...
+Transitioning to dfuMANIFEST state
+
+
+
+
+
+-> Nach einem power cycle zeigt sich folgendes bild
+(Applikations SW läuft und exponiert die USB DFU device class)
+
+C:\tools\OneDrive - Höhere technische Bundeslehranstalt Graz-Gösting\hw\g4\DC-Motor-Board\external\dfu-util-0.11-binaries\win64>dfu-util -l
+-> Dieser liefert den output
+Found DFU: [0483:df11] ver=0200, devnum=2, cfg=1, intf=0, path="2-2", alt=0, name="@Internal Flash   /0x08000000/03*016Ka,01*016Kg,01*064Kg,07*128Kg,04*016Kg,01*064Kg,07*128Kg", serial="308B335A3036"
+
+
+
+dfu-util -d 0483:df11 -e -E 1
+
+
+
+
+
+Wir wollen nun testweise eine FW mittels DFU flashen.
+Dazu müssen wir zuerst mittels cubeide ein -bin file erzeugen
+->Project properties
+	->C/C++ Build
+		-> Settings
+			->Tab Tool Settings
+				-> MCU/MPU Post build outputs
+					->convert to binary file
+					
+					
+					
+
+USB
+#include "stdint.h"
+volatile uint8_t dfu_jump_requested = 0;
+
+ganz unten indetach
+  dfu_jump_requested = 1;
+					
+
+

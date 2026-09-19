@@ -22,6 +22,54 @@
 
 /* USER CODE BEGIN 0 */
 
+static volatile uint32_t cycles = 0;
+volatile float motor_rpm[500] = {0};
+volatile uint32_t f_measurement_finished = 0;
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	float current_rpm;
+	static uint32_t i = 0;
+
+    if (htim->Instance == TIM3)
+    {
+    	if(cycles == 0)
+    	{
+    		current_rpm = 0; // we report zero rpm if we do not have a useful measurement
+    	}
+    	else
+    	{
+    		// float hall_frequency = ( (float)170E6 ) / cycles;
+    		// float motor_rpm = hall_frequency / 16 * 60;
+        	current_rpm = ( (float)170E6 ) / cycles * 3.75;  //motor_rpm = hall_frequency / 16 * 60;
+    	}
+
+    	motor_rpm[i++] = current_rpm;
+    	if(i == sizeof(motor_rpm)/4)
+    	{
+    		f_measurement_finished = 1;
+    		i = 0;
+    	}
+    }
+}
+
+
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+{
+	static uint32_t old_capture = 0;
+	static uint32_t new_capture;
+
+    if (htim->Instance == TIM2 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1)
+    {
+    	new_capture = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
+    	cycles = new_capture - old_capture; // no overflow check because unsigned int subtraction wraps modulo
+    	old_capture = new_capture;
+    }
+}
+
+
+
+
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;

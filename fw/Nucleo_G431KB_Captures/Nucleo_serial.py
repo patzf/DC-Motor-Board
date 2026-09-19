@@ -3,7 +3,7 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-with serial.Serial('COM3', 115200, timeout=None) as ser:
+with serial.Serial('COM4', 115200, timeout=None) as ser:
 
     ser.flushInput()
 
