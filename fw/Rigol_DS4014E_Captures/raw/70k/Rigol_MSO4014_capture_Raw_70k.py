@@ -1,188 +1,664 @@
 import csv
-from datetime import datetime
-import time
 import socket
+import time
+from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import pyvisa
-CHANNELS_TO_ACQUIRE=[1,2,3,4]
-CHANNEL_DESCRIPTIONS={1:"Hall_A",2:"Motor V+",3:"Driver IN1",4:"Driver IN2"}
-VISA_ADDRESS="TCPIP::192.168.1.26::INSTR"
-TCP_HOST="192.168.1.26"
-TCP_PORT=5555
-ACQUISITION_MEMORY=70000
-RIGOL_COLORS={1:"#D4B100",2:"#00BFFF",3:"#FF1493",4:"#00008B"}
-timestamp=datetime.now().strftime("%Y%m%d_%H%M%S")
-csv_filename=f"rigol_raw_{timestamp}.csv"
-rm=pyvisa.ResourceManager()
-scope=rm.open_resource(VISA_ADDRESS)
-scope.timeout=5000
-channel_data={}
-time_axis=[]
-validated_channels=[]
-valid_options=(1,2,3,4)
-def tcp_send(sock,cmd):
-    sock.sendall((cmd+"\n").encode())
-def tcp_query(sock,cmd):
-    tcp_send(sock,cmd)
-    data=b""
-    while not data.endswith(b"\n"):
-        chunk=sock.recv(4096)
-        if not chunk:
-            raise RuntimeError("TCP connection closed")
-        data+=chunk
-    return data.decode().strip()
-def tcp_read_block(sock):
-    header=b""
-    while len(header)<11:
-        chunk=sock.recv(11-len(header))
-        if not chunk:
-            raise RuntimeError("TCP connection closed while reading binary header")
-        header+=chunk
-    if header[:2]!=b"#9":
-        raise RuntimeError(f"Unexpected binary header: {header!r}")
-    count=int(header[2:11])
-    data=b""
-    while len(data)<count:
-        chunk=sock.recv(min(65536,count-len(data)))
-        if not chunk:
-            raise RuntimeError("TCP connection closed during binary transfer")
-        data+=chunk
-    terminator=sock.recv(1)
-    if terminator not in (b"\n",b"\r"):
-        raise RuntimeError(f"Unexpected binary terminator: {terminator!r}")
-    return data
-def acquire_raw_channel(ch):
-    sock=socket.create_connection((TCP_HOST,TCP_PORT),timeout=10)
-    sock.settimeout(120)
+# ========================= CONFIG =========================
+CHANNELS_TO_ACQUIRE = [1, 2, 3, 4]
+CHANNEL_DESCRIPTIONS = {
+    1: "Hall_A",
+    2: "Motor V+",
+    3: "Driver IN1",
+    4: "Driver IN2"
+}
+VISA_ADDRESS = "TCPIP::192.168.1.26::INSTR"
+TCP_HOST = "192.168.1.26"
+TCP_PORT = 5555
+ACQUISITION_MEMORY = 70000
+TRIGGER_TIMEOUT_SECONDS = 3600
+ARM_TIMEOUT_SECONDS = 3
+TCP_CONNECT_TIMEOUT_SECONDS = 10
+TCP_READ_TIMEOUT_SECONDS = 120
+POLL_INTERVAL_SECONDS = 0.02
+COMMAND_DELAY_SECONDS = 0.05
+RIGOL_COLORS = {
+    1: "#D4B100",
+    2: "#00BFFF",
+    3: "#FF1493",
+    4: "#00008B"
+}
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+csv_filename = f"rigol_raw_{timestamp}.csv"
+VALID_CHANNELS = {1, 2, 3, 4}
+# ========================= VISA =========================
+def visa_write(scope, command):
+    scope.write(command)
+    if COMMAND_DELAY_SECONDS:
+        time.sleep(COMMAND_DELAY_SECONDS)
+def visa_query(scope, command):
+    return scope.query(command).strip()
+def get_trigger_status(scope):
+    return visa_query(
+        scope,
+        ":TRIGger:STATus?"
+    ).upper()
+def print_trigger_configuration(scope):
     try:
-        tcp_send(sock,f":WAVeform:SOURce CHANnel{ch}")
-        tcp_send(sock,":WAVeform:MODE RAW")
-        preamble=tcp_query(sock,":WAVeform:PREamble?")
-        print(f"CH{ch} PREAMBLE:",preamble)
-        p=preamble.split(",")
-        points=int(p[2])
-        x_inc=float(p[4])
-        x_orig=float(p[5])
-        y_inc=float(p[7])
-        y_orig=float(p[8])
-        y_ref=float(p[9])
-        print(f"CH{ch} POINTS:",points)
-        if points!=ACQUISITION_MEMORY:
-            raise RuntimeError(f"CH{ch} acquisition memory is {points} samples instead of {ACQUISITION_MEMORY}")
-        tcp_send(sock,f":WAVeform:POINts {ACQUISITION_MEMORY}")
-        points_set=int(tcp_query(sock,":WAVeform:POINts?"))
-        print(f"CH{ch} POINTS SET:",points_set)
-        if points_set!=ACQUISITION_MEMORY:
-            raise RuntimeError(f"CH{ch} scope did not accept {ACQUISITION_MEMORY} points; returned {points_set}")
-        tcp_send(sock,":WAVeform:RESet")
-        tcp_send(sock,":WAVeform:BEGin")
-        time.sleep(1)
-        total=0
-        blocks=0
-        raw_data=bytearray()
-        while total<ACQUISITION_MEMORY:
-            status=tcp_query(sock,":WAVeform:STATus?")
-            print(f"CH{ch} STATUS:",status)
-            tcp_send(sock,":WAVeform:DATA?")
-            block=tcp_read_block(sock)
-            raw_data.extend(block)
-            total+=len(block)
-            blocks+=1
-            print(f"CH{ch} BLOCK:",blocks,"BYTES:",len(block),"TOTAL:",total)
-            if status.startswith("IDLE"):
-                break
-            time.sleep(0.2)
-        tcp_send(sock,":WAVeform:END")
-        print(f"CH{ch} FINAL BYTES:",total)
-        print(f"CH{ch} BLOCKS:",blocks)
-        print(f"CH{ch} EXPECTED POINTS:",ACQUISITION_MEMORY)
-        if total!=ACQUISITION_MEMORY:
-            raise RuntimeError(f"CH{ch} received {total} samples instead of {ACQUISITION_MEMORY}")
-        voltages=[(raw_value-y_ref-y_orig)*y_inc for raw_value in raw_data]
-        current_time_axis=[x_orig+(idx*x_inc) for idx in range(ACQUISITION_MEMORY)]
-        return voltages,current_time_axis
-    finally:
-        sock.close()
-try:
-    print("Setting scope trigger sweep mode to SINGLE...")
-    scope.write(":RUN")
-    scope.write(":TRIGger:SWEep SINGle")
-    print("\nThe scope is now armed in SINGLE mode and waiting for your trigger.")
+        sweep = visa_query(
+            scope,
+            ":TRIGger:SWEep?"
+        )
+    except Exception as e:
+        sweep = f"ERROR:{e}"
+    try:
+        source = visa_query(
+            scope,
+            ":TRIGger:EDGE:SOURce?"
+        )
+    except Exception as e:
+        source = f"ERROR:{e}"
+    try:
+        slope = visa_query(
+            scope,
+            ":TRIGger:EDGE:SLOPe?"
+        )
+    except Exception as e:
+        slope = f"ERROR:{e}"
+    try:
+        level = visa_query(
+            scope,
+            ":TRIGger:EDGE:LEVel?"
+        )
+    except Exception as e:
+        level = f"ERROR:{e}"
+    print(
+        f"Trigger: sweep={sweep}, "
+        f"source={source}, "
+        f"slope={slope}, "
+        f"level={level}"
+    )
+# ========================= TRIGGER =========================
+def arm_single_acquisition(scope):
+    print("Arming...")
+    before_status = get_trigger_status(scope)
+    before_sweep = visa_query(
+        scope,
+        ":TRIGger:SWEep?"
+    ).upper()
+    print(
+        f"Before: status={before_status}, "
+        f"sweep={before_sweep}"
+    )
+    print_trigger_configuration(scope)
+    # Enter SINGLE mode.
+    visa_write(scope, ":SINGle")
+    start = time.monotonic()
+    last_status = None
+    saw_td = False
+    while time.monotonic() - start < ARM_TIMEOUT_SECONDS:
+        status = get_trigger_status(scope)
+        if status != last_status:
+            print(f"State: {status}")
+            last_status = status
+        # Normal case:
+        # scope is armed and waiting for trigger.
+        if status == "WAIT":
+            print("Waiting for trigger...")
+            return time.monotonic(), False
+        # TD immediately after :SINGle can be a transient
+        # state while changing from the previous acquisition.
+        if status == "TD":
+            saw_td = True
+            time.sleep(0.05)
+            continue
+        # IMPORTANT:
+        # If SINGLE goes directly to STOP without ever showing
+        # WAIT, the trigger may have occurred immediately.
+        #
+        # If TD was observed first, this is definitely the
+        # completed single acquisition.
+        if status == "STOP":
+            elapsed = time.monotonic() - start
+            if saw_td:
+                print(
+                    f"Triggered immediately "
+                    f"after {elapsed:.2f} s"
+                )
+            else:
+                print(
+                    f"Single acquisition completed "
+                    f"immediately after {elapsed:.2f} s"
+                )
+            return time.monotonic(), True
+        time.sleep(POLL_INTERVAL_SECONDS)
+    final_status = get_trigger_status(scope)
+    final_sweep = visa_query(
+        scope,
+        ":TRIGger:SWEep?"
+    )
+    print(
+        f"Arm failed: status={final_status}, "
+        f"sweep={final_sweep}"
+    )
+    print_trigger_configuration(scope)
+    raise TimeoutError(
+        f"Scope did not arm. "
+        f"Final status={final_status!r}, "
+        f"sweep={final_sweep!r}"
+    )
+def wait_for_trigger(scope, armed_time):
     while True:
-        status=scope.query(":TRIGger:STATus?").strip()
-        if status=="WAIT":
-            continue
-        else:
-            print(f"\nTrigger confirmed! Scope status is: {status}")
+        status = get_trigger_status(scope)
+        # TD may be extremely short-lived.
+        if status == "TD":
+            elapsed = time.monotonic() - armed_time
+            print(
+                f"Triggered after {elapsed:.2f} s"
+            )
+            return
+        # Once WAIT was confirmed, STOP means the
+        # single acquisition has completed.
+        if status == "STOP":
+            elapsed = time.monotonic() - armed_time
+            print(
+                f"Triggered/acquisition complete "
+                f"after {elapsed:.2f} s"
+            )
+            return
+        if (
+            time.monotonic() - armed_time
+            >= TRIGGER_TIMEOUT_SECONDS
+        ):
+            raise TimeoutError(
+                f"No trigger within "
+                f"{TRIGGER_TIMEOUT_SECONDS} s"
+            )
+        time.sleep(POLL_INTERVAL_SECONDS)
+# ========================= TCP =========================
+def tcp_send(sock, command):
+    sock.sendall(
+        (command + "\n").encode("ascii")
+    )
+def tcp_query(sock, command):
+    tcp_send(sock, command)
+    data = bytearray()
+    while True:
+        chunk = sock.recv(4096)
+        if not chunk:
+            raise RuntimeError(
+                f"TCP connection closed waiting "
+                f"for {command!r}"
+            )
+        data.extend(chunk)
+        if b"\n" in chunk:
             break
-    input("Press [ENTER] to acquire data...")
-    time_div_seconds=float(scope.query(":TIMebase:MAIN:SCALe?").strip())
-    print("Freezing buffer (STOP)...")
-    scope.write(":STOP")
-    time.sleep(0.2)
-    memory_depth=int(scope.query(":ACQuire:MDEPth?").strip())
-    print("ACQUISITION MEMORY:",memory_depth)
-    if memory_depth!=ACQUISITION_MEMORY:
-        raise RuntimeError(f"Scope acquisition memory is {memory_depth}, expected {ACQUISITION_MEMORY}")
+    return bytes(data).split(
+        b"\n",
+        1
+    )[0].decode("ascii").strip()
+def tcp_read_exact(sock, number_of_bytes):
+    data = bytearray()
+    while len(data) < number_of_bytes:
+        chunk = sock.recv(
+            min(
+                65536,
+                number_of_bytes - len(data)
+            )
+        )
+        if not chunk:
+            raise RuntimeError(
+                f"TCP connection closed after "
+                f"{len(data)}/{number_of_bytes} bytes"
+            )
+        data.extend(chunk)
+    return bytes(data)
+def tcp_read_block(sock):
+    prefix = tcp_read_exact(sock, 2)
+    if prefix != b"#9":
+        raise RuntimeError(
+            f"Invalid RIGOL binary block prefix: "
+            f"{prefix!r}"
+        )
+    try:
+        byte_count = int(
+            tcp_read_exact(sock, 9).decode("ascii")
+        )
+    except ValueError:
+        raise RuntimeError(
+            "Invalid RIGOL binary block length"
+        )
+    payload = tcp_read_exact(
+        sock,
+        byte_count
+    )
+    terminator = tcp_read_exact(
+        sock,
+        1
+    )
+    if terminator == b"\r":
+        old_timeout = sock.gettimeout()
+        try:
+            sock.settimeout(0.1)
+            try:
+                next_byte = sock.recv(1)
+                if next_byte not in (b"", b"\n"):
+                    raise RuntimeError(
+                        f"Unexpected byte after CR: "
+                        f"{next_byte!r}"
+                    )
+            except socket.timeout:
+                pass
+        finally:
+            sock.settimeout(old_timeout)
+    elif terminator != b"\n":
+        raise RuntimeError(
+            f"Invalid binary terminator: "
+            f"{terminator!r}"
+        )
+    return payload
+# ========================= WAVEFORM =========================
+def parse_preamble(preamble):
+    parts = [
+        item.strip()
+        for item in preamble.split(",")
+    ]
+    if len(parts) < 10:
+        raise RuntimeError(
+            f"Unexpected waveform preamble: "
+            f"{preamble!r}"
+        )
+    return {
+        "format": int(parts[0]),
+        "mode": int(parts[1]),
+        "points": int(parts[2]),
+        "count": int(parts[3]),
+        "x_increment": float(parts[4]),
+        "x_origin": float(parts[5]),
+        "x_reference": float(parts[6]),
+        "y_increment": float(parts[7]),
+        "y_origin": float(parts[8]),
+        "y_reference": float(parts[9])
+    }
+def acquire_raw_channel(ch):
+    print(f"Reading CH{ch}...")
+    sock = socket.create_connection(
+        (TCP_HOST, TCP_PORT),
+        timeout=TCP_CONNECT_TIMEOUT_SECONDS
+    )
+    sock.settimeout(
+        TCP_READ_TIMEOUT_SECONDS
+    )
+    try:
+        tcp_send(
+            sock,
+            f":WAVeform:SOURce CHANnel{ch}"
+        )
+        tcp_send(
+            sock,
+            ":WAVeform:MODE RAW"
+        )
+        tcp_send(
+            sock,
+            ":WAVeform:FORMat BYTE"
+        )
+        tcp_send(
+            sock,
+            f":WAVeform:POINts "
+            f"{ACQUISITION_MEMORY}"
+        )
+        points_set = int(
+            tcp_query(
+                sock,
+                ":WAVeform:POINts?"
+            )
+        )
+        if points_set != ACQUISITION_MEMORY:
+            raise RuntimeError(
+                f"CH{ch}: scope accepted "
+                f"{points_set} points instead of "
+                f"{ACQUISITION_MEMORY}"
+            )
+        p = parse_preamble(
+            tcp_query(
+                sock,
+                ":WAVeform:PREamble?"
+            )
+        )
+        if p["points"] != ACQUISITION_MEMORY:
+            raise RuntimeError(
+                f"CH{ch}: preamble reports "
+                f"{p['points']} points"
+            )
+        if p["format"] != 0:
+            raise RuntimeError(
+                f"CH{ch}: expected BYTE format, "
+                f"got {p['format']}"
+            )
+        if p["mode"] != 2:
+            raise RuntimeError(
+                f"CH{ch}: expected RAW mode, "
+                f"got {p['mode']}"
+            )
+        tcp_send(
+            sock,
+            ":WAVeform:RESet"
+        )
+        tcp_send(
+            sock,
+            ":WAVeform:BEGin"
+        )
+        raw_data = bytearray()
+        while len(raw_data) < ACQUISITION_MEMORY:
+            status = tcp_query(
+                sock,
+                ":WAVeform:STATus?"
+            )
+            status_parts = status.split(",")
+            read_status = (
+                status_parts[0]
+                .strip()
+                .upper()
+            )
+            points_read = (
+                int(status_parts[1])
+                if len(status_parts) > 1
+                else -1
+            )
+            # Request the actual binary waveform data.
+            tcp_send(
+                sock,
+                ":WAVeform:DATA?"
+            )
+            block = tcp_read_block(sock)
+            raw_data.extend(block)
+            if len(raw_data) > ACQUISITION_MEMORY:
+                raise RuntimeError(
+                    f"CH{ch}: received too much "
+                    f"data ({len(raw_data)} samples)"
+                )
+            if len(raw_data) == ACQUISITION_MEMORY:
+                break
+            if read_status == "IDLE":
+                raise RuntimeError(
+                    f"CH{ch}: waveform reader finished "
+                    f"at {len(raw_data)} samples "
+                    f"(scope reports {points_read})"
+                )
+            time.sleep(0.01)
+        tcp_send(
+            sock,
+            ":WAVeform:END"
+        )
+        if len(raw_data) != ACQUISITION_MEMORY:
+            raise RuntimeError(
+                f"CH{ch}: received "
+                f"{len(raw_data)} samples"
+            )
+        print(
+            f"CH{ch}: received "
+            f"{len(raw_data)} samples"
+        )
+        voltages = [
+            (
+                value
+                - p["y_reference"]
+                - p["y_origin"]
+            ) * p["y_increment"]
+            for value in raw_data
+        ]
+        time_axis = [
+            p["x_origin"]
+            + i * p["x_increment"]
+            for i in range(
+                ACQUISITION_MEMORY
+            )
+        ]
+        return voltages, time_axis
+    finally:
+        try:
+            sock.close()
+        except Exception:
+            pass
+# ========================= CHANNELS =========================
+def get_enabled_channels(scope):
+    channels = []
     for ch in CHANNELS_TO_ACQUIRE:
-        if ch not in valid_options:
-            print(f"Skipping invalid channel number: CH{ch}")
+        if ch not in VALID_CHANNELS:
             continue
-        is_on=scope.query(f":CHANnel{ch}:DISPlay?").strip()
-        if is_on in ["1","ON"]:
-            validated_channels.append(ch)
-        else:
-            print(f"Warning: CH{ch} is turned OFF on the scope screen. Skipping.")
-    if not validated_channels:
-        print("Error: None of the requested channels are visible on the scope screen. Exiting.")
-        exit()
-    print(f"Capturing FULL 70k RAW data for channels: {validated_channels}")
-    for ch in validated_channels:
-        print(f"\nStarting FULL 70k RAW acquisition for CH{ch}...")
-        voltages,current_time_axis=acquire_raw_channel(ch)
-        channel_data[ch]=voltages
-        if not time_axis:
-            time_axis=current_time_axis
-    with open(csv_filename,mode="w",newline="") as file:
-        writer=csv.writer(file)
-        headers=["Time (s)"]+[f"CH{ch} (V)" for ch in validated_channels]
-        writer.writerow(headers)
-        voltage_lists=[channel_data[ch] for ch in validated_channels]
-        for row_data in zip(time_axis,*voltage_lists):
-            writer.writerow(row_data)
-    print(f"Success! Saved FULL RAW waveform ({len(time_axis)} points) to '{csv_filename}'")
-    if time_div_seconds<1e-6:
-        time_factor=1e9
-        unit_label="Time (ns)"
-        title_unit="ns"
-    elif time_div_seconds<1e-3:
-        time_factor=1e6
-        unit_label="Time (µs)"
-        title_unit="µs"
-    elif time_div_seconds<1.0:
-        time_factor=1e3
-        unit_label="Time (ms)"
-        title_unit="ms"
+        state = visa_query(
+            scope,
+            f":CHANnel{ch}:DISPlay?"
+        ).upper()
+        if state in ("1", "ON"):
+            channels.append(ch)
+    if not channels:
+        raise RuntimeError(
+            "None of the requested channels "
+            "are enabled"
+        )
+    print(f"Channels: {channels}")
+    return channels
+# ========================= CSV =========================
+def save_csv(
+    filename,
+    time_axis,
+    channel_data,
+    channels
+):
+    with open(
+        filename,
+        "w",
+        newline=""
+    ) as file:
+        writer = csv.writer(file)
+        writer.writerow(
+            ["Time (s)"]
+            + [
+                f"CH{ch} (V)"
+                for ch in channels
+            ]
+        )
+        writer.writerows(
+            zip(
+                time_axis,
+                *[
+                    channel_data[ch]
+                    for ch in channels
+                ]
+            )
+        )
+    print(f"Saved: {filename}")
+# ========================= PLOT =========================
+def plot_waveforms(
+    time_axis,
+    channel_data,
+    channels,
+    time_div_seconds
+):
+    if time_div_seconds < 1e-6:
+        factor = 1e9
+        unit = "ns"
+    elif time_div_seconds < 1e-3:
+        factor = 1e6
+        unit = "µs"
+    elif time_div_seconds < 1:
+        factor = 1e3
+        unit = "ms"
     else:
-        time_factor=1.0
-        unit_label="Time (s)"
-        title_unit="s"
-    time_axis_scaled=[t*time_factor for t in time_axis]
-    time_div_scaled=time_div_seconds*time_factor
-    fig,ax=plt.subplots(figsize=(10,5))
-    for ch in validated_channels:
-        label_text=CHANNEL_DESCRIPTIONS.get(ch,f"Channel {ch}")
-        trace_color=RIGOL_COLORS.get(ch,"#000000")
-        ax.plot(time_axis_scaled,channel_data[ch],label=label_text,color=trace_color)
-    ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%g'))
-    ax.xaxis.set_major_locator(ticker.MultipleLocator(time_div_scaled))
-    plt.title(f"Rigol Oscilloscope Data Capture ({time_div_scaled:g} {title_unit}/Div)")
-    plt.xlabel(unit_label)
-    plt.ylabel("Voltage (V)")
-    plt.grid(True,which="major",linestyle="--",color="gray",alpha=0.7)
-    plt.legend()
+        factor = 1
+        unit = "s"
+    x = [
+        t * factor
+        for t in time_axis
+    ]
+    div = time_div_seconds * factor
+    fig, ax = plt.subplots(
+        figsize=(10, 5)
+    )
+    for ch in channels:
+        ax.plot(
+            x,
+            channel_data[ch],
+            label=CHANNEL_DESCRIPTIONS.get(
+                ch,
+                f"Channel {ch}"
+            ),
+            color=RIGOL_COLORS.get(
+                ch,
+                "#000000"
+            )
+        )
+    ax.xaxis.set_major_formatter(
+        ticker.FormatStrFormatter("%g")
+    )
+    if div > 0:
+        ax.xaxis.set_major_locator(
+            ticker.MultipleLocator(div)
+        )
+    ax.set_title(
+        f"Rigol Oscilloscope Data Capture "
+        f"({div:g} {unit}/Div)"
+    )
+    ax.set_xlabel(
+        f"Time ({unit})"
+    )
+    ax.set_ylabel(
+        "Voltage (V)"
+    )
+    ax.grid(
+        True,
+        which="major",
+        linestyle="--",
+        color="gray",
+        alpha=0.7
+    )
+    ax.legend()
+    fig.tight_layout()
+    base_filename = csv_filename.rsplit(".", 1)[0]
+    fig.savefig(f"{base_filename}.png", dpi=300, bbox_inches="tight")
+    fig.savefig(f"{base_filename}.pdf", bbox_inches="tight")
     plt.show()
-finally:
-    scope.close()
-    rm.close()
+# ========================= MAIN =========================
+def main():
+    rm = None
+    scope = None
+    channel_data = {}
+    time_axis = []
+    try:
+        rm = pyvisa.ResourceManager()
+        scope = rm.open_resource(
+            VISA_ADDRESS
+        )
+        scope.timeout = 10000
+        scope.write_termination = "\n"
+        scope.read_termination = "\n"
+        print(
+            f"Connected: "
+            f"{visa_query(scope, '*IDN?')}"
+        )
+        try:
+            visa_write(
+                scope,
+                "*CLS"
+            )
+        except Exception:
+            pass
+        time_div = float(
+            visa_query(
+                scope,
+                ":TIMebase:MAIN:SCALe?"
+            )
+        )
+        memory = int(
+            float(
+                visa_query(
+                    scope,
+                    ":ACQuire:MDEPth?"
+                )
+            )
+        )
+        if memory != ACQUISITION_MEMORY:
+            raise RuntimeError(
+                f"Expected "
+                f"{ACQUISITION_MEMORY} points, "
+                f"scope reports {memory}"
+            )
+        channels = get_enabled_channels(
+            scope
+        )
+        # ARM SINGLE
+        armed_time, already_complete = (
+            arm_single_acquisition(scope)
+        )
+        # WAIT FOR TRIGGER
+        if not already_complete:
+            wait_for_trigger(
+                scope,
+                armed_time
+            )
+        # READ RAW DATA
+        if get_trigger_status(scope) != "STOP":
+            raise RuntimeError(
+                "Scope is not STOPPED after "
+                "acquisition"
+            )
+        for ch in channels:
+            voltages, current_time_axis = (
+                acquire_raw_channel(ch)
+            )
+            if not time_axis:
+                time_axis = current_time_axis
+            elif len(current_time_axis) != len(
+                time_axis
+            ):
+                raise RuntimeError(
+                    f"CH{ch}: time axis "
+                    f"length mismatch"
+                )
+            channel_data[ch] = voltages
+        # SAVE CSV
+        save_csv(
+            csv_filename,
+            time_axis,
+            channel_data,
+            channels
+        )
+        # PLOT
+        plot_waveforms(
+            time_axis,
+            channel_data,
+            channels,
+            time_div
+        )
+        print("Done.")
+    except KeyboardInterrupt:
+        print("\nInterrupted.")
+    except Exception as exc:
+        print(
+            f"\nERROR: "
+            f"{type(exc).__name__}: {exc}"
+        )
+        if scope is not None:
+            try:
+                print(
+                    f"Scope status: "
+                    f"{get_trigger_status(scope)}"
+                )
+            except Exception:
+                pass
+        raise
+    finally:
+        if scope is not None:
+            try:
+                scope.close()
+            except Exception:
+                pass
+        if rm is not None:
+            try:
+                rm.close()
+            except Exception:
+                pass
+if __name__ == "__main__":
+    main()
