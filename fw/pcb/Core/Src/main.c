@@ -155,15 +155,21 @@ void quickCheck(void)
 // if we wait for 10ms, we can measure down to ~ 2/16 Umdrehungen/10ms = 1/8*100 = 12.5 RPS
 void recordStepResponse(void)
 {
-	HAL_TIM_Base_Start_IT(&htim3); // this will fire period elapsed callback on TIM3 every 10ms
-	HAL_TIM_IC_Start_IT(&htim2, TIM_CHANNEL_1); // this will start TIM2 counting and waiting for pulses with input capture
+	HAL_TIM_Base_Start_IT(&htim3); // this will fire period elapsed callback on TIM3 overrun
+	HAL_TIM_IC_Start_IT(&htim2, TIM_CHANNEL_1); // this will enable TIM2 that is counting pulses with input capture
 
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 6800); // always high for 100% duty cycle
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0); // keeping that zero uses coast mode
 
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+}
 
+void startDataStreaming(void)
+{
+	HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
+	HAL_ADC_Start_DMA(&hadc2, (uint32_t *)adc_buffer, ADC_BUFFER_SIZE);
+	HAL_TIM_Base_Start(&htim4); // TIM4 Update event triggers ADC
 }
 
 
@@ -248,6 +254,7 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM3_Init();
   MX_USB_Device_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -257,6 +264,7 @@ int main(void)
 
 
   setMotorRPM(5000);
+  //startDataStreaming();
   //quickCheck();
   //cycleThrough();
   //HAL_Delay(3000);
@@ -284,7 +292,12 @@ int main(void)
 		HAL_UART_Transmit(&hlpuart1, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
 		f_measurement_finished = 0;
 		//memset(motor_rpm, 0, sizeof(motor_rpm));
+	  }
 
+	  if(convComplete)
+	  {
+		  HAL_UART_Transmit(&hlpuart1, (uint8_t*)adc_buffer, sizeof(adc_buffer), HAL_MAX_DELAY);
+		  convComplete = 0;
 	  }
 
     /* USER CODE END WHILE */

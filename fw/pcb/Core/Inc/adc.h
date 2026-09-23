@@ -38,12 +38,17 @@ extern ADC_HandleTypeDef hadc2;
 
 /* USER CODE BEGIN Private defines */
 
+#define ADC_BUFFER_SIZE 2000
+extern volatile uint32_t convComplete;
+
 /* USER CODE END Private defines */
 
 void MX_ADC1_Init(void);
 void MX_ADC2_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+
+extern uint16_t adc_buffer[ADC_BUFFER_SIZE];
 
 /* USER CODE END Prototypes */
 
