@@ -103,3 +103,22 @@ ADC DMA:
                     ▼                ▼
                 UART sends A     UART sends B
 
+
+
+
+
+
+yes. so we now produce 12 bit adc raw data of only one channel of the ADC with 10kHz sample rate and send every 10ms. i will paste you a zip with the pc side python code. please son´t throw away the code parts that we current do not use since we will use them later. just adapt the aquisition worker code and live graph for the current so it matches what we defined
+
+please knock out the code that only simulated data for the curretnversion so that the plotting yould be tested
+we only want to use real values from now on. still, keep the qidgets as is, even if we are now only receiving data for one plot (the current) at the moment
+
+I'll specifically adapt:
+
+Acquisition worker → read the STM32's raw uint16_t little-endian stream.
+Current acquisition → 10 kHz, one ADC channel.
+Block handling → 10 samples / 20 bytes per 10 ms.
+Serial buffering → robustly handle arbitrary chunks returned by the VCP, rather than assuming each read() is exactly 20 bytes.
+Live current graph → update at the appropriate rate using the received samples.
+Preserve the existing infrastructure/code for the other quantities/channels and future functionality, even if currently unused.
+Preserve your existing architecture and naming where practical rather than rewriting the application.
