@@ -1,0 +1,105 @@
+
+
+
+10kHz Abtastrate: Bei einem Signal: 16Bit = 2 Byte
+wenn alle 10ms ein transfer zu PC: 10000*2Byte/(1000ms/10ms) = 200Byte/10ms - >8N1 -> 2kBit/10ms -> 200kBit/s 
+-> ADC Buffer: doppelte Größe -> 400 Byte/ Kanal
+
+
+
+Bei Spannung und Strom: 2 Signale zu je 16 Bit @ 10kHz: 320000 Bit/s Rohdaten ohne 16->12 "reduktion")
+Für 8N1 über UART -> *1.25 weil 2 von 10 bit overhead -> 400000 Bit/s
+
+For Standad UART:
+USARTDIV = 170E6/(16*baudrate)
+-> Baudrate: 460800
+
+FOR LPUART
+LPUARTDIV = 256*fck/Baudrate
+
+
+For testing 1KhZ-> TIM4: prescaler (3)
+170e6/((3+1)* 1e3) = 42500
+
+
+
+
+
+                         ┌─────────────────────────────┐
+                         │          TIM4                │
+                         │      Update Event            │
+                         └──────────────┬──────────────┘
+                                        │
+                                        │ TRGO
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │           ADC2               │
+                         │     External Trigger        │
+                         │     ADC conversion          │
+                         └──────────────┬──────────────┘
+                                        │
+                                        │ ADC result
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │        ADC2 DMA              │
+                         │       Circular Mode          │
+                         └──────────────┬──────────────┘
+                                        │
+                         ┌──────────────┴──────────────┐
+                         │                             │
+                         ▼                             ▼
+                  Half-transfer                  Transfer-complete
+                    interrupt                       interrupt
+                         │                             │
+                         ▼                             ▼
+          HAL_ADC_ConvHalfCpltCallback()     HAL_ADC_ConvCpltCallback()
+                         │                             │
+                         │                             │
+                         ▼                             ▼
+                  ┌─────────────┐               ┌─────────────┐
+                  │   HALF A    │               │   HALF B    │
+                  │ ADC buffer  │               │ ADC buffer  │
+                  └──────┬──────┘               └──────┬──────┘
+                         │                             │
+                         │                             │
+                         ▼                             ▼
+                  LPUART TX DMA                LPUART TX DMA
+                         │                             │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                                  LPUART TX pin
+								  
+								  
+								  
+								  
+
+adc_buffer[]
+┌───────────────────────┬───────────────────────┐
+│        HALF A         │        HALF B         │
+│                       │                       │
+│ ADC writes here       │ ADC writes here       │
+│ then UART sends here  │ then UART sends here  │
+└───────────────────────┴───────────────────────┘
+          ↑                         ↑
+          │                         │
+     half callback             complete callback
+	 
+	 
+	 
+
+
+
+
+ADC DMA:
+
+        fill A             fill B             fill A
+    ────────────────┬────────────────┬────────────────
+                    │                │
+                    ▼                ▼
+                 HALF IRQ         COMPLETE IRQ
+                    │                │
+                    │                │
+                    ▼                ▼
+                UART sends A     UART sends B
+

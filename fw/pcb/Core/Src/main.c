@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "usart.h"
 #include "tim.h"
@@ -245,6 +246,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_ADC2_Init();
   MX_LPUART1_UART_Init();
@@ -263,8 +265,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 
-  setMotorRPM(5000);
-  //startDataStreaming();
+  //setMotorRPM(5000);
+  startDataStreaming();
+
   //quickCheck();
   //cycleThrough();
   //HAL_Delay(3000);
@@ -294,9 +297,17 @@ int main(void)
 		//memset(motor_rpm, 0, sizeof(motor_rpm));
 	  }
 
+	  if(convHalfComplete)
+	  { // TODO add check if a transfer is already running!
+		// ADC has finished writing Part A of buffer
+		// A is now sent via UART
+		HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[0], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
+		convHalfComplete = 0;
+	  }
+
 	  if(convComplete)
 	  {
-		  HAL_UART_Transmit(&hlpuart1, (uint8_t*)adc_buffer, sizeof(adc_buffer), HAL_MAX_DELAY);
+		  HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[ADC_BUFFER_SIZE/2], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
 		  convComplete = 0;
 	  }
 
