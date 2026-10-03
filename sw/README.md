@@ -2,69 +2,49 @@
 
 PySide6-based desktop application for DC motor measurement, visualization and future system identification.
 
-The application is designed as a cross-platform measurement tool for:
+## Current live acquisition
 
-- Windows
-- Linux
-- macOS
+The live measurement path now reads real STM32 USB VCP/serial data.
 
-The primary target hardware is an STM32-based motor controller connected via USB.
+Current STM32 stream assumptions:
 
-The current version (V2) provides a complete software architecture for live data acquisition using a simulated measurement source. The architecture is prepared for later replacement of the simulator with real STM32 USB communication.
+- One channel: motor-current ADC value
+- ADC resolution: 12 bit (`0 ... 4095`)
+- One sample every 1 ms (1000 samples/s)
+- Each sample is transmitted as a little-endian `uint16_t` (2 bytes)
+- 100 samples / 200 bytes are expected every 100 ms
+- No framing/header/timestamp exists yet
+- The first byte received after acquisition starts is treated as the beginning of the stream
+- Scaling from raw ADC value to amperes is intentionally not implemented yet
 
----
+The acquisition worker accumulates serial bytes and converts every complete pair of bytes into one ADC sample. It does not assume that one serial read corresponds to one 200-byte block.
 
-# Current Status
+The existing motor-current live plot displays a configurable rolling history (1 s to 60 s). The existing motor-voltage plot and controls remain in the GUI, but no simulated live voltage/current data is generated.
 
-## Version: V2 - Acquisition Architecture
+## Serial configuration
 
-Implemented:
+The Live Measurement tab provides:
 
-- PySide6 graphical user interface
-- PyQtGraph high-performance plotting
-- Live measurement tab
-- Separate acquisition thread
-- Acquisition controller layer
-- Ring-buffer based data storage
-- Simulated motor voltage/current data source
-- Dynamic live scrolling plots
-- Configurable display history length
-- Motor voltage command interface placeholder
+- Serial-port selection
+- Port refresh
+- Configurable baud rate (default 460800)
 
-Not yet implemented:
+For USB CDC devices, the effective baud rate may be ignored by the USB device, but the serial-port driver still accepts a baud-rate setting.
 
-- STM32 USB CDC communication
-- Real ADC data acquisition
-- Step-response measurement workflow
-- Motor parameter identification
-- Data logging
-- Experiment management
+## Offline / analysis functionality
 
----
+The Motor Identification / Step Response tab has not been changed by the live UART implementation.
 
-# Software Architecture
+## Dependencies
 
-The application follows a layered architecture.
+Install the Python dependencies with:
 
-The main design goal is:
+```text
+pip install -r requirements.txt
+```
 
-> The GUI should only display data. Acquisition and hardware communication are separated from the user interface.
+Run:
 
-Current architecture:
-                Main Window
-                     |
-                     |
-             +-------+-------+
-             |               |
-          Live Tab       Analysis Tab
-             |
-             |
-    Acquisition Controller
-             |
-             |
-    Acquisition Worker
-             |
-      +------+------+
-      |             |
-Simulation       STM32 USB
-(current)       (future)
+```text
+python main.py
+```

@@ -38,7 +38,7 @@ extern ADC_HandleTypeDef hadc2;
 
 /* USER CODE BEGIN Private defines */
 
-#define ADC_BUFFER_SIZE 400
+#define ADC_BUFFER_SIZE 200
 extern volatile uint32_t convComplete;
 extern volatile uint32_t convHalfComplete;
 

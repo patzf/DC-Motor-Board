@@ -7,7 +7,8 @@ from PySide6.QtWidgets import (
     QPushButton,
     QLabel,
     QComboBox,
-    QDoubleSpinBox
+    QDoubleSpinBox,
+    QSpinBox
 )
 
 from acquisition.acquisition_controller import (
@@ -38,7 +39,6 @@ class LiveTab(QWidget):
         self.create_display_timer()
 
 
-
     def create_widgets(self):
 
         self.voltage_plot = LivePlotWidget(
@@ -50,7 +50,7 @@ class LiveTab(QWidget):
 
         self.current_plot = LivePlotWidget(
             "Motor Current",
-            "A",
+            "ADC",
             "r"
         )
 
@@ -79,6 +79,34 @@ class LiveTab(QWidget):
         )
 
 
+        self.serial_port = QComboBox()
+
+        self.serial_port.setMinimumWidth(
+            120
+        )
+
+
+        self.refresh_ports_button = QPushButton(
+            "Refresh Ports"
+        )
+
+
+        self.baudrate = QSpinBox()
+
+        self.baudrate.setRange(
+            1200,
+            3000000
+        )
+
+        self.baudrate.setSingleStep(
+            1200
+        )
+
+        self.baudrate.setValue(
+            460800
+        )
+
+
         self.voltage_command = QDoubleSpinBox()
 
         self.voltage_command.setRange(
@@ -103,7 +131,6 @@ class LiveTab(QWidget):
         self.voltage_button = QPushButton(
             "Set Voltage"
         )
-
 
 
     def create_layout(self):
@@ -141,6 +168,35 @@ class LiveTab(QWidget):
         )
 
 
+        controls.addWidget(
+            QLabel(
+                "Serial Port:"
+            )
+        )
+
+
+        controls.addWidget(
+            self.serial_port
+        )
+
+
+        controls.addWidget(
+            self.refresh_ports_button
+        )
+
+
+        controls.addWidget(
+            QLabel(
+                "Baud:"
+            )
+        )
+
+
+        controls.addWidget(
+            self.baudrate
+        )
+
+
         controls.addStretch()
 
 
@@ -171,7 +227,6 @@ class LiveTab(QWidget):
         )
 
 
-
     def connect_signals(self):
 
         self.acquire_button.clicked.connect(
@@ -189,15 +244,37 @@ class LiveTab(QWidget):
         )
 
 
+        self.serial_port.currentTextChanged.connect(
+            self.serial_port_changed
+        )
+
+
+        self.baudrate.valueChanged.connect(
+            self.baudrate_changed
+        )
+
+
+        self.refresh_ports_button.clicked.connect(
+            self.controller.refresh_ports
+        )
+
+
         self.controller.acquisitionChanged.connect(
             self.acquisition_changed
         )
 
 
         self.controller.errorOccurred.connect(
-            print
+            self.show_error
         )
 
+
+        self.controller.portsChanged.connect(
+            self.update_ports
+        )
+
+
+        self.controller.refresh_ports()
 
 
     def create_display_timer(self):
@@ -220,7 +297,6 @@ class LiveTab(QWidget):
         self.display_timer.start()
 
 
-
     def toggle_acquisition(self):
 
         if (
@@ -234,7 +310,6 @@ class LiveTab(QWidget):
         else:
 
             self.controller.stop()
-
 
 
     def acquisition_changed(
@@ -255,6 +330,53 @@ class LiveTab(QWidget):
             )
 
 
+    def update_ports(self, ports):
+
+        current_port = self.serial_port.currentText()
+
+        self.serial_port.blockSignals(True)
+
+        self.serial_port.clear()
+        self.serial_port.addItems(ports)
+
+        if current_port in ports:
+            self.serial_port.setCurrentText(current_port)
+
+        elif ports:
+            self.serial_port.setCurrentIndex(0)
+
+        self.serial_port.blockSignals(False)
+
+        if self.serial_port.currentText():
+            self.serial_port_changed(
+                self.serial_port.currentText()
+            )
+
+
+    def serial_port_changed(self, port):
+
+        if port:
+            self.controller.set_serial_config(
+                port,
+                self.baudrate.value()
+            )
+
+
+    def baudrate_changed(self, baudrate):
+
+        if self.serial_port.currentText():
+            self.controller.set_serial_config(
+                self.serial_port.currentText(),
+                baudrate
+            )
+
+
+    def show_error(self, message):
+
+        print(
+            f"Acquisition error: {message}"
+        )
+
 
     def change_history(
         self,
@@ -266,13 +388,11 @@ class LiveTab(QWidget):
         )
 
 
-
     def set_voltage(self):
 
         self.controller.set_motor_voltage(
             self.voltage_command.value()
         )
-
 
 
     def update_display(self):
@@ -299,19 +419,23 @@ class LiveTab(QWidget):
         )
 
 
-        self.voltage_plot.update_data(
-            t_v,
-            voltage,
-            self.history_seconds
-        )
-
-
+        # The STM32 currently provides only motor-current ADC samples.
+        # The voltage channel is retained in the GUI but is intentionally
+        # not populated with simulated data.
         self.current_plot.update_data(
             t_i,
             current,
             self.history_seconds
         )
 
+
+        # Keep the existing voltage plot/widget.  NaN values from the
+        # live worker produce no visible simulated voltage trace.
+        self.voltage_plot.update_data(
+            t_v,
+            voltage,
+            self.history_seconds
+        )
 
 
     def decimate(

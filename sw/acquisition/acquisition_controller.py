@@ -28,6 +28,11 @@ class AcquisitionController(QObject):
 
     voltageRequest = Signal(float)
 
+    portsChanged = Signal(list)
+
+    serialConfigRequest = Signal(str, int)
+    refreshPortsRequest = Signal()
+
 
     def __init__(self, parent=None):
 
@@ -92,6 +97,14 @@ class AcquisitionController(QObject):
             self.worker.set_motor_voltage
         )
 
+        self.serialConfigRequest.connect(
+            self.worker.set_serial_config
+        )
+
+        self.refreshPortsRequest.connect(
+            self.worker.refresh_ports
+        )
+
 
         self.thread.started.connect(
             self.worker.initialize
@@ -117,9 +130,26 @@ class AcquisitionController(QObject):
             self.errorOccurred
         )
 
+        self.worker.portsChanged.connect(
+            self.portsChanged
+        )
+
 
         self.thread.start()
 
+
+
+    def set_serial_config(self, port, baudrate=460800):
+
+        self.serialConfigRequest.emit(
+            port,
+            int(baudrate)
+        )
+
+
+    def refresh_ports(self):
+
+        self.refreshPortsRequest.emit()
 
 
     def start(self):
@@ -213,6 +243,7 @@ class AcquisitionController(QObject):
         v = self.voltage_buffer.get()
 
         i = self.current_buffer.get()
+
 
 
         if len(t) == 0:

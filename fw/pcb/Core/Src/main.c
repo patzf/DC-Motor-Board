@@ -31,6 +31,8 @@
 /* USER CODE BEGIN Includes */
 
 //TODO FIXME
+HAL_StatusTypeDef DMA_status = 0;
+volatile uint16_t err = 0;
 volatile uint8_t dfu_jump_requested;
 
 /* USER CODE END Includes */
@@ -70,8 +72,6 @@ void SystemClock_Config(void);
 
 
 // Taken from https://community.st.com/stm32-mcus-60/how-to-jump-to-system-bootloader-from-application-code-on-stm32-microcontrollers-71
-
-
 #include "stm32g4xx_hal.h"
 #include "core_cm4.h"
 
@@ -259,13 +259,17 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
+  __HAL_DBGMCU_FREEZE_TIM4();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
 
-  //setMotorRPM(5000);
+  setMotorRPM(5000);
+ // HAL_Delay(2000); //just to spin up
+ // setMotorRPM(3000);
   startDataStreaming();
 
   //quickCheck();
@@ -292,23 +296,47 @@ int main(void)
 		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
 
 		//send values to PC
-		HAL_UART_Transmit(&hlpuart1, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
+		//HAL_UART_Transmit(&hlpuart1, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
 		f_measurement_finished = 0;
 		//memset(motor_rpm, 0, sizeof(motor_rpm));
 	  }
 
+
 	  if(convHalfComplete)
-	  { // TODO add check if a transfer is already running!
+	  {
 		// ADC has finished writing Part A of buffer
-		// A is now sent via UART
-		HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[0], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
+
+		// Since uart is configured for 8 bit/ no party, the size parameter is also interpreted in bytes
+		DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[0], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
+
+		if(DMA_status == HAL_BUSY)
+		{
+			while(1)
+			{
+				err = 2;
+				HAL_Delay(10);
+			}
+		}
+
 		convHalfComplete = 0;
 	  }
 
+
+
 	  if(convComplete)
 	  {
-		  HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[ADC_BUFFER_SIZE/2], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
-		  convComplete = 0;
+
+		  DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[ADC_BUFFER_SIZE/2], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
+
+	  if(DMA_status == HAL_BUSY)
+		{
+			while(1)
+			{
+				err = 2;
+			}
+		}
+
+		 convComplete = 0;
 	  }
 
     /* USER CODE END WHILE */

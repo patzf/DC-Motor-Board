@@ -9,6 +9,7 @@ def main():
     app = QApplication(sys.argv)
 
     window = MainWindow()
+    window.setFixedSize(1000, 700)
     window.show()
 
     sys.exit(app.exec())

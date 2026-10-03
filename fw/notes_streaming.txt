@@ -21,6 +21,8 @@ LPUARTDIV = 256*fck/Baudrate
 For testing 1KhZ-> TIM4: prescaler (3)
 170e6/((3+1)* 1e3) = 42500
 
+ADC2_IN14: single ended rank 1: UMOTOR (diffamp output)
+
 
 
 
