@@ -124,3 +124,24 @@ Serial buffering → robustly handle arbitrary chunks returned by the VCP, rathe
 Live current graph → update at the appropriate rate using the received samples.
 Preserve the existing infrastructure/code for the other quantities/channels and future functionality, even if currently unused.
 Preserve your existing architecture and naming where practical rather than rewriting the application.
+
+
+
+
+
+please tell me exactly (please analyse deeply, not just getting back to me after the first idea) why the following python visualizsation code that vizualizes DC motor current data (at the moment, only current data is receieved, no voltage) prints the received data fine, but as soon as the source is disconnected or stopd sending data, old ringbuffer data is plotted over and over again. please point out which part of the code does this and do all necessary modifications needed so that ebery data point is plotted only once, so no old data is plotted. the "liec" plot should not increase the time axis anymore or show delivered data when there is no new data to plot .
+
+
+
+
+
+
+
+USB: CubeMX
+Enable USB device
+middleware->USB device
+Class for FS IP: CDC
+-> user code additions as documented in screenshot named usb_enum_wait_for.png 
+to wait for device enumeration. if that is not ready before adc is ready, theusb_cdc_call throws busy since the data structure is not yet initialised
+-> add code for LineCoding
+

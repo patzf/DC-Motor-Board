@@ -261,7 +261,7 @@ class AcquisitionWorker(QObject):
 
             self.sample_index += 1
 
-            print(f"adc_val:{adc_value}")
+            #print(f"adc_val:{adc_value}")
             sample = MeasurementSample(
                 timestamp=timestamp,
                 voltage=float("nan"),

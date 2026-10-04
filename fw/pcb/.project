@@ -29,4 +29,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>STM_Shell</name>
+			<type>2</type>
+			<locationURI>PROJECT_LOC/STM_SHELL</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

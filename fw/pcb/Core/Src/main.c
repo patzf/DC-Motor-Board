@@ -30,8 +30,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "usbd_cdc_if.h"
+
 //TODO FIXME
-HAL_StatusTypeDef DMA_status = 0;
+HAL_StatusTypeDef DMA_status;
 volatile uint16_t err = 0;
 volatile uint8_t dfu_jump_requested;
 
@@ -166,7 +168,7 @@ void recordStepResponse(void)
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 }
 
-void startDataStreaming(void)
+void startAdcSampling(void)
 {
 	HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
 	HAL_ADC_Start_DMA(&hadc2, (uint32_t *)adc_buffer, ADC_BUFFER_SIZE);
@@ -266,11 +268,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
+/*  while (!USB_DeviceIsConfigured())
+  {
+      // USB enumeration is still in progress
+  }*/
 
   setMotorRPM(5000);
  // HAL_Delay(2000); //just to spin up
  // setMotorRPM(3000);
-  startDataStreaming();
+
+  startAdcSampling();
 
   //quickCheck();
   //cycleThrough();
@@ -280,6 +287,7 @@ int main(void)
   while (1)
   {
 	  // !! DO NOT MODIFY THIS !!
+
 	  if(dfu_jump_requested)
 	  {
 		  JumpToSystemBootloader();
@@ -305,38 +313,26 @@ int main(void)
 	  if(convHalfComplete)
 	  {
 		// ADC has finished writing Part A of buffer
-
 		// Since uart is configured for 8 bit/ no party, the size parameter is also interpreted in bytes
 		DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[0], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
-
-		if(DMA_status == HAL_BUSY)
+		//status = CDC_Transmit_FS( (uint8_t *)&adc_buffer[0], ADC_BUFFER_SIZE / 2 * sizeof(uint16_t) );
+/*		if (status != USBD_OK)
 		{
-			while(1)
-			{
-				err = 2;
-				HAL_Delay(10);
-			}
-		}
-
+			err=2;
+		}*/
 		convHalfComplete = 0;
 	  }
-
-
 
 	  if(convComplete)
 	  {
 
-		  DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[ADC_BUFFER_SIZE/2], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
-
-	  if(DMA_status == HAL_BUSY)
+		//status = CDC_Transmit_FS( (uint8_t *)&adc_buffer[ADC_BUFFER_SIZE / 2], ADC_BUFFER_SIZE / 2 * sizeof(uint16_t) );
+		DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[ADC_BUFFER_SIZE/2], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
+/*		if (status != USBD_OK)
 		{
-			while(1)
-			{
-				err = 2;
-			}
-		}
-
-		 convComplete = 0;
+			err=2;
+		}*/
+		convComplete = 0;
 	  }
 
     /* USER CODE END WHILE */
