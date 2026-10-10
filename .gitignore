@@ -6,7 +6,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
 *.eclipse.cdt.core.prefs
 
 # Temporary files
@@ -16,6 +15,7 @@ __pycache__/
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *-backups
+
 *-cache*
 *-bak
 *-bak*

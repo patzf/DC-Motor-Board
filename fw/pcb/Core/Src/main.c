@@ -24,13 +24,12 @@
 #include "usart.h"
 #include "tim.h"
 #include "ucpd.h"
-#include "usb_device.h"
+#include "usb.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
-#include "usbd_cdc_if.h"
+#include "shell.h"
 
 //TODO FIXME
 HAL_StatusTypeDef DMA_status;
@@ -68,6 +67,35 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
+
+/* STM Shell related */
+
+void shell_out (char *buff, int length)
+{
+  HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) buff, length);
+  shell_state.busy = 1;  // DMA transfer in progress.
+}
+
+void shell_get_byte (char *c)
+{
+  HAL_UART_Receive_IT(&hlpuart1, (uint8_t *) c, 1);
+}
+
+void HAL_UART_TxCpltCallback (UART_HandleTypeDef *huart)
+{
+  // Verify which USART we're dealing with:
+  if (huart->Instance == LPUART1)  // UART used by the shell
+    shell_state.busy = 0;  // Transfer complete : clear the flag
+}
+
+void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
+{
+  // Verify which USART we're dealing with :
+  if (huart->Instance == LPUART1)  // UART used by the shell
+    shell_in (shell_state.c);  // Feed the byte to the shell
+}
 
 
 
@@ -176,45 +204,6 @@ void startAdcSampling(void)
 }
 
 
-void setMotorRPM(uint32_t rpm)
-{
-	// TODO: remove the hardcoded 6800 form TIM1
-
-	// calc duty cycle needed for given RPM
-
-	// Annahme: linearer Zusammenhang zwischen RPM und UMOTOR
-	// UMotor = rpm/10000.0f*12;
-
-	// Annahme: linearer Zusammenhang zwischen UMOTOR und PWM duty cycle
-	// duty in prozent = UMotor/12.0f*100
-	// 100% duty heißt: TIMER capture compare = Timer overflow (Period)
-	// Timer CCR = UMotor/12.0f*6800
-
-	uint32_t duty = rpm*68/100.0f;
-
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0);
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-
-}
-
-void setMotorDuty(void)
-{
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 0);
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0);
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-	for(int i = 10; i >= 1; i--)
-	{
-		int duty = i*680;
-		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
-		HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-		HAL_Delay(5000);
-		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
-		HAL_Delay(3000);
-	}
-}
 
 
 /* USER CODE END 0 */
@@ -257,8 +246,8 @@ int main(void)
   MX_TIM1_Init();
   MX_I2C1_Init();
   MX_TIM3_Init();
-  MX_USB_Device_Init();
   MX_TIM4_Init();
+  MX_USB_PCD_Init();
   /* USER CODE BEGIN 2 */
 
   __HAL_DBGMCU_FREEZE_TIM4();
@@ -273,11 +262,11 @@ int main(void)
       // USB enumeration is still in progress
   }*/
 
-  setMotorRPM(5000);
+  //setMotorRPM(0);
  // HAL_Delay(2000); //just to spin up
  // setMotorRPM(3000);
 
-  startAdcSampling();
+  //startAdcSampling();
 
   //quickCheck();
   //cycleThrough();
@@ -287,12 +276,15 @@ int main(void)
   while (1)
   {
 	  // !! DO NOT MODIFY THIS !!
-
 	  if(dfu_jump_requested)
 	  {
 		  JumpToSystemBootloader();
 	  }
-	  //
+
+
+	  // Keep out shell interaction going
+	  shell_fp();
+
 
 	  //stop reporting of values
 	  if(f_measurement_finished)

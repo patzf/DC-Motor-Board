@@ -1,0 +1,1 @@
+#define GIT_INFO_PRESENT "d6be783"

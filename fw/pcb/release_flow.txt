@@ -1,0 +1,12 @@
+git branch #show actual branch
+git tag # show actual tags
+
+download gh tool from github , extract and add to path
+
+git tag v0.10 -m "Kommentar"
+git push origon v0.10
+git auth login
+	--> ssh, paste token. (vorher im Browser uuf Github als classic token erstellen wobei vor dem erstellen auswählen: repo , read: org and workflow
+git release create v0.10
+gh release upload v0.10 "C:\tools\OneDrive - Höhere technische Bundeslehranstalt Graz-Gösting\hw\g4\DC-Motor-Board\fw\pcb\Debug\fw.bin"
+	--> das .bin file deshalb da nucleo auch als mass storage per default. Neu Programmieren indem man das bin file im explorer auf das nucleo board kopiert

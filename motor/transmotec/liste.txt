@@ -1,0 +1,19 @@
+trasnmotec
+770-4087-CC
+
+NC5FN-3550-CVC
+
+
+KP3N-35110-CVC
+KS3N-30100-CVC
+
+
+ND5FN-16190-CV
+KS5FN-2462-CVC
+HS3SFN-22240-CVC
+
+
+1kHz - 50kHz PWM
+
+des gemeine is nämlich wenn man nur die Kurve so anschaun würde, würde man meinen ma könnte den MOSFET mit einem 3V pin einfach schalten. Stimmt natürlich ned wenn weil mit 10V Drain/Source fangst ned viel an =) 
+andererseits fangen diie anderen Kurven, die mir zeigen könnten on das Sinn macht oder ned erst später an. bei 4V Gate-Source hat er im worst case 50mOhm rDSon. was er bei 3 hat kann i ned extrapolieren =)
