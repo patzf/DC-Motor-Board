@@ -174,7 +174,6 @@ void quickCheck(void)
 }
 
 
-
 // Prepare TIM2 for counting pulses.
 // We count the number of pulses inside a fixed time window of 1ms
 // at no load : HALL Sensor delivers pulses with 2.8kHz -> 2.8kHz/16 = 175 RPS = 175*60 = 10500 RPM
@@ -183,14 +182,15 @@ void quickCheck(void)
 // With 16 RPC
 // -> if we want to measure down to 1 RPS we need to wait for at least 2*1/*16 = 125ms
 // -> for measuring 10RPS, we need to measure for 12,5ms
-// if we wait for 10ms, we can measure down to ~ 2/16 Umdrehungen/10ms = 1/8*100 = 12.5 RPS
-void recordStepResponse(void)
+// if we wait for 10ms, we can measure down to ~ 2/16 turns/10ms = 1/8*100 = 12.5 RPS
+//TODO: currently we do not make use of the parameter rpm
+void measStepRsp(uint16_t rpm)
 {
 	HAL_TIM_Base_Start_IT(&htim3); // this will fire period elapsed callback on TIM3 overrun
 	HAL_TIM_IC_Start_IT(&htim2, TIM_CHANNEL_1); // this will enable TIM2 that is counting pulses with input capture
 
 	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 6800); // always high for 100% duty cycle
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0); // keeping that zero uses coast mode
+	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, 0); // keeping that zero uses coast mode during off time of PWM
 
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -202,7 +202,6 @@ void startAdcSampling(void)
 	HAL_ADC_Start_DMA(&hadc2, (uint32_t *)adc_buffer, ADC_BUFFER_SIZE);
 	HAL_TIM_Base_Start(&htim4); // TIM4 Update event triggers ADC
 }
-
 
 
 
@@ -271,22 +270,20 @@ int main(void)
   //quickCheck();
   //cycleThrough();
   //HAL_Delay(3000);
-  //recordStepResponse();
+  //measStepRsp(6800);
 
   while (1)
   {
-	  // !! DO NOT MODIFY THIS !!
+	  /* !! DO NOT MODIFY THIS !! */
 	  if(dfu_jump_requested)
 	  {
 		  JumpToSystemBootloader();
 	  }
 
-
-	  // Keep out shell interaction going
+	  // Keep shell interaction going
 	  shell_fp();
 
-
-	  //stop reporting of values
+	  //stop reporting values after step response finished
 	  if(f_measurement_finished)
 	  {
 		HAL_TIM_Base_Stop_IT(&htim3);
@@ -296,22 +293,23 @@ int main(void)
 		HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
 
 		//send values to PC
-		//HAL_UART_Transmit(&hlpuart1, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
+		HAL_UART_Transmit(&hlpuart1, (uint8_t*)motor_rpm, sizeof(motor_rpm), HAL_MAX_DELAY);
 		f_measurement_finished = 0;
 		//memset(motor_rpm, 0, sizeof(motor_rpm));
 	  }
 
 
+	  /*
 	  if(convHalfComplete)
 	  {
 		// ADC has finished writing Part A of buffer
 		// Since uart is configured for 8 bit/ no party, the size parameter is also interpreted in bytes
 		DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[0], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
 		//status = CDC_Transmit_FS( (uint8_t *)&adc_buffer[0], ADC_BUFFER_SIZE / 2 * sizeof(uint16_t) );
-/*		if (status != USBD_OK)
-		{
-			err=2;
-		}*/
+//		if (status != USBD_OK)
+//		{
+//			err=2;
+//		}
 		convHalfComplete = 0;
 	  }
 
@@ -320,12 +318,14 @@ int main(void)
 
 		//status = CDC_Transmit_FS( (uint8_t *)&adc_buffer[ADC_BUFFER_SIZE / 2], ADC_BUFFER_SIZE / 2 * sizeof(uint16_t) );
 		DMA_status = HAL_UART_Transmit_DMA(&hlpuart1, (uint8_t *) &adc_buffer[ADC_BUFFER_SIZE/2], ADC_BUFFER_SIZE/2*sizeof(uint16_t));
-/*		if (status != USBD_OK)
-		{
-			err=2;
-		}*/
+//		if (status != USBD_OK)
+//		{
+//			err=2;
+//		}
 		convComplete = 0;
 	  }
+	  */
+
 
     /* USER CODE END WHILE */
 

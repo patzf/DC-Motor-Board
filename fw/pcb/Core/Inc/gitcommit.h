@@ -1,1 +1,1 @@
-#define GIT_INFO_PRESENT "d6be783"
+#define GIT_INFO_PRESENT "5c3a24d"

@@ -166,13 +166,49 @@ void command_load ()
 
 
 
+void command_measStepRsp ()
+{
+	static int arg = 0;
+	int rv = 0;
+
+	STATE_MACHINE
+	STATE 0:		// parse the command line
+		rv = sscanf (shell_state.input, "setMotorRPM %i", &arg);
+		state = ((rv == 1) && (arg >= 0)) ? 1 : 2;		// argument successfully decoded and non-negative ?
+	STATE 1:		// turn on the LED
+		measStepRsp(arg);
+		RETURN
+	STATE 2:
+		RETURN
+	STATE_MACHINE_END
+}
+
 
 void command_set_motor_rpm ()
 {
+	static int arg = 0;
+	int rv = 0;
+
+	/* Franz
 	setMotorRPM(5000);
 	shell_state.command_fp = 0;			// Ends this command's execution
 	shell_fp = shell_state_output;		// This time, it'll return to the prompt
+	*/
+
+	STATE_MACHINE
+	STATE 0:		// parse the command line
+		rv = sscanf (shell_state.input, "setMotorRPM %i", &arg);
+		state = ((rv == 1) && (arg >= 0)) ? 1 : 2;		// argument successfully decoded and non-negative ?
+	STATE 1:
+		setMotorRPM(arg);
+		RETURN
+	STATE 2:
+		RETURN
+	STATE_MACHINE_END
 }
+
+
+
 
 //void command_pwm_start ()
 //{
@@ -313,8 +349,8 @@ t_shell_block_entry root_block[] =
 		//{"flash N - flash the LED 'N' times", command_flash, 0},
 		//{"cnt - displays its own call count", command_cnt, 0},
 		//{"load - performance test", command_load, 0}
-		{"setMotorRPM", command_set_motor_rpm, 0}
-		//{"startPWM", command_pwm_start, 0},
+		{"setMotorRPM RPM", command_set_motor_rpm, 0},
+		{"measStepResponse", command_measStepRsp, 0}
 		//{"stopPWM", command_pwm_stop, 0}
 };
 
