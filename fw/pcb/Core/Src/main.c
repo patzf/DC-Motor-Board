@@ -83,12 +83,14 @@ void shell_get_byte (char *c)
   HAL_UART_Receive_IT(&hlpuart1, (uint8_t *) c, 1);
 }
 
+/*
 void HAL_UART_TxCpltCallback (UART_HandleTypeDef *huart)
 {
   // Verify which USART we're dealing with:
   if (huart->Instance == LPUART1)  // UART used by the shell
     shell_state.busy = 0;  // Transfer complete : clear the flag
 }
+*/
 
 void HAL_UART_RxCpltCallback (UART_HandleTypeDef *huart)
 {
@@ -270,7 +272,9 @@ int main(void)
   //quickCheck();
   //cycleThrough();
   //HAL_Delay(3000);
-  //measStepRsp(6800);
+
+  HAL_Delay(5000);
+  measStepRsp(6800);
 
   while (1)
   {
@@ -283,7 +287,7 @@ int main(void)
 	  // Keep shell interaction going
 	  shell_fp();
 
-	  //stop reporting values after step response finished
+	  //stop measurement and send data to PC when step response has finished
 	  if(f_measurement_finished)
 	  {
 		HAL_TIM_Base_Stop_IT(&htim3);

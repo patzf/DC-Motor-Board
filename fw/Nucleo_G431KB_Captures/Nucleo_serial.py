@@ -3,14 +3,17 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-with serial.Serial('COM4', 115200, timeout=None) as ser:
+with serial.Serial('COM5', 460800, timeout=None) as ser: #//460800
 
     ser.flushInput()
 
-    raw = ser.read(2000)
+    raw = ser.read(2000) # 500 floats * 4bytes
 
-    # Convert 800 bytes -> 200 floats
+    # Convert bytes -> floats
     values = np.frombuffer(raw, dtype='<f4')
+
+    print(len(values))
+    print(values)
 
     # Save to CSV
     with open('data.csv', 'w', newline='') as f:
